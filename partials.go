@@ -16,7 +16,7 @@ import (
 	"text/template"
 )
 
-func getFuncMap() template.FuncMap {
+func GetFuncMap() template.FuncMap {
 	funcMap := template.FuncMap{
 		newFaq.CONVERTER_FUNCTION_NAME:              newFaq.Cast_to_faq,
 		simpleHeader.CONVERTER_FUNCTION_NAME:        simpleHeader.Cast_to_simple_header,
