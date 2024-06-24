@@ -276,9 +276,9 @@
 }
 
 .pagination a.active {
-    background-color: rgb(59 130 246 / var(--tw-bg-opacity));
+    background-color: var(--primary-color);
     color: white;
-    border-color: rgb(59 130 246 / var(--tw-border-opacity));
+    border-color: var(--primary-color);
 }
 
 .pagination a.prev,

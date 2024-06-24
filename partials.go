@@ -30,7 +30,17 @@ func GetFuncMap() template.FuncMap {
 		cta2.CONVERTER_FUNCTION_NAME:                cta2.Cast_to_cta2,
 		feature1.CONVERTER_FUNCTION_NAME:            feature1.Cast_to_feature1,
 		pricingCards.CONVERTER_FUNCTION_NAME:        pricingCards.Cast_to_pricing_cards,
+		"add":                                       Add,
+		"sub":                                       Sub,
 	}
 
 	return funcMap
+}
+
+func Add(a, b int) int {
+	return a + b
+}
+
+func Sub(a, b int) int {
+	return a - b
 }
