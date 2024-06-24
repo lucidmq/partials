@@ -1,0 +1,70 @@
+<div class="blogContainerWrapper">
+    <div class="blogContainer">
+        <div class="blogSubContainer">
+            {{$singleColBlogPage := cast_to_single_col_blog .TemplateData}}
+            <h1 class="blogTitle">{{$singleColBlogPage.Title}}</h1>
+            <p class="blogSubtitle">
+                {{$singleColBlogPage.Subtitle}}
+                
+            </p>
+            <div class="blogArticleContainer">
+                {{range $article := $singleColBlogPage.BlogPages}}
+                <article class="articleContainer">
+                    <div class="articleMetaDataContainer">
+                        <time
+                            datetime="{{$article.GetDateString}}"
+                            class="timeWrapper"
+                            >{{$article.GetMonthDateString}}</time
+                        >
+                        <a class="tag">{{$article.Tag}}</a>
+                    </div>
+                    <div class="articleDetailsContainer">
+                        <h3 class="articleTitle">
+                            <a href="{{$article.Slug}}">
+                                <span class="textSpanner"></span>
+                                {{$article.Title}}
+                            </a>
+                        </h3>
+                        <p class="articleSnippet">{{$article.Snippet}}</p>
+                    </div>
+                    <div class="articleAuthorContainer">
+                        <img
+                            src="{{$article.Authorurl}}"
+                            alt="{{$article.Author}}"
+                            class="authorImage"
+                        />
+                        <div class="authorMetaDetailsContainer">
+                            <p class="authorText">
+                                <a>
+                                    <span class="textSpanner"></span>
+                                    {{$article.Author}}
+                                </a>
+                            </p>
+                            <p class="authorRoleTitleText">{{$article.Authorrole}}</p>
+                        </div>
+                    </div>
+                </article>
+                {{end}}
+            </div>
+
+            <!-- Pagination  -->
+            <div class="pagination">
+                {{if gt $singleColBlogPage.CurrentPage 1}}
+                <a href="?page={{sub $singleColBlogPage.CurrentPage 1}}" class="prev"
+                    >&laquo; Previous</a
+                >
+                {{end}} {{range $singleColBlogPage.Pagination}}
+                <a
+                    href="?page={{.}}"
+                    class="{{if eq . $singleColBlogPage.CurrentPage}}active{{end}}"
+                    >{{.}}</a
+                >
+                {{end}} {{if lt $singleColBlogPage.CurrentPage $singleColBlogPage.TotalPages}}
+                <a href="?page={{add $singleColBlogPage.CurrentPage 1}}" class="next"
+                    >Next &raquo;</a
+                >
+                {{end}}
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,76 @@
+<template id="modalTemplate">
+  <div id="modal" onclick="this.remove()">
+    <div class="modal-underlay"></div>
+    <div class="modal-content" onclick="stopClose(event)">
+      <div id="noteSubmiter" class="noteSubmitContainer">
+        <p>
+          <span class="requiredStar">*</span> Required Information
+        </p>
+        <form
+          class="former"
+          method="POST"
+          action="/form"
+        >
+          <div class="fill-content-container">
+            <div class="fill-content-subcontainer">
+              <div class="inputContainer">
+                <label for="first-name" class="labeler">First name<span class="requiredStar">*</span></label>
+                <div class="inputSubcontainer">
+                  <input
+                    type="text"
+                    name="first-name"
+                    id="first-name"
+                    autocomplete="given-name"
+                    class="inputer"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="inputContainer">
+                <label for="last-name" class="labeler">Last name<span class="requiredStar">*</span></label>
+                <div class="inputSubcontainer">
+                  <input
+                    type="text"
+                    name="last-name"
+                    id="last-name"
+                    autocomplete="family-name"
+                    class="inputer"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="inputContainer2">
+                <label for="email" class="labeler">Email address<span class="requiredStar">*</span></label>
+                <div class="inputSubcontainer">
+                  <input
+                    id="email"
+                    name="email"
+                    type="email"
+                    autocomplete="email"
+                    class="inputer"
+                    required
+                  />
+                </div>
+              </div>
+              <div class="inputContainer2">
+                <label for="phone" class="labeler">Phone number</label>
+                <div class="inputSubcontainer">
+                  <input
+                    id="phone"
+                    name="phone"
+                    type="text"
+                    autocomplete="phone"
+                    class="inputer"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="button-container">
+            <button type="submit" class="submit-button">Get a demo</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</template>

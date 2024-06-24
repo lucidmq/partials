@@ -1,0 +1,130 @@
+.cta2-container {
+    /* aji */
+    --tw-bg-opacity: 1;
+    background-color: rgb(224 231 255 / var(--tw-bg-opacity));
+}
+
+.cta2-subcontainer {
+    display: flex;
+    flex-direction: column;
+    /* gx  */
+    margin-left: auto;
+    margin-right: auto;
+    /* ua  */
+    max-width: 80rem;
+    /* arj  */
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    /* arx  */
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+
+}
+
+.cta2-title-container {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    text-align: center;
+}
+
+.cta2-header {
+    /* avr  */
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    /* awc  */
+    font-weight: 700;
+    /* aww  */
+    letter-spacing: -0.025em;
+    /* axu  */
+    --tw-text-opacity: 1;
+    color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.cta2-logos-container {
+    /* kw  */
+    margin-top: 2.5rem;
+    /* lx  */
+    display: flex;
+    /* yz  */
+    align-items: center;
+    justify-content: center;
+    /* aai  */
+    -moz-column-gap: 1.5rem;
+    column-gap: 1.5rem;
+}
+
+
+@media (min-width: 640px) {
+    .cta2-subcontainer {
+        /* cfj  (@media 640)*/
+        padding-top: 6rem;
+        padding-bottom: 6rem;
+    }
+
+    .cta2-header {
+        /* chu (@media 640)*/
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .cta2-subcontainer {
+        /* cuv  (@media 1024)*/
+        display: flex;
+        /* czd  (@media 1024)*/
+        align-items: center;
+        /* czi  (@media 1024)*/
+        justify-content: space-between;
+        /* dde (@media 1024)*/
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .cta2-logos-container {
+        /* cuf  (@media 1024)*/
+        margin-top: 0px;
+        /* cxq (@media 1024)*/
+        flex-shrink: 0;
+    }
+}
+/* New Stuff */
+
+.cta2-item-image-wrapper {
+    height: 3.5rem;
+    width: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    /* alm  */
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+
+    /* bbs  */
+    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+    /* bcn */
+    --tw-ring-color: rgb(17 24 39 / 0.1);
+
+    /* adt  */
+    border-radius: 0.5rem;
+}
+
+.cta2-item-image {
+    /* nj  */
+    height: 2.5rem;
+    /* rl  */
+    width: 2.5rem;
+    /* uo  */
+    flex: none;
+    /* adt  */
+    border-radius: 0.5rem;
+    /* alm  */
+    --tw-bg-opacity: 1;
+    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    /* aqd  */
+    -o-object-fit: cover;
+    object-fit: cover;
+}

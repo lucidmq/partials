@@ -1,0 +1,50 @@
+<section class="integration-card-section">
+  <div class="integration-card-container">
+    {{$IntegrationFeatures := cast_to_integration_cards .TemplateData}}
+    <div class="features3-title-header-container">
+      <p class="features3-sub-title">
+        {{$IntegrationFeatures.Title}}
+      </p>
+      <p class="features3-description">
+        {{$IntegrationFeatures.Description}}
+      </p>
+    </div>
+    <ul role="list" class="integration-card-list-container">
+      {{ range $example := $IntegrationFeatures.ExampleIntegations }}
+      <li class="card-item">
+        <div class="card-item-header-container">
+          <div class="card-item-header-images-container">
+            <div class="card-item-image-wrapper">
+              <img
+                src="{{$example.App1ImageLocation}}"
+                alt="Filevine"
+                class="card-item-image"
+              />
+            </div>
+            <div class="card-item-image-wrapper">
+              <img
+                src="{{$example.App2ImageLocation}}"
+                alt="Filevine"
+                class="card-item-image"
+              />
+            </div>
+          </div>
+          <div class="card-item-title">
+            {{ $example.Description }}
+          </div>
+        </div>
+        <a href="#" onclick="openModal(event)">
+          <div class="card-item-cta-container">
+            <div class="card-item-cta-sub-container">
+              <p>Try it now</p>
+              <p>
+                <span aria-hidden="true">→</span>
+              </p>
+            </div>
+          </div>
+        </a>
+      </li>
+      {{ end }}
+    </ul>
+  </div>
+</section>

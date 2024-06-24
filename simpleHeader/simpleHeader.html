@@ -1,0 +1,12 @@
+<section class="simpleHeader-section-container">
+    
+    <div class="simpleHeader-title-header-container">
+        {{$SimpleHeader := cast_to_simple_header .TemplateData}}
+        <h1 class="simpleHeader-title">
+            {{$SimpleHeader.Title}}
+        </h1>
+        <p class="simpleHeader-description">
+            {{$SimpleHeader.Description}}
+        </p>
+    </div>
+</section>

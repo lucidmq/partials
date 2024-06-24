@@ -1,0 +1,203 @@
+.container {
+    display: block;
+    height: 900vh;
+}
+
+.a-hero_anim {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    /* position: absolute;
+    top: 0%;
+    bottom: 0%;
+    right: 0%; */
+}
+
+.a-hero_banner {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    position: relative;
+  }
+
+  .div-block {
+    z-index: 2;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 125px;
+    display: flex;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+  }
+
+  .div-block-2 {
+    z-index: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+  }
+  
+  .div-block-3 {
+    z-index: 1;
+    opacity: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    top: 11%;
+    right: 11%;
+  }
+
+  .div-block-4 {
+    z-index: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    right: 0%;
+  }
+  
+  .div-block-5 {
+    z-index: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    bottom: 11%;
+    right: 11%;
+  }
+  
+  .div-block-6 {
+    z-index: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    bottom: 0%;
+    left: 0%;
+    right: 0%;
+  }
+  
+  .div-block-7 {
+    z-index: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    bottom: 11%;
+    left: 11%;
+  }
+  
+  .div-block-8 {
+    z-index: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    top: 0%;
+    bottom: 0%;
+    left: 0%;
+  }
+  
+  .div-block-9 {
+    z-index: 1;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+    top: 11%;
+    left: 11%;
+  }
+
+  .particle {
+    background-color: var(--black);
+    border-radius: 8px;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 8px;
+    height: 8px;
+    display: flex;
+    position: absolute;
+  }
+
+  .banner-line {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    position: absolute;
+  }
+
+  .banner-line._1 {
+    top: 0;
+    bottom: 0;
+    left: 20%;
+  }
+  
+  .banner-line._2 {
+    top: 0%;
+    bottom: 0%;
+    right: 20%;
+    transform: rotate(180deg);
+  }
+  
+  .banner-line._3 {
+    bottom: 22%;
+    left: 0%;
+    right: 0%;
+  }
+  
+  .banner-line._4 {
+    top: 22%;
+    left: 0%;
+    right: 0%;
+  }
+  
+  .banner-line._5 {
+    top: 29%;
+    left: 22%;
+    transform: rotate(-45deg);
+  }
+  
+  .banner-line._6 {
+    top: 29%;
+    right: 22%;
+    transform: rotate(45deg);
+  }
+  
+  .banner-line._7 {
+    bottom: 29%;
+    right: 22%;
+    transform: rotate(135deg);
+  }
+  
+  .banner-line._8 {
+    bottom: 29%;
+    left: 22%;
+    transform: rotate(225deg);
+  }
+
+  .image-3-copy {
+    transform: translate(0, 36px)rotate(90deg);
+  }

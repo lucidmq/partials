@@ -1,0 +1,57 @@
+<section class="qa-container">
+  <div class="qa-wrapper">
+    <div class="qa-content">
+      <h2 class="qa-heading">Frequently asked questions</h2>
+      <dl class="qa-list">
+        {{ range $index, $faq := cast_to_faq .TemplateData }}
+        <div class="qa-item" data-state="{{ if eq $index 0 }}open{{ end }}">
+          <dt>
+            <button
+              class="qa-toggle-button"
+              id="qa-toggle-button-{{ $index }}"
+              type="button"
+              aria-expanded="{{ if eq $index 0 }}true{{ else }}false{{ end }}"
+              data-state="{{ if eq $index 0 }}open{{ end }}"
+              aria-controls="qa-toggle-panel-{{ $index }}"
+            >
+              <span class="qa-question">{{ $faq.Question }}</span>
+              <span class="qa-toggle-icon">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="none"
+                  viewBox="0 0 24 24"
+                  stroke-width="1.5"
+                  stroke="currentColor"
+                  aria-hidden="true"
+                  class="qa-toggle-icon-svg"
+                >
+                  {{ if eq $index 0 }}
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M18 12H6M12 6V18"
+                  ></path>
+                  {{ else }}
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    d="M12 6v12m6-6H6"
+                  ></path>
+                  {{ end }}
+                </svg>
+              </span>
+            </button>
+          </dt>
+          <dd
+            class="qa-answer"
+            id="qa-toggle-panel-{{ $index }}"
+            data-state="{{ if eq $index 0 }}open{{ end }}"
+          >
+            <p class="qa-answer-text">{{ $faq.Answer }}</p>
+          </dd>
+        </div>
+        {{ end }}
+      </dl>
+    </div>
+  </div>
+</section>

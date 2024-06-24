@@ -1,0 +1,42 @@
+<section class="allIntegrationsHero-section">
+  <div class="allIntegrationsHero-wrapper">
+    <div class="allIntegrationsHero-sub-wrapper">
+      {{range $index, $integration := cast_to_integration_grid_list .TemplateData}}
+      <div class="base-integration-box integration-box-{{$index}}">
+        <div class="card-item-header-images-container">
+          <div class="card-item-image-wrapper">
+            <img
+              src="{{$integration.App1ImageLocation}}"
+              alt="Filevine"
+              class="card-item-image"
+            />
+          </div>
+          <div class="card-item-image-wrapper">
+            <img
+              src="{{$integration.App2ImageLocation}}"
+              alt="Filevine"
+              class="card-item-image"
+            />
+          </div>
+        </div>
+        <div class="integration-box-text-container">
+          <h3 class="integration-box-title">
+            <a href="{{$integration.Link}}" class="integration-box-link">
+              <span class="integration-box-link-span" aria-hidden="true"></span>
+              {{$integration.App1}} - {{$integration.App2}}
+            </a>
+          </h3>
+        </div>
+        <span class="integration-box-svg2-span" aria-hidden="true">
+          <svg class="integration-box-svg1-svg" fill="currentColor" viewBox="0 0 24 24">
+            <path
+              d="M20 4h1a1 1 0 00-1-1v1zm-1 12a1 1 0 102 0h-2zM8 3a1 1 0 000 2V3zM3.293 19.293a1 1 0 101.414 1.414l-1.414-1.414zM19 4v12h2V4h-2zm1-1H8v2h12V3zm-.707.293l-16 16 1.414 1.414 16-16-1.414-1.414z"
+            >
+            </path>
+          </svg>
+        </span>
+      </div>
+      {{end}}
+    </div>
+  </div>
+</section>
