@@ -2,14 +2,14 @@
   <div class="cta1-subcontainer">
     {{ $cta := cast_to_cta1 .TemplateData }}
     <h2 class="cta1-header">
-      {{cta.Title}}<br />{{cta.Description}}
+      {{$cta.Title}}<br />{{$cta.Description}}
     </h2>
     <div class="cta1-actions-container">
       <a href="#" class="cta1-action-link1" onclick="openModal(event)">
-        {{cta.Button1Text}}
+        {{$cta.Button1Text}}
       </a>
       <a href="#" class="cta1-action-link2" onclick="openModal(event)">
-        {{cta.Button2Text}}
+        {{$cta.Button2Text}}
         <span aria-hidden="true">→</span>
       </a>
     </div>
