@@ -1,14 +1,16 @@
 <section class="cta1-container">
   <div class="cta1-subcontainer">
+    {{ $cta := cast_to_cta1 .TemplateData }}
     <h2 class="cta1-header">
-      Don't see the integration you need?<br />We can build it for you
+      {{cta.Title}}<br />{{cta.Description}}
     </h2>
     <div class="cta1-actions-container">
       <a href="#" class="cta1-action-link1" onclick="openModal(event)">
-        Get started
+        {{cta.Button1Text}}
       </a>
       <a href="#" class="cta1-action-link2" onclick="openModal(event)">
-        Learn more <span aria-hidden="true">→</span>
+        {{cta.Button2Text}}
+        <span aria-hidden="true">→</span>
       </a>
     </div>
   </div>
