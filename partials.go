@@ -4,6 +4,7 @@ import (
 	"partials/blogArticle"
 	"partials/cta1"
 	"partials/cta2"
+	"partials/docPage"
 	"partials/feature1"
 	"partials/features3"
 	"partials/integrationCards"
@@ -32,6 +33,7 @@ func GetFuncMap() template.FuncMap {
 		feature1.CONVERTER_FUNCTION_NAME:            feature1.Cast_to_feature1,
 		pricingCards.CONVERTER_FUNCTION_NAME:        pricingCards.Cast_to_pricing_cards,
 		cta1.CONVERTER_FUNCTION_NAME:                cta1.Cast_to_cta1,
+		docPage.CONVERTER_FUNCTION_NAME:             docPage.Cast_to_doc_page,
 		"add":                                       Add,
 		"sub":                                       Sub,
 	}
