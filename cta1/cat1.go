@@ -9,7 +9,9 @@ type Cta1 struct {
 	Title       string
 	Description string
 	Button1Text string
+	Button1Link string
 	Button2Text string
+	Button2Link string
 }
 
 func Cast_to_cta1(mapper map[string]interface{}) Cta1 {
