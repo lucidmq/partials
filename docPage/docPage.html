@@ -13,8 +13,8 @@
             <ul role="list" class="subLister">
               {{ range $index, $section := $contents.SubSections }}
               <li class="listItem">
-                <a class="linker" href="#"
-                  >{{$section}}
+                <a class="linker" href="{{$section.Link}}"
+                  >{{$section.SubSectionTitle}}
                 </a>
               </li>
               {{end}}
@@ -39,8 +39,8 @@
       <div>
         <dt class="previousText">Previous</dt>
         <dd class="previousLinkContainer">
-          <a class="previousLink" href="/docs/understanding-caching">
-            Understanding caching
+          <a class="previousLink" href="{{$docPage.PreviousPage.Link}}">
+            {{$docPage.PreviousPage.SubSectionTitle}}
             <svg viewBox="0 0 16 16" aria-hidden="true" class="svger">
               <path
                 d="m9.182 13.423-1.17-1.16 3.505-3.505H3V7.065h8.517l-3.506-3.5L9.181 2.4l5.512 5.511-5.511 5.512Z"
@@ -52,12 +52,9 @@
       <div class="nextContainer">
         <dt class="nextText">Next</dt>
         <dd class="nextLinkContainer">
-          <a class="nextLink" href="/docs/basics-of-time-travel"
-            >Basics of time-travel<svg
-              viewBox="0 0 16 16"
-              aria-hidden="true"
-              class="svger"
-            >
+          <a class="nextLink" href="{{$docPage.NextPage.Link}}">
+            {{$docPage.NextPage.SubSectionTitle}}
+            <svg viewBox="0 0 16 16" aria-hidden="true" class="svger">
               <path
                 d="m9.182 13.423-1.17-1.16 3.505-3.505H3V7.065h8.517l-3.506-3.5L9.181 2.4l5.512 5.511-5.511 5.512Z"
               ></path>
@@ -67,7 +64,7 @@
       </div>
     </dl>
   </div>
-  <div class="pageTableContents">
+  <!-- <div class="pageTableContents">
     <nav aria-labelledby="on-this-page-title" class="naver">
       <h2 id="on-this-page-title" class="title">On this page</h2>
       <ol role="list" class="contentsList">
@@ -128,5 +125,5 @@
         </li>
       </ol>
     </nav>
-  </div>
+  </div> -->
 </div>

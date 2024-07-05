@@ -9,21 +9,23 @@ const DATA_KEY = "docPage"
 const CONVERTER_FUNCTION_NAME = "cast_to_doc_page"
 
 type SectionLink struct {
-	Title string
-	Link  string
+	SubSectionTitle string
+	Link            string
 }
 
 type TableOfContents struct {
 	SectionTitle string
-	SubSections  []string
+	SubSections  []SectionLink
 }
 
 type DocPage struct {
-	TOC         []TableOfContents
-	OnThisPage  []TableOfContents
-	DocHtmlData template.HTML
-	Section     string
-	Title       string
+	TOC          []TableOfContents
+	OnThisPage   []TableOfContents
+	DocHtmlData  template.HTML
+	Section      string
+	Title        string
+	NextPage     SectionLink
+	PreviousPage SectionLink
 }
 
 func Cast_to_doc_page(mapper map[string]interface{}) DocPage {
