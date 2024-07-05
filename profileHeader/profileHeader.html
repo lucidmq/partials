@@ -1,15 +1,16 @@
 <section class="profile-container">
     <div class="profile-wrapper">
+        {{ $profileHeader := cast_to_profile_header .TemplateData }}
         <div class="background-container" >
-            <img class="background-img" src="/static/images/background.avif" alt="Background Computer" />
+            <img class="background-img" src="{{$profileHeader.BackgroundImage}}" alt="Background Computer" />
         </div>
         <div class="profile-image-container">
-            <img class="profile-image" src="/static/images/profile/burak.avif" alt="Burak Kiran" />
+            <img class="profile-image" src="{{$profileHeader.ProfileImage}}" alt="Burak Kiran" />
         </div>
         <div class="">
             <div class="profile-text-container">
-                <h2 class="profile-title">Burak Kiran</h2>
-                <p class="profile-sub-title">Open Source Dev</p>
+                <h2 class="profile-title">{{$profileHeader.Title}}</h2>
+                <p class="profile-sub-title">{{$profileHeader.Description}}</p>
             </div>
         </div>
     </div>

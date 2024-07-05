@@ -12,6 +12,7 @@ import (
 	"partials/integrationHero"
 	"partials/newFaq"
 	"partials/pricingCards"
+	"partials/profileHeader"
 	"partials/simpleHeader"
 	"partials/simpleHero"
 	"partials/singleColumnBlog"
@@ -34,6 +35,7 @@ func GetFuncMap() template.FuncMap {
 		pricingCards.CONVERTER_FUNCTION_NAME:        pricingCards.Cast_to_pricing_cards,
 		cta1.CONVERTER_FUNCTION_NAME:                cta1.Cast_to_cta1,
 		docPage.CONVERTER_FUNCTION_NAME:             docPage.Cast_to_doc_page,
+		profileHeader.CONVERTER_FUNCTION_NAME:       profileHeader.Cast_to_profile_header,
 		"add":                                       Add,
 		"sub":                                       Sub,
 	}
