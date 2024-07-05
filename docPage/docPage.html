@@ -1,4 +1,5 @@
 <div class="docPageContainer">
+  {{$docPage := cast_to_doc_page .TemplateData}}
   <div class="docTableContents">
     <div class="content1"></div>
     <div class="content2"></div>
@@ -6,125 +7,20 @@
     <div class="mainTableContent">
       <nav class="mainContentNav">
         <ul role="list" class="lister">
+          {{ range $index, $contents := $docPage.TOC }}
           <li>
-            <h2 class="listTitle">Introduction</h2>
+            <h2 class="listTitle">{{$contents.SectionTitle}}</h2>
             <ul role="list" class="subLister">
+              {{ range $index, $section := $contents.SubSections }}
               <li class="listItem">
-                <a class="linker" href="/">Getting started</a>
-              </li>
-              <li class="listItem">
-                <a class="linker" href="/docs/installation">Installation</a>
-              </li>
-            </ul>
-          </li>
-          <li>
-            <h2 class="listTitle">Core concepts</h2>
-            <ul role="list" class="subLister">
-              <li class="listItem">
-                <a class="linker" href="/docs/understanding-caching">
-                  Understanding caching
+                <a class="linker" href="#"
+                  >{{$section}}
                 </a>
               </li>
-              <li class="listItem">
-                <a class="activeLinker" href="/docs/predicting-user-behavior"
-                  >Predicting user behavior</a
-                >
-              </li>
-              <li class="listItem">
-                <a class="linker" href="/docs/basics-of-time-travel"
-                  >Basics of time-travel</a
-                >
-              </li>
-              <li class="listItem">
-                <a class="linker" href="/docs/introduction-to-string-theory"
-                  >Introduction to string theory</a
-                >
-              </li>
-              <li class="listItem">
-                <a class="linker" href="/docs/the-butterfly-effect"
-                  >The butterfly effect</a
-                >
-              </li>
+              {{end}}
             </ul>
           </li>
-          <li>
-            <h2 class="listTitle">Advanced guides</h2>
-            <ul role="list" class="subLister">
-              <li class="listItem">
-                <a class="linker" href="/docs/writing-plugins"
-                  >Writing plugins</a
-                >
-              </li>
-              <li class="listItem">
-                <a class="linker" href="/docs/neuralink-integration"
-                  >Neuralink integration</a
-                >
-              </li>
-              <li class="listItem">
-                <a class="linker" href="/docs/temporal-paradoxes"
-                  >Temporal paradoxes</a
-                >
-              </li>
-              <li class="listItem">
-                <a class="linker" href="/docs/testing">Testing</a>
-              </li>
-              <li class="listItem">
-                <a class="linker" href="/docs/compile-time-caching"
-                  >Compile-time caching</a
-                >
-              </li>
-              <li class="listItem">
-                <a class="linker" href="/docs/predictive-data-generation"
-                  >Predictive data generation</a
-                >
-              </li>
-            </ul>
-          </li>
-          <li>
-            <h2 class="listTitle">API reference</h2>
-            <ul role="list" class="subLister">
-              <li class="listItem">
-                <a class="linker" href="/docs/cacheadvance-predict"
-                  >CacheAdvance.predict()</a
-                >
-              </li>
-              <li class="listItem">
-                <a class="linker" href="/docs/cacheadvance-flush"
-                  >CacheAdvance.flush()</a
-                >
-              </li>
-              <li class="listItem">
-                <a class="linker" href="/docs/cacheadvance-revert"
-                  >CacheAdvance.revert()</a
-                >
-              </li>
-              <li class="listItem">
-                <a class="linker" href="/docs/cacheadvance-regret"
-                  >CacheAdvance.regret()</a
-                >
-              </li>
-            </ul>
-          </li>
-          <li>
-            <h2 class="listTitle">Contributing</h2>
-            <ul role="list" class="subLister">
-              <li class="listItem">
-                <a class="linker" href="/docs/how-to-contribute"
-                  >How to contribute</a
-                >
-              </li>
-              <li class="listItem">
-                <a class="linker" href="/docs/architecture-guide"
-                  >Architecture guide</a
-                >
-              </li>
-              <li class="listItem">
-                <a class="linker" href="/docs/design-principles"
-                  >Design principles</a
-                >
-              </li>
-            </ul>
-          </li>
+          {{end}}
         </ul>
       </nav>
     </div>
@@ -132,10 +28,9 @@
   <div class="docMainArticle">
     <article>
       <header class="articleHeader">
-        <p class="articleSubtitle">Core concepts</p>
-        <h1 class="articleTitle">Predicting user behavior</h1>
+        <p class="articleSubtitle">{{$docPage.Section}}</p>
+        <h1 class="articleTitle">{{$docPage.Title}}</h1>
       </header>
-      {{$docPage := cast_to_doc_page .TemplateData}}
       <div class="articleBody">
         {{$docPage.DocHtmlData}}
       </div>

@@ -14,8 +14,8 @@
 }
 
 .footer-logo-and-link {
-  padding-top: 4rem;
-  padding-bottom: 4rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 
   /* py-16 */
 }
@@ -72,8 +72,8 @@
   align-items: center;
   border-top-width: 1px;
   border-color: rgba(148, 163, 184, 0.1);
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 
   /* flex flex-col items-center border-t border-slate-400/10 py-10 sm:flex-row-reverse sm:justify-between */
 }

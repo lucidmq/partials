@@ -168,9 +168,7 @@
             padding-left: 0.875rem;
             /* font-semibold  */
             font-weight: 600;
-            /* text-sky-500  */
-            --tw-text-opacity: 1;
-            color: rgb(14 165 233 / var(--tw-text-opacity));
+            color: var(--primary-color)
             /* before:pointer-events-none  */
             /* before:absolute  */
             /* before:-left-1  */
@@ -221,9 +219,7 @@
       line-height: 1.5rem;
       /* font-medium  */
       font-weight: 500;
-      /* text-sky-500 */
-      --tw-text-opacity: 1;
-      color: rgb(14 165 233 / var(--tw-text-opacity));
+      color: var(--primary-color);
     }
 
     .articleTitle {
@@ -1030,9 +1026,7 @@
       line-height: 1.5rem;
 
       .topLink {
-        /* text-sky-500 */
-        --tw-text-opacity: 1;
-        color: rgb(14 165 233 / var(--tw-text-opacity));
+        color: var(--primary-color)
       }
 
       .botLink {
