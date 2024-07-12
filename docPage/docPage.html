@@ -12,11 +12,17 @@
             <h2 class="listTitle">{{$contents.SectionTitle}}</h2>
             <ul role="list" class="subLister">
               {{ range $index, $section := $contents.SubSections }}
-              <li class="listItem">
-                <a class="linker" href="{{$section.Link}}"
+                <li class="listItem">
+                  {{if eq $docPage.CurrentPageSlug $section.Link}}
+                  <a class="activeLinker" href="{{$section.Link}}"
+                    >{{$section.SubSectionTitle}}
+                  </a>
+                  {{else}}
+                  <a class="linker" href="{{$section.Link}}"
                   >{{$section.SubSectionTitle}}
-                </a>
-              </li>
+                  </a>
+                  {{end}}
+                </li>
               {{end}}
             </ul>
           </li>
@@ -36,6 +42,7 @@
       </div>
     </article>
     <dl class="articleNavigator">
+      {{if $docPage.PreviousPage.SubSectionTitle}}
       <div>
         <dt class="previousText">Previous</dt>
         <dd class="previousLinkContainer">
@@ -49,6 +56,8 @@
           </a>
         </dd>
       </div>
+      {{end}}
+      {{if $docPage.NextPage.SubSectionTitle}}
       <div class="nextContainer">
         <dt class="nextText">Next</dt>
         <dd class="nextLinkContainer">
@@ -62,6 +71,7 @@
           </a>
         </dd>
       </div>
+      {{end}}
     </dl>
   </div>
   <!-- <div class="pageTableContents">

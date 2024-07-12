@@ -19,13 +19,14 @@ type TableOfContents struct {
 }
 
 type DocPage struct {
-	TOC          []TableOfContents
-	OnThisPage   []TableOfContents
-	DocHtmlData  template.HTML
-	Section      string
-	Title        string
-	NextPage     SectionLink
-	PreviousPage SectionLink
+	TOC             []TableOfContents
+	CurrentPageSlug string
+	OnThisPage      []TableOfContents
+	DocHtmlData     template.HTML
+	Section         string
+	Title           string
+	NextPage        SectionLink
+	PreviousPage    SectionLink
 }
 
 func Cast_to_doc_page(mapper map[string]interface{}) DocPage {
