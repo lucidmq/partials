@@ -71,69 +71,23 @@
           </a>
         </dd>
       </div>
-      {{end}}
+      {{ end }}
     </dl>
   </div>
-  <!-- <div class="pageTableContents">
+  <div class="pageTableContents">
     <nav aria-labelledby="on-this-page-title" class="naver">
       <h2 id="on-this-page-title" class="title">On this page</h2>
       <ol role="list" class="contentsList">
+        {{ range $index, $onPageSections := $docPage.OnThisPage }}
         <li>
           <h3>
-            <a class="topLink" href="#quis-vel-iste-dicta"
-              >Quis vel iste dicta</a
+            <a class="botLink" href="#{{$onPageSections.Link}}"
+              >{{$onPageSections.SubSectionTitle}}</a
             >
           </h3>
-          <ol role="list" class="contentsSublist">
-            <li>
-              <a class="sublistLink" href="#et-pariatur-ab-quas"
-                >Et pariatur ab quas</a
-              >
-            </li>
-            <li>
-              <a class="sublistLink" href="#natus-aspernatur-iste"
-                >Natus aspernatur iste</a
-              >
-            </li>
-          </ol>
         </li>
-        <li>
-          <h3>
-            <a class="botLink" href="#quos-porro-ut-molestiae"
-              >Quos porro ut molestiae</a
-            >
-          </h3>
-          <ol role="list" class="contentsSublist">
-            <li>
-              <a class="sublistLink" href="#voluptatem-quas-possimus"
-                >Voluptatem quas possimus</a
-              >
-            </li>
-            <li>
-              <a class="sublistLink" href="#id-vitae-minima">Id vitae minima</a>
-            </li>
-          </ol>
-        </li>
-        <li>
-          <h3>
-            <a class="botLink" href="#vitae-laborum-maiores"
-              >Vitae laborum maiores</a
-            >
-          </h3>
-          <ol role="list" class="contentsSublist">
-            <li>
-              <a class="sublistLink" href="#corporis-exercitationem"
-                >Corporis exercitationem</a
-              >
-            </li>
-            <li>
-              <a class="sublistLink" href="#reprehenderit-magni"
-                >Reprehenderit magni</a
-              >
-            </li>
-          </ol>
-        </li>
+        {{ end }}
       </ol>
     </nav>
-  </div> -->
+  </div>
 </div>

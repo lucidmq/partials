@@ -21,7 +21,7 @@ type TableOfContents struct {
 type DocPage struct {
 	TOC             []TableOfContents
 	CurrentPageSlug string
-	OnThisPage      []TableOfContents
+	OnThisPage      []SectionLink
 	DocHtmlData     template.HTML
 	Section         string
 	Title           string
