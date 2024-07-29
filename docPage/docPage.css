@@ -30,9 +30,12 @@
     right: 0;
     /* w-[50vw]  */
     width: 50vw;
-    /* bg-slate-50 */
+    border-right-width: 1px;
+    border-right-style: solid;
+    border-right-color: var(--secondary-border-color);
+    /* bg-slate-50
     --tw-bg-opacity: 1;
-    background-color: rgb(248 250 252 / var(--tw-bg-opacity));
+    background-color: rgb(248 250 252 / var(--tw-bg-opacity)); */
   }
 
   .content2 {
