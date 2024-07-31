@@ -9,7 +9,7 @@
   /* w-full  */
   width: 100%;
   /* max-w-8xl  */
-  max-width: 88rem;
+  max-width: 95rem;
   /* flex-auto  */
   flex: 1 1 auto;
   /* justify-center  */
@@ -89,7 +89,7 @@
     /* h-[calc(100vh-4.75rem)]  */
     height: calc(100vh - 4.75rem);
     /* w-64  */
-    width: 16rem;
+    width: 14rem;
     /* overflow-y-auto */
     overflow-y: auto;
     /* overflow-x-hidden  */
@@ -100,7 +100,7 @@
     /* pl-0.5  */
     padding-left: 0.125rem;
     /* pr-8  */
-    padding-right: 2rem;
+    padding-right: 1rem;
 
     .mainContentNav {
       /* text-base  */
@@ -1130,8 +1130,8 @@
 @media (min-width: 1024px) {
   .docPageContainer {
     /* lg:px-8  */
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1.3rem;
+    padding-right: 1.3rem;
   }
 
   .docTableContents {
@@ -1179,16 +1179,16 @@
 @media (min-width: 1280px) {
   .docPageContainer {
     /* xl:px-12 */
-    padding-left: 3rem;
-    padding-right: 3rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
   }
 
   .docTableContents {
     .mainTableContent {
       /* xl:w-72  */
-      width: 18rem;
+      width: 16rem;
       /* xl:pr-16 */
-      padding-right: 4rem;
+      padding-right: 2rem;
     }
   }
 
