@@ -15,7 +15,7 @@
 
 .footer-logo-and-link {
   padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 
   /* py-16 */
 }
@@ -28,7 +28,7 @@
   /* mx-auto h-10 w-auto */
 }
 .nav {
-  margin-top: 2.5rem;
+  margin-top: 1rem;
   font-size: 0.875rem;
   line-height: 1.5rem;
 }

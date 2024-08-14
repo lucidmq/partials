@@ -3,8 +3,8 @@
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
     /* arx  */
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 3rem;
+    padding-bottom: 4rem;
 }
 
 .blogContainer {
@@ -227,8 +227,8 @@
 @media (min-width: 640px) {
     .blogContainerWrapper {
         /* cfj(min width 640) */
-        padding-top: 8rem;
-        padding-bottom: 8rem;
+        padding-top: 4rem;
+        padding-bottom: 6rem;
     }
 
     .blogTitle {
