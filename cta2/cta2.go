@@ -6,9 +6,10 @@ const DATA_KEY = "cta2"
 const CONVERTER_FUNCTION_NAME = "cast_to_cta2"
 
 type Cta2 struct {
-	Title       string
-	Description string
-	ButtonText  string
+	Title               string
+	Description         string
+	ButtonText          string
+	BackgroundImagePath string
 }
 
 func Cast_to_cta2(mapper map[string]interface{}) Cta2 {
