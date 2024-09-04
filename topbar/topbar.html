@@ -44,39 +44,37 @@
           </a>
         </div>
         <a class="register_link" href="/login">
-          <span>
-            Sign In
-          </span>
+          <span>Sign In</span>
         </a>
         <div class="mobile_container">
-            <button
-              class="mobile_togle_nav"
-              aria-label="Toggle Navigation"
-              type="button"
-              aria-expanded="false"
-              onclick="toggleMenu(event)"
+          <button
+            class="mobile_togle_nav"
+            aria-label="Toggle Navigation"
+            type="button"
+            aria-expanded="false"
+            onclick="toggleMenu(event)"
+          >
+            <svg
+              aria-hidden="true"
+              class="mobile_svg_button"
+              fill="none"
+              stroke-width="2"
+              stroke-linecap="round"
             >
-              <svg
-                aria-hidden="true"
-                class="mobile_svg_button"
-                fill="none"
-                stroke-width="2"
-                stroke-linecap="round"
-              >
-                <path
-                  d="M0 1H14M0 7H14M0 13H14"
-                  class="hamburger_x_path"
-                ></path>
-                <path
-                  d="M2 2L12 12M12 2L2 12"
-                  class="hamburger_x_selected"
-                ></path>
-              </svg>
-            </button>
-            <div class="mobile_sub_object" id="resNav">
-              <a class="main_links" href="/docs">Docs</a>
-              <a class="mobile_links" href="/blog">Blog</a>
-            </div>
+              <path
+                d="M0 1H14M0 7H14M0 13H14"
+                class="hamburger_x_path"
+              ></path>
+              <path
+                d="M2 2L12 12M12 2L2 12"
+                class="hamburger_x_selected"
+              ></path>
+            </svg>
+          </button>
+          <div class="mobile_sub_object" id="resNav">
+            <a class="main_links" href="/docs">Docs</a>
+            <a class="mobile_links" href="/blog">Blog</a>
+          </div>
         </div>
       </div>
     </nav>

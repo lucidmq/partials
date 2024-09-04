@@ -16,6 +16,7 @@ import (
 	"partials/simpleHeader"
 	"partials/simpleHero"
 	"partials/singleColumnBlog"
+	"partials/topbar"
 	"text/template"
 )
 
@@ -36,6 +37,7 @@ func GetFuncMap() template.FuncMap {
 		cta1.CONVERTER_FUNCTION_NAME:                cta1.Cast_to_cta1,
 		docPage.CONVERTER_FUNCTION_NAME:             docPage.Cast_to_doc_page,
 		profileHeader.CONVERTER_FUNCTION_NAME:       profileHeader.Cast_to_profile_header,
+		topbar.CONVERTER_FUNCTION_NAME:              topbar.Cast_to_topbar,
 		"add":                                       Add,
 		"sub":                                       Sub,
 	}
