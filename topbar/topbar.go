@@ -1,6 +1,9 @@
 package topbar
 
-import "log"
+import (
+	"html/template"
+	"log"
+)
 
 const DATA_KEY = "topbar"
 const CONVERTER_FUNCTION_NAME = "cast_to_topbar"
@@ -12,7 +15,7 @@ type MainLink struct {
 
 type Topbar struct {
 	MainLinks      []MainLink
-	LogoSVG        string
+	LogoSVG        template.HTML //We insert the svg directly into the page
 	ShowLoginLinks bool
 }
 

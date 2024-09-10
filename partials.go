@@ -7,6 +7,7 @@ import (
 	"partials/docPage"
 	"partials/feature1"
 	"partials/features3"
+	"partials/fromTheBlogSection"
 	"partials/integrationCards"
 	"partials/integrationGridList"
 	"partials/integrationHero"
@@ -38,8 +39,9 @@ func GetFuncMap() template.FuncMap {
 		docPage.CONVERTER_FUNCTION_NAME:             docPage.Cast_to_doc_page,
 		profileHeader.CONVERTER_FUNCTION_NAME:       profileHeader.Cast_to_profile_header,
 		topbar.CONVERTER_FUNCTION_NAME:              topbar.Cast_to_topbar,
-		"add":                                       Add,
-		"sub":                                       Sub,
+		fromTheBlogSection.CONVERTER_FUNCTION_NAME:  fromTheBlogSection.Cast_to_from_the_blog_section,
+		"add": Add,
+		"sub": Sub,
 	}
 
 	return funcMap

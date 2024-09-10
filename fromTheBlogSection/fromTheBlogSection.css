@@ -1,0 +1,400 @@
+.IKYJGMIBHZBWZDX {
+  /*alt*/
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  /*ase*/
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+@media (min-width: 640px) {
+  .IKYJGMIBHZBWZDX {
+    /*ckp*/
+
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+}
+
+.AOOKDOEUHDOMNCS {
+  /*gx*/
+  margin-left: auto;
+  margin-right: auto;
+  /*mb*/
+  display: grid;
+  /*uh*/
+  max-width: 80rem;
+  /*yn*/
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  /*aaq*/
+  -moz-column-gap: 2rem;
+  column-gap: 2rem;
+  /*aat*/
+  row-gap: 3rem;
+  /*arq*/
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .AOOKDOEUHDOMNCS {
+    /*chi*/
+
+    row-gap: 4rem;
+  }
+}
+@media (min-width: 1024px) {
+  .AOOKDOEUHDOMNCS {
+    /*ded*/
+
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+@media (min-width: 1024px) {
+  .AOOKDOEUHDOMNCS {
+    /*dit*/
+
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+
+.BZCSBFVGOOLFAHA {
+  /*gx*/
+  margin-left: auto;
+  margin-right: auto;
+  /*tu*/
+  width: 100%;
+  /*uc*/
+  max-width: 42rem;
+}
+
+@media (min-width: 1024px) {
+  .BZCSBFVGOOLFAHA {
+    /*cys*/
+
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+@media (min-width: 1024px) {
+  .BZCSBFVGOOLFAHA {
+    /*dcw*/
+
+    max-width: 32rem;
+  }
+}
+
+.ENDJCGVNOGOIDPW {
+  /*lu*/
+  display: block;
+  /*awg*/
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  /*awv*/
+  line-height: 1.5rem;
+  /*axy*/
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+.EFWQLGPHXHFDHVS {
+  /*lh*/
+  margin-top: 1rem;
+  /*avy*/
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  /*awj*/
+  font-weight: 700;
+  /*axd*/
+  letter-spacing: -0.025em;
+  /*ayb*/
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .EFWQLGPHXHFDHVS {
+    /*cna*/
+
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+}
+
+.WXWXSBURYWFEVKQ {
+  /*lh*/
+  margin-top: 1rem;
+  /*awf*/
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  /*awx*/
+  line-height: 2rem;
+  /*axy*/
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+.PVMRBIYWYXATOEL {
+  /*lh*/
+  margin-top: 1rem;
+  /*lx*/
+  display: flex;
+  /*yy*/
+  flex-direction: column;
+  /*zm*/
+  justify-content: space-between;
+  /*zy*/
+  gap: 1.5rem;
+}
+
+@media (min-width: 640px) {
+  .PVMRBIYWYXATOEL {
+    /*ccp*/
+
+    margin-top: 2rem;
+  }
+}
+@media (min-width: 640px) {
+  .PVMRBIYWYXATOEL {
+    /*cgf*/
+
+    flex-direction: row-reverse;
+  }
+}
+@media (min-width: 640px) {
+  .PVMRBIYWYXATOEL {
+    /*cgy*/
+
+    gap: 2rem;
+  }
+}
+@media (min-width: 1024px) {
+  .PVMRBIYWYXATOEL {
+    /*dad*/
+
+    margin-top: 1rem;
+  }
+}
+@media (min-width: 1024px) {
+  .PVMRBIYWYXATOEL {
+    /*dep*/
+
+    flex-direction: column;
+  }
+}
+
+.BYOCCYADNIJSISY {
+  /*lx*/
+  display: flex;
+}
+
+.CIQKGHQRGSUOWKR {
+  /*awg*/
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  /*awm*/
+  font-weight: 600;
+  /*awv*/
+  line-height: 1.5rem;
+  /*ayn*/
+  --tw-text-opacity: 1;
+  color: rgb(79 70 229 / var(--tw-text-opacity));
+}
+
+.LFKZOFPLCKLKFMU {
+  /*lx*/
+  display: flex;
+}
+
+@media (min-width: 1024px) {
+  .LFKZOFPLCKLKFMU {
+    /*dhl*/
+
+    border-top-width: 1px;
+  }
+}
+@media (min-width: 1024px) {
+  .LFKZOFPLCKLKFMU {
+    /*dhp*/
+
+    border-color: rgb(17 24 39 / 0.1);
+  }
+}
+@media (min-width: 1024px) {
+  .LFKZOFPLCKLKFMU {
+    /*dld*/
+
+    padding-top: 2rem;
+  }
+}
+
+.KTJQGXOMHKCCEOI {
+  /*lx*/
+  display: flex;
+  /*aak*/
+  -moz-column-gap: 0.625rem;
+  column-gap: 0.625rem;
+  /*awg*/
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  /*awm*/
+  font-weight: 600;
+  /*awv*/
+  line-height: 1.5rem;
+  /*ayb*/
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+.NPOLBQLTKWAYTGE {
+  /*oi*/
+  height: 1.5rem;
+  /*sl*/
+  width: 1.5rem;
+  /*uv*/
+  flex: none;
+  /*adz*/
+  border-radius: 9999px;
+  /*aiv*/
+  --tw-bg-opacity: 1;
+  background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+}
+
+.GSTEBPFGYBEGFHG {
+  /*gx*/
+  margin-left: auto;
+  margin-right: auto;
+  /*tu*/
+  width: 100%;
+  /*uc*/
+  max-width: 42rem;
+  /*aft*/
+  border-top-width: 1px;
+  /*agh*/
+  border-color: rgb(17 24 39 / 0.1);
+  /*auw*/
+  padding-top: 3rem;
+}
+
+@media (min-width: 640px) {
+  .GSTEBPFGYBEGFHG {
+    /*cmi*/
+
+    padding-top: 4rem;
+  }
+}
+@media (min-width: 1024px) {
+  .GSTEBPFGYBEGFHG {
+    /*cys*/
+
+    margin-left: 0px;
+    margin-right: 0px;
+  }
+}
+@media (min-width: 1024px) {
+  .GSTEBPFGYBEGFHG {
+    /*dcy*/
+
+    max-width: none;
+  }
+}
+@media (min-width: 1024px) {
+  .GSTEBPFGYBEGFHG {
+    /*dhm*/
+
+    border-top-width: 0px;
+  }
+}
+@media (min-width: 1024px) {
+  .GSTEBPFGYBEGFHG {
+    /*dko*/
+
+    padding-top: 0px;
+  }
+}
+
+.WNQNVFEQOONPOEI {
+  /*gk*/
+  margin-top: -3rem;
+  margin-bottom: -3rem;
+}
+
+.ZMRRUEFTKLHTSMD {
+  /*ary*/
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.FLQSJTNYFGWBKSD {
+  /*ab*/
+  position: relative;
+  /*ur*/
+  max-width: 36rem;
+}
+
+/* Classes not found for QNDUCCHVSEOCZRA*/
+/* bqi */
+
+.QNDUCCHVSEOCZRA {
+  /*lb*/
+  margin-top: 0.5rem;
+  /*awf*/
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  /*awm*/
+  font-weight: 600;
+  /*ayb*/
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+/* Classes not found for QNDUCCHVSEOCZRA*/
+/* brp */
+
+.VTSXRHONAAFTEWP {
+  /*aa*/
+  position: absolute;
+  /*ak*/
+  inset: 0px;
+}
+
+.SFBWKFJQZAQCRAM {
+  /*lh*/
+  margin-top: 1rem;
+  /*awg*/
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  /*awv*/
+  line-height: 1.5rem;
+  /*axy*/
+  --tw-text-opacity: 1;
+  color: rgb(75 85 99 / var(--tw-text-opacity));
+}
+
+.JBDMLCFAIAKVGXU {
+  /*lh*/
+  margin-top: 1rem;
+  /*lx*/
+  display: flex;
+}
+
+.GJWMHOWHATGTWPQ {
+  /*ab*/
+  position: relative;
+  /*lx*/
+  display: flex;
+  /*aak*/
+  -moz-column-gap: 0.625rem;
+  column-gap: 0.625rem;
+  /*awg*/
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  /*awm*/
+  font-weight: 600;
+  /*awv*/
+  line-height: 1.5rem;
+  /*ayb*/
+  --tw-text-opacity: 1;
+  color: rgb(17 24 39 / var(--tw-text-opacity));
+}

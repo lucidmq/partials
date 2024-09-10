@@ -1,0 +1,63 @@
+<div class="IKYJGMIBHZBWZDX">
+    <div class="AOOKDOEUHDOMNCS">
+      {{$from_the_blog_section := cast_to_from_the_blog_section .TemplateData}}
+      <article class="BZCSBFVGOOLFAHA">
+        <time class="ENDJCGVNOGOIDPW" datetime="{{$from_the_blog_section.PrimaryPost.GetDateString}}">
+            {{$from_the_blog_section.PrimaryPost.GetMonthDateString}}
+        </time>
+        <h2 class="EFWQLGPHXHFDHVS" id="featured-post">
+            {{$from_the_blog_section.PrimaryPost.Title}}
+        </h2>
+        <p class="WXWXSBURYWFEVKQ">
+            {{$from_the_blog_section.PrimaryPost.Snippet}}
+        </p>
+        <div class="PVMRBIYWYXATOEL">
+          <div class="BYOCCYADNIJSISY">
+            <a aria-describedby="featured-post" class="CIQKGHQRGSUOWKR" href="#"
+              >Continue reading <span aria-hidden="true">→</span>
+            </a>
+          </div>
+          <div class="LFKZOFPLCKLKFMU">
+            <a class="KTJQGXOMHKCCEOI" href="#"
+              ><img
+                alt=""
+                class="NPOLBQLTKWAYTGE"
+                src="{{$from_the_blog_section.PrimaryPost.Authorurl}}"
+              />{{$from_the_blog_section.PrimaryPost.Author}}</a
+            >
+          </div>
+        </div>
+      </article>
+      <div class="GSTEBPFGYBEGFHG">
+        <div class="WNQNVFEQOONPOEI">
+        {{range $article := $from_the_blog_section.OtherPosts}}
+          <article class="ZMRRUEFTKLHTSMD">
+            <div class="FLQSJTNYFGWBKSD">
+              <time class="ENDJCGVNOGOIDPW" datetime="{{$article.GetDateString}}"
+                >{{$article.GetMonthDateString}}</time
+              >
+              <h2 class="QNDUCCHVSEOCZRA">
+                <a href="{{$article.Slug}}">
+                  <span class="VTSXRHONAAFTEWP"></span>{{$article.Title}}
+                </a>
+              </h2>
+              <p class="SFBWKFJQZAQCRAM">
+                {{$article.Snippet}}
+              </p>
+            </div>
+            <div class="JBDMLCFAIAKVGXU">
+              <a class="GJWMHOWHATGTWPQ" href="#"
+                ><img
+                  alt=""
+                  class="NPOLBQLTKWAYTGE"
+                  src="{{$article.Authorurl}}"
+                />{{$article.Author}}</a
+              >
+            </div>
+          </article>
+        {{end}}
+        </div>
+      </div>
+    </div>
+  </div>
+  
