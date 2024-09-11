@@ -2,15 +2,15 @@ package fromTheBlogSection
 
 import (
 	"log"
-	"partials/singleColumnBlog"
+	"partials/types"
 )
 
 const DATA_KEY = "fromTheBlogSection"
 const CONVERTER_FUNCTION_NAME = "cast_to_from_the_blog_section"
 
 type FromTheBlogSection struct {
-	PrimaryPost singleColumnBlog.BlogPageDetails
-	OtherPosts  []singleColumnBlog.BlogPageDetails
+	PrimaryPost types.BlogPageDetails
+	OtherPosts  []types.BlogPageDetails
 }
 
 func Cast_to_from_the_blog_section(mapper map[string]interface{}) FromTheBlogSection {

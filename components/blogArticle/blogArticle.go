@@ -3,14 +3,14 @@ package blogArticle
 import (
 	"html/template"
 	"log"
-	"partials/singleColumnBlog"
+	"partials/types"
 )
 
 const DATA_KEY = "blogArticle"
 const CONVERTER_FUNCTION_NAME = "cast_to_blog_article"
 
 type BlogArticle struct {
-	BlogDetails    singleColumnBlog.BlogPageDetails
+	BlogDetails    types.BlogPageDetails
 	HtmlDataString template.HTML
 }
 
