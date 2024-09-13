@@ -7,14 +7,7 @@
   padding-bottom: 6rem;
 }
 
-@media (min-width: 640px) {
-  .IKYJGMIBHZBWZDX {
-    /*ckp*/
 
-    padding-top: 8rem;
-    padding-bottom: 8rem;
-  }
-}
 
 .AOOKDOEUHDOMNCS {
   /*gx*/
@@ -36,29 +29,6 @@
   padding-right: 1.5rem;
 }
 
-@media (min-width: 640px) {
-  .AOOKDOEUHDOMNCS {
-    /*chi*/
-
-    row-gap: 4rem;
-  }
-}
-@media (min-width: 1024px) {
-  .AOOKDOEUHDOMNCS {
-    /*ded*/
-
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-}
-@media (min-width: 1024px) {
-  .AOOKDOEUHDOMNCS {
-    /*dit*/
-
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-}
-
 .BZCSBFVGOOLFAHA {
   /*gx*/
   margin-left: auto;
@@ -67,22 +37,6 @@
   width: 100%;
   /*uc*/
   max-width: 42rem;
-}
-
-@media (min-width: 1024px) {
-  .BZCSBFVGOOLFAHA {
-    /*cys*/
-
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-}
-@media (min-width: 1024px) {
-  .BZCSBFVGOOLFAHA {
-    /*dcw*/
-
-    max-width: 32rem;
-  }
 }
 
 .ENDJCGVNOGOIDPW {
@@ -113,15 +67,6 @@
   color: rgb(17 24 39 / var(--tw-text-opacity));
 }
 
-@media (min-width: 640px) {
-  .EFWQLGPHXHFDHVS {
-    /*cna*/
-
-    font-size: 2.25rem;
-    line-height: 2.5rem;
-  }
-}
-
 .WXWXSBURYWFEVKQ {
   /*lh*/
   margin-top: 1rem;
@@ -148,42 +93,6 @@
   gap: 1.5rem;
 }
 
-@media (min-width: 640px) {
-  .PVMRBIYWYXATOEL {
-    /*ccp*/
-
-    margin-top: 2rem;
-  }
-}
-@media (min-width: 640px) {
-  .PVMRBIYWYXATOEL {
-    /*cgf*/
-
-    flex-direction: row-reverse;
-  }
-}
-@media (min-width: 640px) {
-  .PVMRBIYWYXATOEL {
-    /*cgy*/
-
-    gap: 2rem;
-  }
-}
-@media (min-width: 1024px) {
-  .PVMRBIYWYXATOEL {
-    /*dad*/
-
-    margin-top: 1rem;
-  }
-}
-@media (min-width: 1024px) {
-  .PVMRBIYWYXATOEL {
-    /*dep*/
-
-    flex-direction: column;
-  }
-}
-
 .BYOCCYADNIJSISY {
   /*lx*/
   display: flex;
@@ -197,36 +106,13 @@
   font-weight: 600;
   /*awv*/
   line-height: 1.5rem;
-  /*ayn*/
-  --tw-text-opacity: 1;
-  color: rgb(79 70 229 / var(--tw-text-opacity));
+
+  color: var(--primary-color)
 }
 
 .LFKZOFPLCKLKFMU {
   /*lx*/
   display: flex;
-}
-
-@media (min-width: 1024px) {
-  .LFKZOFPLCKLKFMU {
-    /*dhl*/
-
-    border-top-width: 1px;
-  }
-}
-@media (min-width: 1024px) {
-  .LFKZOFPLCKLKFMU {
-    /*dhp*/
-
-    border-color: rgb(17 24 39 / 0.1);
-  }
-}
-@media (min-width: 1024px) {
-  .LFKZOFPLCKLKFMU {
-    /*dld*/
-
-    padding-top: 2rem;
-  }
 }
 
 .KTJQGXOMHKCCEOI {
@@ -275,43 +161,6 @@
   border-color: rgb(17 24 39 / 0.1);
   /*auw*/
   padding-top: 3rem;
-}
-
-@media (min-width: 640px) {
-  .GSTEBPFGYBEGFHG {
-    /*cmi*/
-
-    padding-top: 4rem;
-  }
-}
-@media (min-width: 1024px) {
-  .GSTEBPFGYBEGFHG {
-    /*cys*/
-
-    margin-left: 0px;
-    margin-right: 0px;
-  }
-}
-@media (min-width: 1024px) {
-  .GSTEBPFGYBEGFHG {
-    /*dcy*/
-
-    max-width: none;
-  }
-}
-@media (min-width: 1024px) {
-  .GSTEBPFGYBEGFHG {
-    /*dhm*/
-
-    border-top-width: 0px;
-  }
-}
-@media (min-width: 1024px) {
-  .GSTEBPFGYBEGFHG {
-    /*dko*/
-
-    padding-top: 0px;
-  }
 }
 
 .WNQNVFEQOONPOEI {
@@ -397,4 +246,80 @@
   /*ayb*/
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
+}
+
+@media (min-width: 640px) {
+  .IKYJGMIBHZBWZDX {
+    /*ckp*/
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+  .AOOKDOEUHDOMNCS {
+    /*chi*/
+    row-gap: 4rem;
+  }
+  .EFWQLGPHXHFDHVS {
+    /*cna*/
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+  .PVMRBIYWYXATOEL {
+    /*ccp*/
+    margin-top: 2rem;
+    /*cgf*/
+    flex-direction: row-reverse;
+    /*cgy*/
+    gap: 2rem;
+  }
+  .GSTEBPFGYBEGFHG {
+    /*cmi*/
+    padding-top: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .AOOKDOEUHDOMNCS {
+    /*ded*/
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    /*dit*/
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .BZCSBFVGOOLFAHA {
+    /*cys*/
+    margin-left: 0px;
+    margin-right: 0px;
+    /*dcw*/
+    max-width: 32rem;
+  }
+
+  .PVMRBIYWYXATOEL {
+    /*dad*/
+    margin-top: 1rem;
+    /*dep*/
+    flex-direction: column;
+  }
+
+  .LFKZOFPLCKLKFMU {
+    /*dhl*/
+    border-top-width: 1px;
+    /*dhp*/
+    border-color: rgb(17 24 39 / 0.1);
+    /*dld*/
+    padding-top: 2rem;
+  }
+
+  .GSTEBPFGYBEGFHG {
+    /*cys*/
+    margin-left: 0px;
+    margin-right: 0px;
+    /*dcy*/
+    max-width: none;
+    /*dhm*/
+    border-top-width: 0px;
+    /*dko*/
+    padding-top: 0px;
+  }
 }
