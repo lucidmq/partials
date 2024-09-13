@@ -23,7 +23,7 @@ const (
 
 var TemplatesMap = map[string]*template.Template{}
 
-func BaseTemplateGenerator(templateName string, templates_to_bring []string) (*template.Template, []string, error) {
+func BaseTemplateGenerator(starting_template string, templateName string, templates_to_bring []string) (*template.Template, []string, error) {
 	cssFiles := []string{}
 	templates_to_fetch := append([]string{"topbar", "footer"}, templates_to_bring...)
 	all_templates := []string{}
@@ -51,7 +51,7 @@ func BaseTemplateGenerator(templateName string, templates_to_bring []string) (*t
 			template_builder_string.WriteString(formatted_template_string)
 		}
 	}
-	fileContents, err := os.ReadFile("web/templates/base.html")
+	fileContents, err := os.ReadFile(starting_template)
 	if err != nil {
 		return nil, cssFiles, err
 	}
