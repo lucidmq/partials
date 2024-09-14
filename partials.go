@@ -11,6 +11,7 @@ import (
 	"partials/components/integrationCards"
 	"partials/components/integrationGridList"
 	"partials/components/integrationHero"
+	"partials/components/linker"
 	"partials/components/newFaq"
 	"partials/components/pricingCards"
 	"partials/components/profileHeader"
@@ -40,8 +41,9 @@ func GetFuncMap() template.FuncMap {
 		profileHeader.CONVERTER_FUNCTION_NAME:       profileHeader.Cast_to_profile_header,
 		topbar.CONVERTER_FUNCTION_NAME:              topbar.Cast_to_topbar,
 		fromTheBlogSection.CONVERTER_FUNCTION_NAME:  fromTheBlogSection.Cast_to_from_the_blog_section,
-		"add": Add,
-		"sub": Sub,
+		linker.CONVERTER_FUNCTION_NAME:              linker.Cast_to_linker,
+		"add":                                       Add,
+		"sub":                                       Sub,
 	}
 
 	return funcMap
