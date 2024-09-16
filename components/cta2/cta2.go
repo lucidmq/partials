@@ -1,6 +1,9 @@
 package cta2
 
-import "log"
+import (
+	"html/template"
+	"log"
+)
 
 const DATA_KEY = "cta2"
 const CONVERTER_FUNCTION_NAME = "cast_to_cta2"
@@ -9,6 +12,8 @@ type Cta2 struct {
 	Title               string
 	Description         string
 	ButtonText          string
+	ButtonLink          string
+	ButtonFunction      template.JS
 	BackgroundImagePath string
 }
 
