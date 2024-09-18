@@ -13,12 +13,12 @@ import (
 )
 
 const (
-	HTMl_FILE_EXTENSION    = ".html"
-	CSS_FILE_EXTENSION     = ".css"
-	JS_FILE_EXTENSION      = ".js"
-	PARTIALS_DIRECTORY     = "partials/components/"
-	SYLES_OUTPUT_DIRECTORY = "web/static/styles/"
-	STYLES_WEB_PATH        = "/static/styles/"
+	HTMl_FILE_EXTENSION = ".html"
+	CSS_FILE_EXTENSION  = ".css"
+	JS_FILE_EXTENSION   = ".js"
+	PARTIALS_DIRECTORY  = "partials/components/"
+	STATIC_BASE_PATH    = "web/static"
+	STYLES_WEB_PATH     = "/static/styles/"
 )
 
 var TemplatesMap = map[string]*template.Template{}
@@ -73,7 +73,7 @@ func BaseTemplateGenerator(starting_template string, templateName string, templa
 	return tmpl, cssFiles, nil
 }
 
-func AssetCompiler() {
+func CompileAllAssets() {
 	var directories_to_build []string
 	entries, err := os.ReadDir(PARTIALS_DIRECTORY)
 	if err != nil {
@@ -87,8 +87,35 @@ func AssetCompiler() {
 			log.Println("Entry is not a directory", entry.Name())
 		}
 	}
+	assetCompiler(directories_to_build)
+}
+
+// TODO: test this and see if it works...
+func CompileGivenAssets(templateNames []string) {
+	var directories_to_build []string
+	entries, err := os.ReadDir(PARTIALS_DIRECTORY)
+	if err != nil {
+		log.Fatal(io.ErrNoProgress)
+	}
+	for _, entry := range entries {
+		if entry.IsDir() {
+			for _, templateName := range templateNames {
+				if entry.Name() == templateName {
+					directories_to_build = append(directories_to_build, entry.Name())
+				}
+			}
+		} else {
+			log.Println("Entry is not a directory", entry.Name())
+		}
+	}
+
+	assetCompiler(directories_to_build)
+}
+
+func assetCompiler(directories_to_build []string) {
 	// open JS output file
-	fo, err := os.Create("web/static/index.js")
+	js_file := STATIC_BASE_PATH + "/index.js"
+	fo, err := os.Create(js_file)
 	if err != nil {
 		log.Fatal(err)
 	}
@@ -98,6 +125,8 @@ func AssetCompiler() {
 			log.Fatal(err)
 		}
 	}()
+
+	SYLES_OUTPUT_DIRECTORY := STATIC_BASE_PATH + "/styles/"
 
 	for _, directory := range directories_to_build {
 		src_dictory_path := PARTIALS_DIRECTORY + directory

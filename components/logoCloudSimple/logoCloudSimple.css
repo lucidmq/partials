@@ -3,16 +3,15 @@
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255 / var(--tw-bg-opacity));
     /*ase*/
-    padding-top: 6rem;
-    padding-bottom: 6rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
   
   @media (min-width: 640px) {
     .URQVMJXBKZUJKGC {
       /*ckp*/
-  
-      padding-top: 8rem;
-      padding-bottom: 8rem;
+      padding-top: 4rem;
+      padding-bottom: 4rem;
     }
   }
   
@@ -30,7 +29,6 @@
   @media (min-width: 1024px) {
     .JITOBXDODPWARQG {
       /*dit*/
-  
       padding-left: 2rem;
       padding-right: 2rem;
     }
@@ -47,7 +45,6 @@
   @media (min-width: 1024px) {
     .KRJMEMSICXXTEER {
       /*dcy*/
-  
       max-width: none;
     }
   }
@@ -74,7 +71,7 @@
     /*mb*/
     display: grid;
     /*yr*/
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     /*ze*/
     align-items: flex-start;
     /*aaq*/
@@ -87,8 +84,7 @@
   @media (min-width: 640px) {
     .BLEKFQYFGYETIGU {
       /*cfz*/
-  
-      grid-template-columns: repeat(6, minmax(0, 1fr));
+      grid-template-columns: repeat(4, minmax(0, 1fr));
     }
   }
   @media (min-width: 640px) {
@@ -110,8 +106,7 @@
   @media (min-width: 1024px) {
     .BLEKFQYFGYETIGU {
       /*deg*/
-  
-      grid-template-columns: repeat(5, minmax(0, 1fr));
+      grid-template-columns: repeat(4, minmax(0, 1fr));
     }
   }
   
@@ -133,7 +128,6 @@
   @media (min-width: 1024px) {
     .RAVFWNICOVTHNUB {
       /*cxg*/
-  
       grid-column: span 1 / span 1;
     }
   }

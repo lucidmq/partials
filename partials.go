@@ -7,11 +7,13 @@ import (
 	"partials/components/docPage"
 	"partials/components/feature1"
 	"partials/components/features3"
+	"partials/components/footer"
 	"partials/components/fromTheBlogSection"
 	"partials/components/integrationCards"
 	"partials/components/integrationGridList"
 	"partials/components/integrationHero"
 	"partials/components/linker"
+	"partials/components/logoCloudSimple"
 	"partials/components/newFaq"
 	"partials/components/pricingCards"
 	"partials/components/profileHeader"
@@ -42,6 +44,8 @@ func GetFuncMap() template.FuncMap {
 		topbar.CONVERTER_FUNCTION_NAME:              topbar.Cast_to_topbar,
 		fromTheBlogSection.CONVERTER_FUNCTION_NAME:  fromTheBlogSection.Cast_to_from_the_blog_section,
 		linker.CONVERTER_FUNCTION_NAME:              linker.Cast_to_linker,
+		logoCloudSimple.CONVERTER_FUNCTION_NAME:     logoCloudSimple.Cast_to_tester,
+		footer.CONVERTER_FUNCTION_NAME:              footer.Cast_to_footer,
 		"add":                                       Add,
 		"sub":                                       Sub,
 	}

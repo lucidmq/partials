@@ -1,0 +1,21 @@
+<section class="URQVMJXBKZUJKGC">
+  <div class="JITOBXDODPWARQG">
+    <div class="KRJMEMSICXXTEER">
+      {{ $logoCloudThing := cast_to_tester .TemplateData }}
+      <h2 class="KMQBVBYBWRQUHYN">
+        {{$logoCloudThing.Title}}
+      </h2>
+      <div class="BLEKFQYFGYETIGU">
+        {{ range $index, $logo := $logoCloudThing.Logos }}
+        <img
+          alt="{{$logo.Alt}}"
+          class="RAVFWNICOVTHNUB"
+          height="48"
+          src="{{$logo.Src}}"
+          width="158"
+        />
+        {{end}}
+      </div>
+    </div>
+  </div>
+</section>
