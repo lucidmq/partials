@@ -196,7 +196,7 @@
   color: rgb(99 102 241 / var(--tw-text-opacity));
   /*bru*/
   --tw-text-opacity: 1;
-  color: rgb(79 70 229 / var(--tw-text-opacity));
+  color: var(--primary-color);
   /*brv*/
   --tw-text-opacity: 1;
   color: rgb(67 56 202 / var(--tw-text-opacity));
@@ -279,7 +279,7 @@
   border-color: transparent;
   /*bwf*/
   --tw-bg-opacity: 1;
-  background-color: rgb(79 70 229 / var(--tw-bg-opacity));
+  background-color: var(--primary-color);
   /*bwg*/
   --tw-bg-opacity: 1;
   background-color: rgb(249 115 22 / var(--tw-bg-opacity));
@@ -291,7 +291,7 @@
   background-color: rgb(229 231 235 / var(--tw-bg-opacity));
   /*bwj*/
   --tw-bg-opacity: 1;
-  background-color: rgb(79 70 229 / var(--tw-bg-opacity));
+  background-color: var(--primary-color);
   /*bwk*/
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
@@ -344,7 +344,7 @@
   color: rgb(75 85 99 / var(--tw-text-opacity));
   /*bxb*/
   --tw-text-opacity: 1;
-  color: rgb(79 70 229 / var(--tw-text-opacity));
+  color: var(--primary-color);
   /*bxc*/
   --tw-text-opacity: 1;
   color: rgb(255 255 255 / var(--tw-text-opacity));
@@ -398,7 +398,7 @@
   font-weight: 500;
   /*ayn*/
   --tw-text-opacity: 1;
-  color: rgb(79 70 229 / var(--tw-text-opacity));
+  color: var(--primary-color);
 }
 
 .NYCOAUFATOLEYOS:hover {
@@ -553,7 +553,7 @@
   font-weight: 500;
   /*ayn*/
   --tw-text-opacity: 1;
-  color: rgb(79 70 229 / var(--tw-text-opacity));
+  color: var(--primary-color);
 }
 
 .UDGXKFITUTFYTML:hover {
@@ -1034,7 +1034,7 @@
   border-color: rgb(209 213 219 / var(--tw-border-opacity));
   /*ayn*/
   --tw-text-opacity: 1;
-  color: rgb(79 70 229 / var(--tw-text-opacity));
+  color: var(--primary-color);
 }
 
 .LGRGBRXVSKSYFXD:focus {
@@ -1067,7 +1067,7 @@
   border-color: transparent;
   /*ajw*/
   --tw-bg-opacity: 1;
-  background-color: rgb(79 70 229 / var(--tw-bg-opacity));
+  background-color: var(--primary-color);
   /*aro*/
   padding-left: 1rem;
   padding-right: 1rem;
