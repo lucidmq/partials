@@ -16,6 +16,7 @@ import (
 	"partials/components/logoCloudSimple"
 	"partials/components/newFaq"
 	"partials/components/pricingCards"
+	"partials/components/product"
 	"partials/components/profileHeader"
 	"partials/components/simpleHeader"
 	"partials/components/simpleHero"
@@ -46,6 +47,7 @@ func GetFuncMap() template.FuncMap {
 		linker.CONVERTER_FUNCTION_NAME:              linker.Cast_to_linker,
 		logoCloudSimple.CONVERTER_FUNCTION_NAME:     logoCloudSimple.Cast_to_tester,
 		footer.CONVERTER_FUNCTION_NAME:              footer.Cast_to_footer,
+		product.CONVERTER_FUNCTION_NAME:             product.Cast_to_product,
 		"add":                                       Add,
 		"sub":                                       Sub,
 	}

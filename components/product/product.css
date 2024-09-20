@@ -936,3 +936,9 @@
     transform: rotate(90deg) translate(-0.25rem);
   }
 }
+
+
+a[disabled] {
+  pointer-events: none;
+  background-color: gray;
+}

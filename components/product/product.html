@@ -1,5 +1,6 @@
 <main class="LPESPRSPLBTXIRC">
   <div class="EGHEHGDUFLJKRNC">
+    {{ $productData := cast_to_product .TemplateData }}
     <div class="EPTNUSDSMKYVOYY">
       <div class="JGMOVTLNZRYFUBN">
         <div class="HHMRILLZIVPZRCQ">
@@ -21,7 +22,7 @@
                 ><img
                   alt=""
                   class="TCTYMFUNOZEDZDI"
-                  src="https://tailwindui.com/img/ecommerce-images/product-page-03-product-01.jpg" /></span
+                  src="/static/images/product_images/black-airtag-card.avif" /></span
               ><span aria-hidden="true" class="DAGVIJBYMYDZNCY"></span></button
             ><button
               aria-selected="false"
@@ -35,7 +36,7 @@
                 ><img
                   alt=""
                   class="TCTYMFUNOZEDZDI"
-                  src="https://tailwindui.com/img/ecommerce-images/product-page-03-product-02.jpg" /></span
+                  src="/static/images/product_images/airtag-card-w-wallet.avif" /></span
               ><span aria-hidden="true" class="DAGVIJBYMYDZNCY"></span></button
             ><button
               aria-controls="headlessui-tabs-panel-:ro:"
@@ -52,7 +53,7 @@
                 ><img
                   alt=""
                   class="TCTYMFUNOZEDZDI"
-                  src="https://tailwindui.com/img/ecommerce-images/product-page-03-product-03.jpg" /></span
+                  src="/static/images/product_images/airtag-card-with-description.avif" /></span
               ><span aria-hidden="true" class="DAGVIJBYMYDZNCY"></span></button
             ><button
               aria-controls="headlessui-tabs-panel-:rq:"
@@ -69,7 +70,7 @@
                 ><img
                   alt=""
                   class="TCTYMFUNOZEDZDI"
-                  src="https://tailwindui.com/img/ecommerce-images/product-page-03-product-04.jpg" /></span
+                  src="/static/images/product_images/airtag-card-w-specs.avif" /></span
               ><span aria-hidden="true" class="DAGVIJBYMYDZNCY"></span>
             </button>
           </div>
@@ -86,7 +87,7 @@
             <img
               alt="Angled front view with bag zipped and handles upright."
               class="ZZJJCCQVHFJLDJH"
-              src="https://tailwindui.com/img/ecommerce-images/product-page-03-product-01.jpg"
+              src="/static/images/product_images/black-airtag-card.avif"
             />
           </div>
           <span
@@ -110,10 +111,10 @@
         </div>
       </div>
       <div class="YDVLRZWOUNZAYWT">
-        <h1 class="SHXSJYNQSJRTOAJ">Zip Tote Basket</h1>
+        <h1 class="SHXSJYNQSJRTOAJ">{{ $productData.ProductName }}</h1>
         <div class="FOEVJRITZZVFVQM">
           <h2 class="NPUARCMKHTSFBSB">Product information</h2>
-          <p class="GBSOMGJNUFTTHTB">$140</p>
+          <p class="GBSOMGJNUFTTHTB">${{ $productData.Price }}</p>
         </div>
         <div class="FOEVJRITZZVFVQM">
           <h3 class="NPUARCMKHTSFBSB">Reviews</h3>
@@ -192,11 +193,7 @@
           <h3 class="NPUARCMKHTSFBSB">Description</h3>
           <div class="XBPLHMXXROKSGMM">
             <p>
-              The Zip Tote Basket is the perfect midpoint between shopping tote
-              and comfy backpack. With convertible straps, you can hand carry,
-              should sling, or backpack this convenient and spacious bag. The
-              zip top and durable canvas construction keeps your goods protected
-              for all-day use.
+              {{$productData.ProductDescription}}
             </p>
           </div>
         </div>
@@ -248,7 +245,7 @@
             </fieldset>
           </div>
           <div class="GYVJZOIGUJEKQWN">
-            <a class="SLMGBTXSPFEAUBR" href="/checkout">Add to bag</a>
+            <a class="SLMGBTXSPFEAUBR" disabled tabindex="-1" href="#">{{ $productData.ButtonText }}</a>
             <button class="OPCFHZHYYIYOETQ" type="button">
               <svg
                 aria-hidden="true"
@@ -273,282 +270,21 @@
           <h2 class="NPUARCMKHTSFBSB" id="details-heading">
             Additional details
           </h2>
+          
           <div class="accordion">
+            {{ range $index, $details := $productData.ProductDetails }}
             <div class="tab">
-              <input type="checkbox" name="accordion-1" id="cb1" checked />
-              <label for="cb1" class="tab__label">Features</label>
+              <input type="checkbox" name="accordion-1" id="{{$details.Id}}" />
+              <label for="{{$details.Id}}" class="tab__label">{{$details.Title}}</label>
               <div class="tab__content">
                 <ul class="lister" role="list">
-                    <li class="lister-element">Multiple strap configurations</li>
-                    <li class="lister-element">Spacious interior with top zip</li>
-                    <li class="lister-element">Leather handle and tabs</li>
-                    <li class="lister-element">Interior dividers</li>
-                    <li class="lister-element">Stainless strap loops</li>
-                    <li class="lister-element">Double stitched construction</li>
-                    <li class="lister-element">Water-resistant</li>
+                    {{ range $index, $point := $details.KeyPoints }}
+                    <li class="lister-element">{{$point}}</li>
+                    {{end}}
                 </ul>
               </div>
             </div>
-            <div class="tab">
-              <input type="checkbox" name="accordion-1" id="cb2" />
-              <label for="cb2" class="tab__label">Features</label>
-              <div class="tab__content">
-                <ul class="lister" role="list">
-                    <li class="lister-element">Multiple strap configurations</li>
-                    <li class="lister-element">Spacious interior with top zip</li>
-                    <li class="lister-element">Leather handle and tabs</li>
-                    <li class="lister-element">Interior dividers</li>
-                    <li class="lister-element">Stainless strap loops</li>
-                    <li class="lister-element">Double stitched construction</li>
-                    <li class="lister-element">Water-resistant</li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="ZPHCRDJWUEAKFPZ">
-            <div data-headlessui-state="open" data-open="">
-              <h3>
-                <button
-                  aria-controls="headlessui-disclosure-panel-:r11:"
-                  aria-expanded="true"
-                  class="GPFFCPRIVQEJCEC"
-                  data-headlessui-state="open"
-                  data-open=""
-                  id="headlessui-disclosure-button-:r10:"
-                  type="button"
-                >
-                  <span class="TGWULSWNZINRUUC">Features</span
-                  ><span class="UNURSZWXGELUFWN"
-                    ><svg
-                      aria-hidden="true"
-                      class="UILRALUATLJRZUF"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      viewbox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M12 4.5v15m7.5-7.5h-15"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path>
-                    </svg>
-                    <svg
-                      aria-hidden="true"
-                      class="FXRTGUSGKOTSNFR"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      viewbox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M19.5 12h-15"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path>
-                    </svg>
-                  </span>
-                </button>
-              </h3>
-              <div
-                class="XSDCRIXYXIBLZRP"
-                data-headlessui-state="open"
-                data-open=""
-                id="headlessui-disclosure-panel-:r11:"
-              >
-                <ul class="lister" role="list">
-                  <li class="lister-element">Multiple strap configurations</li>
-                  <li class="lister-element">Spacious interior with top zip</li>
-                  <li class="lister-element">Leather handle and tabs</li>
-                  <li class="lister-element">Interior dividers</li>
-                  <li class="lister-element">Stainless strap loops</li>
-                  <li class="lister-element">Double stitched construction</li>
-                  <li class="lister-element">Water-resistant</li>
-                </ul>
-              </div>
-            </div>
-            <div data-headlessui-state="open" data-open="">
-              <h3>
-                <button
-                  aria-controls="headlessui-disclosure-panel-:r13:"
-                  aria-expanded="true"
-                  class="GPFFCPRIVQEJCEC"
-                  data-headlessui-state="open"
-                  data-open=""
-                  id="headlessui-disclosure-button-:r12:"
-                  type="button"
-                >
-                  <span class="TGWULSWNZINRUUC">Care</span
-                  ><span class="UNURSZWXGELUFWN"
-                    ><svg
-                      aria-hidden="true"
-                      class="UILRALUATLJRZUF"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      viewbox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M12 4.5v15m7.5-7.5h-15"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path>
-                    </svg>
-                    <svg
-                      aria-hidden="true"
-                      class="FXRTGUSGKOTSNFR"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      viewbox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M19.5 12h-15"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path>
-                    </svg>
-                  </span>
-                </button>
-              </h3>
-              <div
-                class="XSDCRIXYXIBLZRP"
-                data-headlessui-state="open"
-                data-open=""
-                id="headlessui-disclosure-panel-:r13:"
-              >
-                <ul class="lister" role="list">
-                  <li class="lister-element">Spot clean as needed</li>
-                  <li class="lister-element">Hand wash with mild soap</li>
-                  <li class="lister-element">Machine wash interior dividers</li>
-                  <li class="lister-element">Treat handle and tabs with leather conditioner</li>
-                </ul>
-              </div>
-            </div>
-            <div data-headlessui-state="open" data-open="">
-              <h3>
-                <button
-                  aria-controls="headlessui-disclosure-panel-:r15:"
-                  aria-expanded="true"
-                  class="GPFFCPRIVQEJCEC"
-                  data-headlessui-state="open"
-                  data-open=""
-                  id="headlessui-disclosure-button-:r14:"
-                  type="button"
-                >
-                  <span class="TGWULSWNZINRUUC">Shipping</span
-                  ><span class="UNURSZWXGELUFWN"
-                    ><svg
-                      aria-hidden="true"
-                      class="UILRALUATLJRZUF"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      viewbox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M12 4.5v15m7.5-7.5h-15"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path>
-                    </svg>
-                    <svg
-                      aria-hidden="true"
-                      class="FXRTGUSGKOTSNFR"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      viewbox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M19.5 12h-15"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path>
-                    </svg>
-                  </span>
-                </button>
-              </h3>
-              <div
-                class="XSDCRIXYXIBLZRP"
-                data-headlessui-state="open"
-                data-open=""
-                id="headlessui-disclosure-panel-:r15:"
-              >
-                <ul class="lister" role="list">
-                  <li class="lister-element">Free shipping on orders over $300</li>
-                  <li class="lister-element">International shipping available</li>
-                  <li class="lister-element">Expedited shipping options</li>
-                  <li class="lister-element">Signature required upon delivery</li>
-                </ul>
-              </div>
-            </div>
-            <div data-headlessui-state="open" data-open="">
-              <h3>
-                <button
-                  aria-controls="headlessui-disclosure-panel-:r17:"
-                  aria-expanded="true"
-                  class="GPFFCPRIVQEJCEC"
-                  data-headlessui-state="open"
-                  data-open=""
-                  id="headlessui-disclosure-button-:r16:"
-                  type="button"
-                >
-                  <span class="TGWULSWNZINRUUC">Returns</span
-                  ><span class="UNURSZWXGELUFWN"
-                    ><svg
-                      aria-hidden="true"
-                      class="UILRALUATLJRZUF"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      viewbox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M12 4.5v15m7.5-7.5h-15"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path>
-                    </svg>
-                    <svg
-                      aria-hidden="true"
-                      class="FXRTGUSGKOTSNFR"
-                      fill="none"
-                      stroke="currentColor"
-                      stroke-width="1.5"
-                      viewbox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M19.5 12h-15"
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                      ></path>
-                    </svg>
-                  </span>
-                </button>
-              </h3>
-              <div
-                class="XSDCRIXYXIBLZRP"
-                data-headlessui-state="open"
-                data-open=""
-                id="headlessui-disclosure-panel-:r17:"
-              >
-                <ul class="lister" role="list">
-                  <li class="lister-element">Easy return requests</li>
-                  <li class="lister-element">Pre-paid shipping label included</li>
-                  <li class="lister-element">10% restocking fee for returns</li>
-                  <li class="lister-element">60 day return window</li>
-                </ul>
-              </div>
-            </div>
+            {{end}}
           </div>
         </section>
       </div>
