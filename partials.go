@@ -1,7 +1,6 @@
 package partials
 
 import (
-	bizitems "partials/components/biz-items"
 	"partials/components/blogArticle"
 	"partials/components/cta1"
 	"partials/components/cta2"
@@ -15,6 +14,7 @@ import (
 	"partials/components/integrationHero"
 	"partials/components/linker"
 	"partials/components/logoCloudSimple"
+	"partials/components/myProductItems"
 	"partials/components/newFaq"
 	"partials/components/pricingCards"
 	"partials/components/product"
@@ -49,7 +49,7 @@ func GetFuncMap() template.FuncMap {
 		logoCloudSimple.CONVERTER_FUNCTION_NAME:     logoCloudSimple.Cast_to_tester,
 		footer.CONVERTER_FUNCTION_NAME:              footer.Cast_to_footer,
 		product.CONVERTER_FUNCTION_NAME:             product.Cast_to_product,
-		bizitems.CONVERTER_FUNCTION_NAME:            bizitems.Cast_to_bizitems,
+		myProductItems.CONVERTER_FUNCTION_NAME:      myProductItems.Cast_to_myProductItems,
 		"add":                                       Add,
 		"sub":                                       Sub,
 	}

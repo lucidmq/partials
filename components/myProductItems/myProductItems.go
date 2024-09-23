@@ -1,11 +1,11 @@
-package bizitems
+package myProductItems
 
 import (
 	"log"
 )
 
-const DATA_KEY = "bizitems"
-const CONVERTER_FUNCTION_NAME = "cast_to_bizitems"
+const DATA_KEY = "myProductItems"
+const CONVERTER_FUNCTION_NAME = "cast_to_myProductItems"
 
 type BizItem struct {
 	Title          string
@@ -15,7 +15,7 @@ type BizItem struct {
 	MonthlyRevenue float32
 }
 
-func Cast_to_bizitems(mapper map[string]interface{}) []BizItem {
+func Cast_to_myProductItems(mapper map[string]interface{}) []BizItem {
 	var v []BizItem
 	var ok bool
 	if x, found := mapper[DATA_KEY]; found {
