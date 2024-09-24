@@ -1,24 +1,3 @@
-.body_overide {
-    position: fixed;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.loginContainer {
-    height: 100%;
-    /* lx */
-    display: flex;
-    /* qx  */
-    min-height: 900px;
-    /* yr */
-    flex-direction: column;
-    /* aio */
-    --tw-bg-opacity: 1;
-    background-color: rgb(249 250 251 / var(--tw-bg-opacity));
-}
-
 .loginWrapper {
     /* lx  */
     display: flex;
@@ -33,13 +12,24 @@
     /* arr  */
     padding-top: 3rem;
     padding-bottom: 3rem;
-    /* cez  (min-width: 640px)*/
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-    /* dde(min-width: 1024px) */
-    padding-left: 2rem;
-    padding-right: 2rem;
 }
+
+@media (min-width: 640px) {
+    .loginWrapper {
+        /* cez  (min-width: 640px)*/
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .loginWrapper {
+        /* dde(min-width: 1024px) */
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+}
+
 
 .loginHeader {
     /* bvb  */
