@@ -1,12 +1,13 @@
 <div class="HPBQXAMUSOHISTL">
   <div class="JFGIESWSORCGMEN">
+    {{ $heroFormData := cast_to_heroForm .TemplateData }}
     <div class="EBUTCXCLHXLHKYD">
       <!-- Title -->
       <div class="QRWDOONIGDISCLT">
-        <p class="LDZELCJIATPWZFC">Small business solutions</p>
+        <p class="LDZELCJIATPWZFC">{{$heroFormData.HoverText}}</p>
         <h1 class="ARPPPTOKUYBYAAC">
-          Turn online shoppers into
-          <span class="GPACUKDMRTICLNQ">lifetime customers</span>
+          {{$heroFormData.Title}}
+          <span class="GPACUKDMRTICLNQ">{{$heroFormData.Subtitle}}</span>
         </h1>
       </div>
       <!-- End Title -->
@@ -36,47 +37,38 @@
               src="https://images.unsplash.com/photo-1492562080023-ab3db95bfbce?ixlib=rb-4.0.3&amp;ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&amp;auto=format&amp;fit=facearea&amp;facepad=2&amp;w=300&amp;h=300&amp;q=80"
             />
             <span class="JCTRVLQUKYOPTEU">
-              <span class="QDEILLJUBSHHGPI">7k+</span>
+              <span class="QDEILLJUBSHHGPI">{{$heroFormData.AuthorityNumber}}</span>
             </span>
           </div>
           <!-- End Avatar Group -->
         </div>
         <div class="DKYLYJHTMBLZQBH"></div>
         <div class="LOQETZPPXIVTKYB">
-          <div class="TPNHBSXVCSXDKZM">Trust pilot</div>
-          <div class="XMMPWURMVNYALDV">Rated best over 37k reviews</div>
+          <div class="TPNHBSXVCSXDKZM">{{$heroFormData.AuthorityTitle}}</div>
+          <div class="XMMPWURMVNYALDV">{{$heroFormData.AuthoritySubtitle}}</div>
         </div>
       </div>
       <!-- End Avatar Group -->
       <!-- Form -->
-      <form>
+      <form method="POST" action="{{$heroFormData.FormLink}}">
         <div class="FBPJRJVRKGDFKLW">
           <div class="AGKOGIOGTBBVOJV">
-            <label class="JKNJVVWQHENAAKS" for="hs-hero-name-1"
-              ><span class="CGDCVVUVCXUOQGS">Your name</span></label
-            >
+            <label class="JKNJVVWQHENAAKS" for="hs-hero-name-1">
+              <span class="CGDCVVUVCXUOQGS">Your email</span>
+            </label>
             <input
               class="UAFWOYZVSBOVCMV"
               id="hs-hero-name-1"
-              placeholder="Your name"
-              type="text"
-            />
-          </div>
-          <div class="MHYROJGGZPFEOAV">
-            <label class="JKNJVVWQHENAAKS" for="hs-hero-email-1"
-              ><span class="CGDCVVUVCXUOQGS">Your email address</span></label
-            >
-            <input
-              class="UAFWOYZVSBOVCMV"
-              id="hs-hero-email-1"
+              name="email"
               placeholder="Your email"
               type="email"
+              required
             />
           </div>
           <div class="SEAUTHGBKBNTUDA">
-            <a class="VIHWMEMFVJGRPUN" href="#" target="_parent">
+            <button class="VIHWMEMFVJGRPUN" type="submit">
               Get started
-            </a>
+            </button>
           </div>
         </div>
       </form>

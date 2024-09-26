@@ -9,6 +9,7 @@ import (
 	"partials/components/features3"
 	"partials/components/footer"
 	"partials/components/fromTheBlogSection"
+	"partials/components/heroForm"
 	"partials/components/integrationCards"
 	"partials/components/integrationGridList"
 	"partials/components/integrationHero"
@@ -50,6 +51,7 @@ func GetFuncMap() template.FuncMap {
 		footer.CONVERTER_FUNCTION_NAME:              footer.Cast_to_footer,
 		product.CONVERTER_FUNCTION_NAME:             product.Cast_to_product,
 		myProductItems.CONVERTER_FUNCTION_NAME:      myProductItems.Cast_to_myProductItems,
+		heroForm.CONVERTER_FUNCTION_NAME:            heroForm.Cast_to_heroForm,
 		"add":                                       Add,
 		"sub":                                       Sub,
 	}
