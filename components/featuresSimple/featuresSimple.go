@@ -1,11 +1,11 @@
-package heroForm
+package featuresSimple
 
 import "log"
 
 const DATA_KEY = "featuresSimeple"
-const CONVERTER_FUNCTION_NAME = "cast_to_featuresSimeple"
+const CONVERTER_FUNCTION_NAME = "cast_to_featuresSimple"
 
-type FeaturesSimeple struct {
+type FeaturesSimple struct {
 	Section1Title     string
 	Section1Body      string
 	Section1Subtitle  string
@@ -18,11 +18,11 @@ type FeaturesSimeple struct {
 	Section2ImagePath string
 }
 
-func Cast_to_featuresSimeple(mapper map[string]interface{}) FeaturesSimeple {
-	var v FeaturesSimeple
+func Cast_to_featuresSimple(mapper map[string]interface{}) FeaturesSimple {
+	var v FeaturesSimple
 	var ok bool
 	if x, found := mapper[DATA_KEY]; found {
-		v, ok = x.(FeaturesSimeple)
+		v, ok = x.(FeaturesSimple)
 		if !ok {
 			log.Fatal("Unable to case....")
 		}

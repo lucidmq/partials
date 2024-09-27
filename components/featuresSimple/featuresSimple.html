@@ -1,7 +1,7 @@
 <section class="UQYEMTEWPTLDTDB">
     <div class="ILRHEIWGMFWOFWN">
       <!-- Row -->
-      {{ $featuresSimple := cast_to_featuresSimeple .TemplateData }}
+      {{ $featuresSimple := cast_to_featuresSimple .TemplateData }}
       <div class="CJAVSHUXLTHDVFM">
         <div class="RSSOXSIUHTXXQQS">
           <h2 class="LSDOBDHQFCKDVHJ">{{$featuresSimple.Section1Title}}</h2>
@@ -10,6 +10,7 @@
           </p>
           <!-- List -->
           <ul class="JWZEQCAESXYKMZE" role="list">
+            {{ range $index, $point := $featuresSimple.Section1Points }}
             <li class="RAWKCEYNAEUWBFS">
               <!-- Icon -->
               <svg
@@ -24,41 +25,10 @@
                   fill-rule="evenodd"
                 ></path>
               </svg>
-              <span class="NLUGJGAAHETWZWC">Gobbly gook</span
+              <span class="NLUGJGAAHETWZWC">{{$point}}</span
               >
             </li>
-            <li class="RAWKCEYNAEUWBFS">
-              <!-- Icon -->
-              <svg
-                class="IDPNBSTXRXFHQWV"
-                fill="currentColor"
-                viewbox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  clip-rule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  fill-rule="evenodd"
-                ></path>
-              </svg>
-              <span class="NLUGJGAAHETWZWC">Development workflow</span>
-            </li>
-            <li class="RAWKCEYNAEUWBFS">
-              <!-- Icon -->
-              <svg
-                class="IDPNBSTXRXFHQWV"
-                fill="currentColor"
-                viewbox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  clip-rule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  fill-rule="evenodd"
-                ></path>
-              </svg>
-              <span class="NLUGJGAAHETWZWC">Knowledge management</span>
-            </li>
+            {{end}}
           </ul>
           <p class="GATFIBDRTNOYITK">
             {{$featuresSimple.Section1Subtitle}}
@@ -84,6 +54,7 @@
           </p>
           <!-- List -->
           <ul class="JWZEQCAESXYKMZE" role="list">
+            {{ range $index, $point := $featuresSimple.Section2Points }}
             <li class="RAWKCEYNAEUWBFS">
               <!-- Icon -->
               <svg
@@ -98,72 +69,9 @@
                   fill-rule="evenodd"
                 ></path>
               </svg>
-              <span class="NLUGJGAAHETWZWC">Dynamic reports and dashboards</span>
+              <span class="NLUGJGAAHETWZWC">{{$point}}</span>
             </li>
-            <li class="RAWKCEYNAEUWBFS">
-              <!-- Icon -->
-              <svg
-                class="IDPNBSTXRXFHQWV"
-                fill="currentColor"
-                viewbox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  clip-rule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  fill-rule="evenodd"
-                ></path>
-              </svg>
-              <span class="NLUGJGAAHETWZWC">Templates for everyone</span>
-            </li>
-            <li class="RAWKCEYNAEUWBFS">
-              <!-- Icon -->
-              <svg
-                class="IDPNBSTXRXFHQWV"
-                fill="currentColor"
-                viewbox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  clip-rule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  fill-rule="evenodd"
-                ></path>
-              </svg>
-              <span class="NLUGJGAAHETWZWC">Development workflow</span>
-            </li>
-            <li class="RAWKCEYNAEUWBFS">
-              <!-- Icon -->
-              <svg
-                class="IDPNBSTXRXFHQWV"
-                fill="currentColor"
-                viewbox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  clip-rule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  fill-rule="evenodd"
-                ></path>
-              </svg>
-              <span class="NLUGJGAAHETWZWC">Limitless business automation</span>
-            </li>
-            <li class="RAWKCEYNAEUWBFS">
-              <!-- Icon -->
-              <svg
-                class="IDPNBSTXRXFHQWV"
-                fill="currentColor"
-                viewbox="0 0 20 20"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  clip-rule="evenodd"
-                  d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"
-                  fill-rule="evenodd"
-                ></path>
-              </svg>
-              <span class="NLUGJGAAHETWZWC">Knowledge management</span>
-            </li>
+            {{end}}
           </ul>
           <p class="XCOBNQNTLOBYCJS">
             {{$featuresSimple.Section2Subtitle}}

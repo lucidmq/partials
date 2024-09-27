@@ -5,8 +5,10 @@ import (
 	"partials/components/cta1"
 	"partials/components/cta2"
 	"partials/components/docPage"
+	"partials/components/emailInputCTA"
 	"partials/components/feature1"
 	"partials/components/features3"
+	"partials/components/featuresSimple"
 	"partials/components/footer"
 	"partials/components/fromTheBlogSection"
 	"partials/components/heroForm"
@@ -52,6 +54,8 @@ func GetFuncMap() template.FuncMap {
 		product.CONVERTER_FUNCTION_NAME:             product.Cast_to_product,
 		myProductItems.CONVERTER_FUNCTION_NAME:      myProductItems.Cast_to_myProductItems,
 		heroForm.CONVERTER_FUNCTION_NAME:            heroForm.Cast_to_heroForm,
+		featuresSimple.CONVERTER_FUNCTION_NAME:      featuresSimple.Cast_to_featuresSimple,
+		emailInputCTA.CONVERTER_FUNCTION_NAME:       emailInputCTA.Cast_to_emailInputCTA,
 		"add":                                       Add,
 		"sub":                                       Sub,
 	}

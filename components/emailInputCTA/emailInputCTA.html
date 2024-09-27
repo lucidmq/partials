@@ -1,0 +1,30 @@
+<div class="MCYENCZASGDHILN">
+  <div class="VPHPMPHGDUKREBG">
+    {{ $emailCTA := cast_to_emailInputCTA .TemplateData }}
+    <div class="BSNEBHBADUGBPVB">
+      <h2 class="MWBZAHXNEYWGFOQ">{{$emailCTA.Title}}</h2>
+      <p class="MWBZAHXNEYWGFOQ">{{$emailCTA.Subtitle}}</p>
+    </div>
+    <form class="JXPWBBDRKOGIVUD" method="POST" action="{{$emailCTA.Link}}">
+      <div class="MFQYETCJGCNFPCI">
+        <label class="PXJXCKXAZGTPIHL" for="email-address">
+          Email address
+        </label>
+        <input
+          autocomplete="email"
+          class="NEBZDZGYSFFKPZV"
+          id="email-address"
+          name="email"
+          placeholder="Enter your email"
+          required
+          type="email"
+        />
+        <button class="NNTVYZTYKXTTEID" type="submit">{{$emailCTA.ButtonText}}</button>
+      </div>
+      <p class="ZLVTTZBPLNLPXSD">
+        We don't sell your data. Read our
+        <a class="VJSMSXMWCXEZUVW" href="#"> privacy policy </a>.
+      </p>
+    </form>
+  </div>
+</div>
