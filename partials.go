@@ -2,6 +2,7 @@ package partials
 
 import (
 	"partials/components/blogArticle"
+	"partials/components/confirmationSimple"
 	"partials/components/cta1"
 	"partials/components/cta2"
 	"partials/components/docPage"
@@ -56,8 +57,9 @@ func GetFuncMap() template.FuncMap {
 		heroForm.CONVERTER_FUNCTION_NAME:            heroForm.Cast_to_heroForm,
 		featuresSimple.CONVERTER_FUNCTION_NAME:      featuresSimple.Cast_to_featuresSimple,
 		emailInputCTA.CONVERTER_FUNCTION_NAME:       emailInputCTA.Cast_to_emailInputCTA,
-		"add":                                       Add,
-		"sub":                                       Sub,
+		confirmationSimple.CONVERTER_FUNCTION_NAME:  confirmationSimple.Cast_to_confirmationSimple,
+		"add": Add,
+		"sub": Sub,
 	}
 
 	return funcMap
