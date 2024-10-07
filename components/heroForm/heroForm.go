@@ -10,6 +10,7 @@ type HeroForm struct {
 	Subtitle          string
 	HoverText         string
 	FormLink          string
+	ButtonTitle       string
 	AuthorityTitle    string
 	AuthoritySubtitle string
 	AuthorityNumber   string
