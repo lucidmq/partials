@@ -16,6 +16,7 @@ type MainLink struct {
 type Topbar struct {
 	MainLinks      []MainLink
 	LogoSVG        template.HTML //We insert the svg directly into the page
+	SiteName       string
 	ShowLoginLinks bool
 }
 

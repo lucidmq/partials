@@ -2,7 +2,12 @@
   {{ $footerData := cast_to_footer .TemplateData }}
   <div class="footer-main">
     <div class="footer-logo-and-link">
+      <a class="footer-logo-link-container" aria-label="Home" href="/">
       {{$footerData.LogoSVG}}
+      {{ if $footerData.SiteName }}
+      <h1 class="footer-logo-text">{{ $footerData.SiteName }}</h1>
+      {{ end }}
+      <a>
       <nav class="nav" aria-label="quick links">
         <div class="nav-links-container">
           {{ range $index, $link := $footerData.MainLinks }}

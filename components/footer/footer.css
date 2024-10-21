@@ -20,12 +20,8 @@
   /* py-16 */
 }
 .footer-logo {
-  margin-left: auto;
-  margin-right: auto;
   height: 2.5rem;
   width: auto;
-
-  /* mx-auto h-10 w-auto */
 }
 .nav {
   margin-top: 1rem;
@@ -74,16 +70,29 @@
   border-color: rgba(148, 163, 184, 0.1);
   padding-top: 1.5rem;
   padding-bottom: 1.5rem;
-
   /* flex flex-col items-center border-t border-slate-400/10 py-10 sm:flex-row-reverse sm:justify-between */
 }
 .footer-icon-container {
   display: flex;
   -moz-column-gap: 1.5rem;
   column-gap: 1.5rem;
-
   /* flex gap-x-6 */
 }
+
+.footer-logo-link-container {
+  display: flex;
+  flex-direction: row;
+  gap: .5rem;
+  align-items: center;
+  justify-content: center;
+}
+
+.footer-logo-text {
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 2rem;
+}
+
 .footer-icon {
   height: 1.5rem;
   width: 1.5rem;
@@ -91,6 +100,7 @@
 
   /* h-6 w-6 fill-slate-500 group-hover:fill-slate-700 */
 }
+
 .footer-icon:hover {
   fill: #334155;
 }

@@ -14,6 +14,7 @@ type MainLink struct {
 }
 
 type Footer struct {
+	SiteName    string
 	MainLinks   []MainLink
 	LogoSVG     template.HTML //We insert the svg directly into the page
 	CompanyName string

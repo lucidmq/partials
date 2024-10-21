@@ -3,8 +3,11 @@
   <div class="topbar_subcontainer">
     <nav class="nav_container">
       <div class="nav_subcontainer">
-        <a aria-label="Home" href="/">
+        <a class="logoContainer" aria-label="Home" href="/">
           {{$topbarData.LogoSVG}}
+          {{ if $topbarData.SiteName }}
+            <h1 class="logoText">{{$topbarData.SiteName }}</h1>
+          {{end}}
         </a>
         <div class="main_links_container">
           {{ range $index, $link := $topbarData.MainLinks }}
