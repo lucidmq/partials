@@ -3,8 +3,8 @@
     --tw-bg-opacity: 1;
     background-color: rgb(255 255 255/var(--tw-bg-opacity));
     /* py-20  */
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
 }
 
 .pricing-container {
@@ -433,8 +433,8 @@
 @media (min-width: 640px) {
     .pricing-section {
         /* sm:py-32 */
-        padding-top: 3rem;
-        padding-bottom: 3rem;
+        padding-top: 6rem;
+        padding-bottom: 6rem;
     }
 
     .pricing-container {
