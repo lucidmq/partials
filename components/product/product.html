@@ -245,7 +245,11 @@
             </fieldset>
           </div>
           <div class="GYVJZOIGUJEKQWN">
-            <a class="SLMGBTXSPFEAUBR" disabled tabindex="-1" href="#">{{ $productData.ButtonText }}</a>
+            {{if $productData.ButtonEnabled}}
+              <a class="SLMGBTXSPFEAUBR" href="{{$productData.ButtonLink}}">{{ $productData.ButtonText }}</a>
+            {{else}}
+              <a class="SLMGBTXSPFEAUBR" disabled tabindex="-1" href="#">{{ $productData.ButtonText }}</a>
+            {{end}}
             <button class="OPCFHZHYYIYOETQ" type="button">
               <svg
                 aria-hidden="true"

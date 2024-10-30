@@ -18,6 +18,7 @@ type Product struct {
 	ProductDescription string
 	ButtonText         string
 	Price              int
+	ButtonLink         string
 	ButtonEnabled      bool
 	ImagesLinks        []string
 	ProductDetails     []Details
