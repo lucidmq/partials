@@ -42,10 +42,17 @@
 }
 
 .logoText {
+    font-size: 1rem;
+    line-height: 1.5rem;
     font-weight: 700;
-    font-size: 1.5rem;
-    line-height: 2rem;
+    display: none;
 }
+
+@media (min-width: 768px) {
+    .logoText {
+      display: inline;
+    }
+  }
 
 .thing_svg {
     /* h-10  */
