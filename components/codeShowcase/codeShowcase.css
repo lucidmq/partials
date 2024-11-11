@@ -69,7 +69,7 @@
   min-width: 18rem;
   border-radius: var(--rounded-box, 1rem);
   --tw-bg-opacity: 1;
-  background-color: rgb(0 0 0 );
+  background-color: rgb(0 0 0);
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
   color: rgb(255, 255, 255);
@@ -112,7 +112,7 @@
   }
 }
 
-.FVRLGYXIOVVZXPN  pre {
+.FVRLGYXIOVVZXPN pre {
   padding-right: 1.25rem;
 }
 
@@ -273,34 +273,159 @@
 .SASNLXGQKQEAZDE {
 }
 
+/* Header section of the element */
 
-.features-title-container {
-  /* max-w-2xl */
-  max-width: 40rem;
+.TTALYSMOAGLCQKW {}
+/* Classes not found for TTALYSMOAGLCQKW*/ /* space-y-6 */
+.MIHOJRTJNHCDBAR {
+  /*text-center*/
+  text-align: center; /*text-4xl*/
+  font-size: 2.25rem;
+  line-height: 2.5rem; /*font-black*/
+  font-weight: 900;
+}
+@media (min-width: 640px) {
+  .MIHOJRTJNHCDBAR {
+    /*sm:text-6xl*/
+    font-size: 3.75rem;
+    line-height: 1;
+  }
+}
+.WIPLKVDNUQEPRXM {
+  /*text-center*/
+  text-align: center; /*text-xl*/
+  font-size: 1.25rem;
+  line-height: 1.75rem;
+}
+@media (min-width: 768px) {
+  .WIPLKVDNUQEPRXM {
+    /*md:text-2xl*/
+    font-size: 1.5rem;
+    line-height: 2rem;
+  }
 }
 
-.features-title {
-  /* font-display */
-  font-family: var(--font-lexend);
-  /* text-3xl */
-  font-size: 2rem;
-  line-height: 2.5rem;
-  /* tracking-tight */
-  letter-spacing: -.025em;
-  /* text-white */
-  --tw-text-opacity: 1;
-  color: rgb(255 255 255/var(--tw-text-opacity));
+/* Tab section.... */
+.EFUMGFCCWRWCMNJ {
+  /*amp*/
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity)); /*asn*/
+  padding-left: 1rem;
+  padding-right: 1rem; /*atj*/
+  padding-top: 1.5rem;
+  padding-bottom: 1.5rem;
 }
-
-.features-title-subtext {
-  /* mt-6 */
-  margin-top: 1.5rem;
-  /* text-lg */
-  font-size: 1.125rem;
-  line-height: 2rem;
-  /* tracking-tight */
-  letter-spacing: -.025em;
-  /* text-blue-100 */
+@media (min-width: 640px) {
+  .EFUMGFCCWRWCMNJ {
+    /*cnm*/
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  .EFUMGFCCWRWCMNJ {
+    /*dms*/
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}
+.FAQHTNAQPQVPQZO {
+  /*hb*/
+  margin-left: auto;
+  margin-right: auto; /*us*/
+  max-width: 80rem;
+}
+.CECNSKQAZPJDELK {
+}
+@media (min-width: 640px) {
+  .CECNSKQAZPJDELK {
+    /*cga*/
+    display: none;
+  }
+}
+.IGKUBLMZPLUGGKC {
+  /*t*/
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border-width: 0;
+}
+.XBPBCCJQKSDGPMA {
+  /*lx*/
+  display: block; /*uf*/
+  width: 100%; /*aet*/
+  border-radius: 0.375rem; /*agy*/
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+}
+.XBPBCCJQKSDGPMA:focus {
+  /*boi*/
+  --tw-border-opacity: 1;
+  border-color: rgb(99 102 241 / var(--tw-border-opacity)); /*bpn*/
+  --tw-ring-opacity: 1;
+  --tw-ring-color: rgb(99 102 241 / var(--tw-ring-opacity));
+}
+.FMJSRGXSNHPGSFW {
+  /*mg*/
+  display: none;
+}
+@media (min-width: 640px) {
+  .FMJSRGXSNHPGSFW {
+    /*cfs*/
+    display: block;
+  }
+}
+.KGWAUHIWYORVCKL {
+  /*agg*/
+  border-bottom-width: 1px; /*agx*/
+  --tw-border-opacity: 1;
+  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+}
+.JZAPSDTOOXDOZEB {
+  /*ho*/
+  margin-bottom: -1px; /*ma*/
+  display: flex;
+}
+.QVVJICETPILLUMT {
+  /*aib*/
+  border-color: transparent; /*aze*/
   --tw-text-opacity: 1;
-  color: rgb(219 234 254/var(--tw-text-opacity));
+  color: rgb(107 114 128 / var(--tw-text-opacity)); /*ry*/
+  width: 50%; /*agi*/
+  border-bottom-width: 2px; /*asf*/
+  padding-left: 0.25rem;
+  padding-right: 0.25rem; /*ath*/
+  padding-top: 1rem;
+  padding-bottom: 1rem; /*awq*/
+  text-align: center; /*axo*/
+  font-size: 0.875rem;
+  line-height: 1.25rem; /*aya*/
+  font-weight: 500;
+}
+.QVVJICETPILLUMT:hover {
+  /*bjj*/
+  --tw-border-opacity: 1;
+  border-color: rgb(209 213 219 / var(--tw-border-opacity)); /*bmw*/
+  --tw-text-opacity: 1;
+  color: rgb(55 65 81 / var(--tw-text-opacity));
+}
+.XQFHZCBMOELEZZW {
+  /*ahj*/
+  border-color: var(--primary-color);
+  color: var(--primary-color);
+  width: 50%; /*agi*/
+  border-bottom-width: 2px; /*asf*/
+  padding-left: 0.25rem;
+  padding-right: 0.25rem; /*ath*/
+  padding-top: 1rem;
+  padding-bottom: 1rem; /*awq*/
+  text-align: center; /*axo*/
+  font-size: 0.875rem;
+  line-height: 1.25rem; /*aya*/
+  font-weight: 500;
 }

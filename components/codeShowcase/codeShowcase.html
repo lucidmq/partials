@@ -1,43 +1,74 @@
 <section class="codeShowcaseWrapper">
-  <div class="SEXJEWKEHZWYJWC">
-    <div class="QTFDQZWSTJBXKYG">
-        <h2 class="BNLZOFYOIBOLXQF">Original CSS</h2>
-      <div class="FVRLGYXIOVVZXPN">
-        <pre><code><span style="color: rgb(255, 143, 64);">import</span><span style="color: rgb(255, 255, 255);"> { f0 } </span><span style="color: rgb(255, 143, 64);">from</span><span style="color: rgb(255, 255, 255);"> </span><span style="color: rgb(170, 217, 76);">'file0'</span><span style="color: rgba(191, 189, 182, 0.7);">;</span></code></pre>
-        <pre><code></code></pre>
-        <pre><code><span style="color: rgb(255, 143, 64);">await</span><span style="color: rgb(255, 255, 255);"> f0</span><span style="color: rgb(242, 150, 104);">.</span><span style="color: rgb(255, 180, 84);">publish</span><span style="color: rgb(255, 255, 255);">(</span><span style="color: rgb(170, 217, 76);">'image.png'</span><span style="color: rgb(255, 255, 255);">)</span><span style="color: rgba(191, 189, 182, 0.7);">;</span></code></pre>
-        <pre><code><span style="color: rgba(172, 182, 191, 0.55);">// This file is served from a CDN automatically</span></code></pre>
-      </div>
-    </div>
-    <div class="QTFDQZWSTJBXKYG">
-      <h2 class="BNLZOFYOIBOLXQF">New CSS</h2>
-      <div class="FVRLGYXIOVVZXPN">
-        <pre><code class="SASNLXGQKQEAZDE">import { S3Client, PutObjectAclCommand } from '@aws-sdk/client-s3';</code></pre>
-        <pre><code class="SASNLXGQKQEAZDE"></code></pre>
-        <pre><code class="SASNLXGQKQEAZDE">const s3 = new S3Client({});</code></pre>
-        <pre><code class="SASNLXGQKQEAZDE"></code></pre>
-        <pre><code class="SASNLXGQKQEAZDE">const bucketPolicy = {</code></pre>
-        <pre><code class="SASNLXGQKQEAZDE">  Version: "2012-10-17",</code></pre>
-        <pre><code class="SASNLXGQKQEAZDE">  Statement: [</code></pre>
-        <pre><code class="SASNLXGQKQEAZDE">    {</code></pre>
-        <pre><code class="SASNLXGQKQEAZDE">        Effect: "Allow",</code></pre>
-        <pre><code class="SASNLXGQKQEAZDE">        Principal: "*",</code></pre>
-        <pre><code class="SASNLXGQKQEAZDE">        Action: "s3:GetObject",</code></pre>
-        <pre><code class="SASNLXGQKQEAZDE">        Resource: "arn:aws:s3:::mybucket/image.png"</code></pre>
-        <pre><code class="SASNLXGQKQEAZDE">    }</code></pre>
-        <pre><code class="SASNLXGQKQEAZDE">  ];</code></pre>
-        <pre><code class="SASNLXGQKQEAZDE">};</code></pre>
-        <pre><code class="SASNLXGQKQEAZDE"></code></pre>
-        <pre><code class="SASNLXGQKQEAZDE">const policyParams = {</code></pre>
-        <pre><code class="SASNLXGQKQEAZDE">  Bucket: bucketName,</code></pre>
-        <pre><code class="SASNLXGQKQEAZDE">  Policy: JSON.stringify(bucketPolicy)</code></pre>
-        <pre><code class="SASNLXGQKQEAZDE">};</code></pre>
-        <pre><code class="SASNLXGQKQEAZDE"></code></pre>
-        <pre><code class="SASNLXGQKQEAZDE">const command = new PutBucketPolicyCommand(policyParams);</code></pre>
-        <pre><code class="SASNLXGQKQEAZDE">const response = await s3.send(command);</code></pre>
-        <pre><code class="SASNLXGQKQEAZDE"></code></pre>
-        <pre><code class="SASNLXGQKQEAZDE">// Now the file is public, but you have to setup a CDN manually.</code></pre>
-      </div>
-    </div>
-  </div>
+	<div class="TTALYSMOAGLCQKW">
+		<h2 class="MIHOJRTJNHCDBAR">Do more with less effort.</h2>
+		<p class="WIPLKVDNUQEPRXM">What used to take hours, now takes minutes.</p>
+	</div>
+
+	<div class="EFUMGFCCWRWCMNJ">
+		<div class="FAQHTNAQPQVPQZO">
+			<div>
+				<div class="CECNSKQAZPJDELK"><label class="IGKUBLMZPLUGGKC" for="tabs">Select a tab</label><select
+						class="XBPBCCJQKSDGPMA" id="tabs" name="tabs">
+						<option>HTML</option>
+						<option selected="">CSS</option>
+					</select>
+				</div>
+				<div class="FMJSRGXSNHPGSFW">
+					<div class="KGWAUHIWYORVCKL">
+						<nav aria-label="Tabs" class="JZAPSDTOOXDOZEB">
+							<a class="QVVJICETPILLUMT" href="#">HTML</a>
+							<a aria-current="page" class="XQFHZCBMOELEZZW" href="#">CSS</a>
+						</nav>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="SEXJEWKEHZWYJWC">
+		<div class="QTFDQZWSTJBXKYG">
+			<h2 class="BNLZOFYOIBOLXQF">New HTML</h2>
+			<div class="FVRLGYXIOVVZXPN">
+				<pre><code class="SASNLXGQKQEAZDE">&lt;button class=&#34;CIPRCOUKLBVBOGB&#34; type=&#34;submit&#34;&gt;</code></pre>
+				<pre><code class="SASNLXGQKQEAZDE">    Sign in</code></pre>
+				<pre><code class="SASNLXGQKQEAZDE">&lt;/button&gt;</code></pre>
+			</div>
+		</div>
+
+		<div class="QTFDQZWSTJBXKYG">
+			<h2 class="BNLZOFYOIBOLXQF">New CSS</h2>
+			<div class="FVRLGYXIOVVZXPN">
+				<pre><code class="SASNLXGQKQEAZDE">.CIPRCOUKLBVBOGB {</code></pre>
+				<pre><code class="SASNLXGQKQEAZDE">  /*ma*/</code></pre>
+				<pre><code class="SASNLXGQKQEAZDE">  display: flex; /*uf*/</code></pre>
+				<pre><code class="SASNLXGQKQEAZDE">  width: 100%; /*zw*/</code></pre>
+				<pre><code class="SASNLXGQKQEAZDE">  justify-content: center; /*aet*/</code></pre>
+				<pre><code class="SASNLXGQKQEAZDE">  border-radius: 0.375rem; /*aks*/</code></pre>
+				<pre><code class="SASNLXGQKQEAZDE">  --tw-bg-opacity: 1;</code></pre>
+				<pre><code class="SASNLXGQKQEAZDE">  background-color: rgb(79 70 229 / var(--tw-bg-opacity)); /*ask*/</code></pre>
+				<pre><code class="SASNLXGQKQEAZDE">  padding-left: 0.75rem;</code></pre>
+				<pre><code class="SASNLXGQKQEAZDE">  padding-right: 0.75rem; /*asv*/</code></pre>
+				<pre><code class="SASNLXGQKQEAZDE">  padding-top: 0.375rem;</code></pre>
+				<pre><code class="SASNLXGQKQEAZDE">  padding-bottom: 0.375rem; /*axq*/</code></pre>
+				<pre><code class="SASNLXGQKQEAZDE">  font-size: 0.875rem;</code></pre>
+				<pre><code class="SASNLXGQKQEAZDE">  line-height: 1.5rem; /*ayc*/</code></pre>
+				<pre><code class="SASNLXGQKQEAZDE">  font-weight: 600; /*bbv*/</code></pre>
+				<pre><code class="SASNLXGQKQEAZDE">  --tw-text-opacity: 1;</code></pre>
+				<pre><code class="SASNLXGQKQEAZDE">  color: rgb(255 255 255 / var(--tw-text-opacity));</code></pre>
+				<pre><code class="SASNLXGQKQEAZDE">}</code></pre>
+				<pre><code class="SASNLXGQKQEAZDE">.CIPRCOUKLBVBOGB:hover {</code></pre>
+				<pre><code class="SASNLXGQKQEAZDE">  /*bkp*/</code></pre>
+				<pre><code class="SASNLXGQKQEAZDE">  --tw-bg-opacity: 1;</code></pre>
+				<pre><code class="SASNLXGQKQEAZDE">  background-color: rgb(99 102 241 / var(--tw-bg-opacity));</code></pre>
+				<pre><code class="SASNLXGQKQEAZDE">}</code></pre>
+				<pre><code class="SASNLXGQKQEAZDE">.CIPRCOUKLBVBOGB:focus-visible {</code></pre>
+				<pre><code class="SASNLXGQKQEAZDE">  /*bqv*/</code></pre>
+				<pre><code class="SASNLXGQKQEAZDE">  outline-style: solid; /*bqw*/</code></pre>
+				<pre><code class="SASNLXGQKQEAZDE">  outline-width: 2px; /*bqy*/</code></pre>
+				<pre><code class="SASNLXGQKQEAZDE">  outline-offset: 2px; /*brf*/</code></pre>
+				<pre><code class="SASNLXGQKQEAZDE">  outline-color: #4f46e5;</code></pre>
+				<pre><code class="SASNLXGQKQEAZDE">}</code></pre>
+			</div>
+		</div>
+	</div>
 </section>
