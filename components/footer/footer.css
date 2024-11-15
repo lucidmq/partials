@@ -114,6 +114,12 @@
   text-align: center;
 }
 
+.burak-link {
+  text-decoration: underline;
+  color: black;
+  font-weight: 500;
+}
+
 @media (min-width: 640px) {
   .fooer-main {
     /* sm:px-6 lg:px-8 */
