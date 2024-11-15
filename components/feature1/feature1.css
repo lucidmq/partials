@@ -118,7 +118,7 @@
     width: 4rem;
     /* _esBfowTK_fr_CH16zZ1  */
     height: 4rem;
-    /* text-primary-600  */
+    color: var(--primary-color)
 }
 
 .icon2 {
@@ -129,9 +129,7 @@
     width: 4rem;
     /* _esBfowTK_fr_CH16zZ1  */
     height: 4rem;
-    /* hJSDce5Yh6B4sQ4gEw_E  */
-    --tw-text-opacity: 1;
-    color: rgb(126 58 242/var(--tw-text-opacity))
+    color: var(--primary-color)
     /* u7pG6wAqTFwyCuKgNh03 */
 }
 
