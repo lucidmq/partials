@@ -2,7 +2,6 @@
 //This happens on load since we go through all of the link tags
 window.onload = function() {
     var anchors = document.getElementsByTagName('a'); // get all <a> tags
-    console.log(anchors)
     if (anchors) {
         // Use one of the following lines, based on what you require:
         for (let anchor of anchors) {

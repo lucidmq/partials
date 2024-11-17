@@ -7,7 +7,9 @@ import (
 	"io"
 	"log"
 	"os"
+	"partials/types"
 	"path"
+	"path/filepath"
 	"regexp"
 	"strings"
 )
@@ -19,25 +21,34 @@ const (
 	PARTIALS_DIRECTORY  = "partials/components/"
 	STATIC_BASE_PATH    = "web/static"
 	STYLES_WEB_PATH     = "/static/styles/"
+	JS_WEB_PATH         = "/static/js/"
 )
 
 var TemplatesMap = map[string]*template.Template{}
 
-func BaseTemplateGenerator(starting_template string, templateName string, templates_to_bring []string) (*template.Template, []string, error) {
+func BaseTemplateGenerator(templater *types.BaseTemplatePageData, starting_template string) (*template.Template, error) {
+	templateName := templater.TemplateName
+	templates_to_bring := templater.Partials
+
 	cssFiles := []string{}
+	jsFiles := []string{}
+
 	templates_to_fetch := append([]string{"topbar", "footer"}, templates_to_bring...)
 	all_templates := []string{}
 
 	val, ok := TemplatesMap[templateName]
-
 	// If the key exists
 	if ok {
 		log.Printf("Found template %s \n", templateName)
 		for _, template := range templates_to_fetch {
 			css_file_path := STYLES_WEB_PATH + template + CSS_FILE_EXTENSION
+			js_file_path := JS_WEB_PATH + template + JS_FILE_EXTENSION
 			cssFiles = append(cssFiles, css_file_path)
+			jsFiles = append(jsFiles, js_file_path)
 		}
-		return val, cssFiles, nil
+		templater.CssFiles = cssFiles
+		templater.JsFiles = jsFiles
+		return val, nil
 	}
 	log.Printf("Generating template %s \n", templateName)
 	var template_builder_string strings.Builder
@@ -45,15 +56,23 @@ func BaseTemplateGenerator(starting_template string, templateName string, templa
 		template_locations := PARTIALS_DIRECTORY + template + "/" + template + HTMl_FILE_EXTENSION
 		all_templates = append(all_templates, template_locations)
 		css_file_path := STYLES_WEB_PATH + template + CSS_FILE_EXTENSION
+		js_file_path := JS_WEB_PATH + template + JS_FILE_EXTENSION
 		cssFiles = append(cssFiles, css_file_path)
+		jsFiles = append(jsFiles, js_file_path)
 		if template != "topbar" && template != "footer" {
 			formatted_template_string := fmt.Sprintf("{{ template \"%s.html\" . }}\n", template)
 			template_builder_string.WriteString(formatted_template_string)
 		}
 	}
+
+	// Set our css and our js files
+	templater.CssFiles = cssFiles
+	templater.JsFiles = jsFiles
+
+	// Start Templating our inside template
 	fileContents, err := os.ReadFile(starting_template)
 	if err != nil {
-		return nil, cssFiles, err
+		return nil, err
 	}
 	templateString := strings.Replace(string(fileContents), "#replace_me#", template_builder_string.String(), 1)
 
@@ -61,16 +80,15 @@ func BaseTemplateGenerator(starting_template string, templateName string, templa
 
 	tmpl, err := template.New(templateName).Funcs(funcMap).Parse(templateString)
 	if err != nil {
-		return nil, cssFiles, err
+		return nil, err
 	}
-	_, err = tmpl.ParseFiles(
-		all_templates...,
-	)
+	_, err = tmpl.ParseFiles(all_templates...)
 	if err != nil {
-		return nil, cssFiles, err
+		return nil, err
 	}
+
 	TemplatesMap[templateName] = tmpl
-	return tmpl, cssFiles, nil
+	return tmpl, nil
 }
 
 func CompileAllAssets() {
@@ -113,20 +131,8 @@ func CompileGivenAssets(templateNames []string) {
 }
 
 func assetCompiler(directories_to_build []string) {
-	// open JS output file
-	js_file := STATIC_BASE_PATH + "/index.js"
-	fo, err := os.Create(js_file)
-	if err != nil {
-		log.Fatal(err)
-	}
-	// close fo on exit and check for its returned error
-	defer func() {
-		if err := fo.Close(); err != nil {
-			log.Fatal(err)
-		}
-	}()
-
 	SYLES_OUTPUT_DIRECTORY := STATIC_BASE_PATH + "/styles/"
+	JS_OUTPUT_DIRECOTRY := STATIC_BASE_PATH + "/js/"
 
 	for _, directory := range directories_to_build {
 		src_dictory_path := PARTIALS_DIRECTORY + directory
@@ -143,14 +149,18 @@ func assetCompiler(directories_to_build []string) {
 			case CSS_FILE_EXTENSION:
 				src_css_file := src_dictory_path + "/" + file.Name()
 				output_css_file := SYLES_OUTPUT_DIRECTORY + file.Name()
-				_, err := cssCopy(src_css_file, output_css_file)
+				err := symLinker(src_css_file, output_css_file)
+				// _, err := cssCopy(src_css_file, output_css_file)
 				if err != nil {
 					log.Fatalln(err)
 				}
 			case JS_FILE_EXTENSION:
 				src_js_file := src_dictory_path + "/" + file.Name()
-				log.Println("writing to js file")
-				js_writer(fo, src_js_file)
+				output_js_file := JS_OUTPUT_DIRECOTRY + file.Name()
+				err := symLinker(src_js_file, output_js_file)
+				if err != nil {
+					log.Fatalln()
+				}
 			case HTMl_FILE_EXTENSION:
 				log.Println(file.Name(), extension)
 			default:
@@ -158,6 +168,28 @@ func assetCompiler(directories_to_build []string) {
 			}
 		}
 	}
+}
+
+func symLinker(src, dst string) error {
+	fullSrcPath, err := filepath.Abs(src)
+	if err != nil {
+		return err
+	}
+	fullDstPath, err := filepath.Abs(dst)
+	if err != nil {
+		return err
+	}
+
+	// Remove the symlink if it already exists
+	if _, err := os.Lstat(fullDstPath); err == nil {
+		err = os.Remove(fullDstPath)
+		if err != nil {
+			return err
+		}
+	}
+
+	err = os.Symlink(fullSrcPath, fullDstPath)
+	return err
 }
 
 var comment_re = regexp.MustCompile("(?s)//.*?\n|/\\*.*?\\*/")

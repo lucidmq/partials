@@ -61,6 +61,14 @@
     width: auto;
 }
 
+.topbar_logo_image{
+    /* h-10  */
+    height: 2rem;
+    /* w-auto */
+    width: auto;
+    border-radius: 9999px;
+}
+
 .main_links_container {
     /* hidden */
     display: none;

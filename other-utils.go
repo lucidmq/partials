@@ -45,6 +45,37 @@ func GetBaseHeaderTags(title string, description string) template.HTML {
 	return template.HTML(meta_sb.String())
 }
 
+func GetOgMetaTag(siteName string, slug string, imgUrl string, title string, description string) template.HTML {
+	websiteLink := "https://%s%s"
+	pageUrl := fmt.Sprintf(websiteLink, siteName, slug)
+	imgURL := fmt.Sprintf(websiteLink, siteName, imgUrl)
+	ogTagBase := "<meta property=\"%s\" content=\"%s\" />"
+	twitterTagBase := "<meta name=\"%s\" content=\"%s\" />"
+	var og_tags_sb strings.Builder
+	og_tags_sb.WriteString("\n")
+	og_tags_sb.WriteString(fmt.Sprintf(ogTagBase, "og:locale", "en_US"))
+	og_tags_sb.WriteString("\n")
+	og_tags_sb.WriteString(fmt.Sprintf(ogTagBase, "og:title", title))
+	og_tags_sb.WriteString("\n")
+	og_tags_sb.WriteString(fmt.Sprintf(ogTagBase, "og:description", description))
+	og_tags_sb.WriteString("\n")
+	// Fix this image size...
+	og_tags_sb.WriteString(fmt.Sprintf(ogTagBase, "og:image", imgURL))
+	og_tags_sb.WriteString("\n")
+	// og_tags_sb.WriteString(fmt.Sprintf(ogTagBase, "og:image:width", "500"))
+	// og_tags_sb.WriteString("\n")
+	// og_tags_sb.WriteString(fmt.Sprintf(ogTagBase, "og:image:height", "500"))
+	// og_tags_sb.WriteString("\n")
+	og_tags_sb.WriteString(fmt.Sprintf(ogTagBase, "og:site_name", siteName))
+	og_tags_sb.WriteString("\n")
+	og_tags_sb.WriteString(fmt.Sprintf(ogTagBase, "og:url", pageUrl))
+	og_tags_sb.WriteString("\n")
+	og_tags_sb.WriteString(fmt.Sprintf(twitterTagBase, "twitter:card", "summary_large_image"))
+	og_tags_sb.WriteString("\n")
+	og_tags_sb.WriteString(fmt.Sprintf(twitterTagBase, "twitter:image", imgURL))
+	return template.HTML(og_tags_sb.String())
+}
+
 var testHTMLTemplate = `
     <div class="FVRLGYXIOVVZXPN">
 	  {{ range $index, $element := .}}
