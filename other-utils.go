@@ -5,6 +5,7 @@ import (
 	"bytes"
 	"fmt"
 	"html/template"
+	"io"
 	"log"
 	"os"
 	"strconv"
@@ -118,4 +119,46 @@ func HtmlCodeFormatter(filePath string) string {
 	}
 
 	return out.String()
+}
+
+func CombineFilesWithSpace(files []string, outputFile string) error {
+	log.Println("Combining CSS file")
+	// Create or overwrite the output file
+	out, err := os.Create(outputFile)
+	if err != nil {
+		log.Println(err)
+		return fmt.Errorf("failed to create output file: %v", err)
+	}
+	defer out.Close()
+
+	for i, file := range files {
+		if strings.Contains(file, "topbar") {
+			continue
+		} else if strings.Contains(file, "footer") {
+			continue
+		}
+		file = "web" + file
+		// Open each input file
+		in, err := os.Open(file)
+		if err != nil {
+			return fmt.Errorf("failed to open file %s: %v", file, err)
+		}
+
+		// Copy the contents of the file to the output file
+		_, err = io.Copy(out, in)
+		in.Close()
+		if err != nil {
+			return fmt.Errorf("failed to copy contents of file %s: %v", file, err)
+		}
+
+		// Add a space after each file's contents except the last one
+		if i < len(files)-1 {
+			_, err = out.WriteString(" ")
+			if err != nil {
+				return fmt.Errorf("failed to write space to output file: %v", err)
+			}
+		}
+	}
+
+	return nil
 }

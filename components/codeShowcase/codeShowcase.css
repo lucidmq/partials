@@ -1,4 +1,6 @@
 .codeShowcaseWrapper {
+  --tw-bg-opacity: 1;
+  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
