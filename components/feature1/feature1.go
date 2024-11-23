@@ -29,3 +29,16 @@ func Cast_to_feature1(mapper map[string]interface{}) Feature1 {
 	log.Fatal("Not found in the map")
 	return v
 }
+
+func NewDummy() Feature1 {
+	return Feature1{
+		Title:         "Effortless and Powerful Data Analysis",
+		Subtitle:      "Create professional-grade reports in seconds. All reports are fully editable, allowing you to adjust data as your needs evolve.",
+		Icon1Title:    "Make Confident Decisions with Clear Insights",
+		Icon1Subtitle: "Generate detailed reports quickly—visualize key metrics, refine your analysis, and stay in control of your outcomes.",
+		Icon2Title:    "User-Friendly Input for Fast Results",
+		Icon2Subtitle: "Designed for simplicity—no advanced knowledge required. Just input your details and get accurate results instantly.",
+		LinkText:      "Try It Free Today",
+		LinkPath:      "#",
+	}
+}

@@ -29,3 +29,16 @@ func Cast_to_heroForm(mapper map[string]interface{}) HeroForm {
 	log.Fatal("Not found in the map")
 	return v
 }
+
+func NewDummy() HeroForm {
+	return HeroForm{
+		Title:             "Streamline Your Workflow",
+		Subtitle:          "Discover the platform designed to simplify tasks and boost productivity",
+		HoverText:         "#1 Tool For Workflows",
+		ButtonTitle:       "Try Now",
+		FormLink:          "#",
+		AuthorityTitle:    "10,000+ Hours Saved",
+		AuthoritySubtitle: "Join those who have ditched bad workflows",
+		AuthorityNumber:   "100+",
+	}
+}

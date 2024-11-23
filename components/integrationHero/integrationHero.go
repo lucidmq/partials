@@ -25,3 +25,12 @@ func Cast_to_integration_hero(mapper map[string]interface{}) IntegrationHero {
 	log.Fatal("Not found in the map")
 	return v
 }
+
+func NewDummy() IntegrationHero {
+	return IntegrationHero{
+		App1:              "Shopify",
+		App2:              "GitHub",
+		App1ImageLocation: "https://img.logo.dev/shopify.com",
+		App2ImageLocation: "https://img.logo.dev/github.com",
+	}
+}

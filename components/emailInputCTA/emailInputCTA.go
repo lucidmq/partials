@@ -25,3 +25,12 @@ func Cast_to_emailInputCTA(mapper map[string]interface{}) EmailInputCTA {
 	log.Fatal("Not found in the map")
 	return v
 }
+
+func NewDummy() EmailInputCTA {
+	return EmailInputCTA{
+		Title:      "Streamline Your Workflow",
+		Subtitle:   "Discover the platform designed to simplify tasks, boost productivity, and scale your business effortlessly.",
+		ButtonText: "Get Started",
+		Link:       "#",
+	}
+}

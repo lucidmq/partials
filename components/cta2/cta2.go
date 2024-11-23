@@ -30,3 +30,12 @@ func Cast_to_cta2(mapper map[string]interface{}) Cta2 {
 	log.Fatal("Not found in the map")
 	return v
 }
+
+func NewDummy() Cta2 {
+	return Cta2{
+		Title:       "Streamline Your Workflow",
+		Description: "Discover the platform designed to simplify tasks, boost productivity, and scale your business effortlessly.",
+		ButtonText:  "Get Started",
+		ButtonLink:  "#",
+	}
+}
