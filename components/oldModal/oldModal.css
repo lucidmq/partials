@@ -203,7 +203,7 @@
 	--tw-ring-inset: inset;
 	/* bcf  */
 	--tw-ring-opacity: 1;
-	--tw-ring-color: rgb(209 213 219 / var(--tw-ring-opacity));
+	--tw-ring-color: rgb(209 213 219 / 1);
 	/* cid  */
 	font-size: 0.875rem;
     line-height: 1.25rem;

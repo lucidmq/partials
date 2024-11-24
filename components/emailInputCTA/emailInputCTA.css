@@ -225,8 +225,8 @@
   /*.bni*/
   --tw-ring-inset: inset;
   /*.boe*/
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(255 255 255 / var(--tw-ring-opacity));
+
+  --tw-ring-color: rgb(255 255 255 / 1);
 }
 
 @media (min-width: 640px) {

@@ -163,8 +163,8 @@
                 /* bbw  */
                 --tw-ring-inset: inset;
                 /* bce  */
-                --tw-ring-opacity: 1;
-                --tw-ring-color: rgb(209 213 219 / var(--tw-ring-opacity));                
+              
+                --tw-ring-color: rgb(209 213 219 / 1);                
                 /* cia (min-width: 640px) */
                 font-size: 0.875rem;
                 line-height: 1.25rem;
@@ -186,8 +186,8 @@
                 /* bne  */
                 --tw-ring-inset: inset;
                 /* bnq  */
-                --tw-ring-opacity: 1;
-                --tw-ring-color: rgb(79 70 229 / var(--tw-ring-opacity));
+              
+                --tw-ring-color: rgb(79 70 229 / 1);
             }
         }
 
@@ -349,8 +349,8 @@
         /* bbw */
         --tw-ring-inset: inset;
         /* bce */
-        --tw-ring-opacity: 1;
-        --tw-ring-color: rgb(209 213 219 / var(--tw-ring-opacity));
+      
+        --tw-ring-color: rgb(209 213 219 / 1);
 
         .social-svg {
             /* nz */

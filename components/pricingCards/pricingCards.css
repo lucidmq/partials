@@ -273,7 +273,7 @@
     line-height: 1.5rem;
     /* ring-blue-700  */
     --tw-ring-color: var(--primary-color);
-    /* --tw-ring-color: rgb(51 65 85/var(--tw-ring-opacity)); */
+    /* --tw-ring-color: rgb(51 65 85/1); */
     /* text-grey */
     color: var(--primary-color);
     /* mt-8 */
@@ -282,16 +282,16 @@
 
 .side-get-started-button:active {
     /* active:ring-slate-700  */
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgb(51 65 85/var(--tw-ring-opacity));
+  
+    --tw-ring-color: rgb(51 65 85/1);
     /* active:text-slate-400  */
     
     color: rgb(148 163 184/1);
 }
 .side-get-started-button:hover {
     /* hover:ring-slate-500  */
-    --tw-ring-opacity: 1;
-    --tw-ring-color: rgb(100 116 139/var(--tw-ring-opacity));
+  
+    --tw-ring-color: rgb(100 116 139/1);
 }
 .side-get-started-button:focus {
     /* focus:outline-none  */

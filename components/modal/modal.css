@@ -215,8 +215,8 @@
   /*bdy*/
   --tw-ring-inset: inset;
   /*beg*/
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(209 213 219 / var(--tw-ring-opacity));
+
+  --tw-ring-color: rgb(209 213 219 / 1);
 }
 
 .WYARAYUFKKDMHFD::-moz-placeholder {
@@ -249,8 +249,8 @@
 
   /*bov*/
 
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(79 70 229 / var(--tw-ring-opacity));
+
+  --tw-ring-color: rgb(79 70 229 / 1);
 }
 
 @media (min-width: 640px) {

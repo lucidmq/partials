@@ -362,17 +362,17 @@
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow),
     var(--tw-shadow, 0 0 #0000);
   /*bxh*/
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(17 24 39 / var(--tw-ring-opacity));
+
+  --tw-ring-color: rgb(17 24 39 / 1);
   /*bxi*/
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(79 70 229 / var(--tw-ring-opacity));
+
+  --tw-ring-color: rgb(79 70 229 / 1);
   /*bxj*/
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(14 165 233 / var(--tw-ring-opacity));
+
+  --tw-ring-color: rgb(14 165 233 / 1);
   /*bxk*/
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(99 102 241 / var(--tw-ring-opacity));
+
+  --tw-ring-color: rgb(99 102 241 / 1);
   /*bxl*/
   --tw-ring-offset-width: 2px;
   /*bxm*/
@@ -635,8 +635,8 @@
   
   border-color: rgb(99 102 241 / 1);
   /*.bnt*/
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(99 102 241 / var(--tw-ring-opacity));
+
+  --tw-ring-color: rgb(99 102 241 / 1);
 }
 
 @media (min-width: 640px) {
@@ -685,8 +685,8 @@
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow),
     var(--tw-shadow, 0 0 #0000);
   /*.bnt*/
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(99 102 241 / var(--tw-ring-opacity));
+
+  --tw-ring-color: rgb(99 102 241 / 1);
   /*.boj*/
   --tw-ring-offset-width: 2px;
   /*.bon*/
@@ -873,8 +873,8 @@
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow),
     var(--tw-shadow, 0 0 #0000);
   /*.bno*/
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(17 24 39 / var(--tw-ring-opacity));
+
+  --tw-ring-color: rgb(17 24 39 / 1);
   /*.boj*/
   --tw-ring-offset-width: 2px;
 }
@@ -1039,8 +1039,8 @@
 
 .LGRGBRXVSKSYFXD:focus {
   /*.bnt*/
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(99 102 241 / var(--tw-ring-opacity));
+
+  --tw-ring-color: rgb(99 102 241 / 1);
 }
 
 .YWDJYSEOVVJUSIX {
@@ -1107,8 +1107,8 @@
   box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow),
     var(--tw-shadow, 0 0 #0000);
   /*.bnt*/
-  --tw-ring-opacity: 1;
-  --tw-ring-color: rgb(99 102 241 / var(--tw-ring-opacity));
+
+  --tw-ring-color: rgb(99 102 241 / 1);
   /*.boj*/
   --tw-ring-offset-width: 2px;
 }
