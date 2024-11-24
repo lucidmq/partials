@@ -1,7 +1,7 @@
 .allIntegrationsHero-section {
     /* alm */
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    
+    background-color: rgb(255 255 255 / 1);
     /* ase */
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -31,8 +31,8 @@
     /* adt  */
     border-radius: 0.5rem;
     /* aij  */
-    --tw-bg-opacity: 1;
-    background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+    
+    background-color: rgb(229 231 235 / 1);
     /* bbh  */
     --tw-shadow: 0 1px 3px 0 rgb(0 0 0 / 0.1), 0 1px 2px -1px rgb(0 0 0 / 0.1);
     --tw-shadow-colored: 0 1px 3px 0 var(--tw-shadow-color), 0 1px 2px -1px var(--tw-shadow-color);
@@ -78,8 +78,8 @@
     /* ab  */
     position: relative;
     /* alm  */
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    
+    background-color: rgb(255 255 255 / 1);
     /* aqu  */
     padding: 1.5rem;
 }
@@ -128,8 +128,8 @@
     align-items: center;
 
     /* alm  */
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    
+    background-color: rgb(255 255 255 / 1);
 
     /* bbs  */
     --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
@@ -152,8 +152,8 @@
     /* adt  */
     border-radius: 0.5rem;
     /* alm  */
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    
+    background-color: rgb(255 255 255 / 1);
     /* aqd  */
     -o-object-fit: cover;
     object-fit: cover;
@@ -181,8 +181,8 @@
     /* awo  */
     line-height: 1.5rem;
     /* axu */
-    --tw-text-opacity: 1;
-    color: rgb(17 24 39 / var(--tw-text-opacity));
+    
+    color: rgb(17 24 39 / 1);
 }
 
 .integration-box-link {
@@ -208,11 +208,11 @@
     /* dw  */
     top: 1.5rem;
     /* axn  */
-    --tw-text-opacity: 1;
-    color: rgb(209 213 219 / var(--tw-text-opacity));
+    
+    color: rgb(209 213 219 / 1);
     /* brj (hover?)*/
-    /* --tw-text-opacity: 1;
-    color: rgb(156 163 175 / var(--tw-text-opacity)); */
+    /* 
+    color: rgb(156 163 175 / 1); */
 }
 
 @media (min-width: 640px) {

@@ -1,7 +1,7 @@
 .pricing-section {
     /* bg-slate-900  */
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255/var(--tw-bg-opacity));
+    
+    background-color: rgb(255 255 255/1);
     /* py-20  */
     padding-top: 4rem;
     padding-bottom: 4rem;
@@ -63,8 +63,8 @@
     font-size: 1.125rem;
     line-height: 2rem;
     /* text-slate-400 */
-    --tw-text-opacity: 1;
-    color: rgb(51 65 85/var(--tw-text-opacity));
+    
+    color: rgb(51 65 85/1);
 }
 
 .pricing-cards-container {
@@ -94,8 +94,8 @@
     /* borders */
     border-width: 1px;
     /* border grey */
-    --tw-border-opacity: 1;
-    border-color: rgb(51 65 85/var(--tw-text-opacity));
+    
+    border-color: rgb(51 65 85/1);
     padding: 1.5rem;
 }
 
@@ -108,8 +108,8 @@
     font-size: 1.125rem;
     line-height: 2rem;
     /* text-white */
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255/var(--tw-text-opacity));
+    
+    color: rgb(255 255 255/1);
 }
 
 
@@ -122,8 +122,8 @@
     font-size: 1.125rem;
     line-height: 2rem;
     /* text-grey */
-    --tw-text-opacity: 1;
-    color: rgb(51 65 85/var(--tw-text-opacity));
+    
+    color: rgb(51 65 85/1);
 }
 
 .side-card-sub-text {
@@ -133,8 +133,8 @@
     font-size: 1rem;
     line-height: 1.75rem;
     /* text-grey */
-    --tw-text-opacity: 1;
-    color: rgb(51 65 85/var(--tw-text-opacity));
+    
+    color: rgb(51 65 85/1);
 }
 
 .middle-card-price-text {
@@ -150,8 +150,8 @@
     /* tracking-tight  */
     letter-spacing: -.025em;
     /* text-white */
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255/var(--tw-text-opacity))
+    
+    color: rgb(255 255 255/1)
 }
 
 .middle-per-month-text {
@@ -167,8 +167,8 @@
     /* tracking-tight  */
     letter-spacing: -.025em;
     /* text-white */
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255/var(--tw-text-opacity))
+    
+    color: rgb(255 255 255/1)
 }
 
 .card-price-text {
@@ -184,8 +184,8 @@
     /* tracking-tight  */
     letter-spacing: -.025em;
     /* text-grey */
-    --tw-text-opacity: 1;
-    color: rgb(51 65 85/var(--tw-text-opacity));
+    
+    color: rgb(51 65 85/1);
 }
 
 .per-month-text {
@@ -201,8 +201,8 @@
     /* tracking-tight  */
     letter-spacing: -.025em;
     /* text-grey */
-    --tw-text-opacity: 1;
-    color: rgb(51 65 85/var(--tw-text-opacity));
+    
+    color: rgb(51 65 85/1);
 }
 
 .side-card-feature-list {
@@ -220,8 +220,8 @@
     font-size: .875rem;
     line-height: 1.5rem;
     /* text-grey */
-    --tw-text-opacity: 1;
-    color: rgb(51 65 85/var(--tw-text-opacity));
+    
+    color: rgb(51 65 85/1);
 }
 
 .card-point-item-container {
@@ -285,8 +285,8 @@
     --tw-ring-opacity: 1;
     --tw-ring-color: rgb(51 65 85/var(--tw-ring-opacity));
     /* active:text-slate-400  */
-    --tw-text-opacity: 1;
-    color: rgb(148 163 184/var(--tw-text-opacity));
+    
+    color: rgb(148 163 184/1);
 }
 .side-get-started-button:hover {
     /* hover:ring-slate-500  */
@@ -329,8 +329,8 @@
     font-size: 1rem;
     line-height: 1.75rem;
     /* text-white */
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255/var(--tw-text-opacity));
+    
+    color: rgb(255 255 255/1);
 }
 
 .middle-card-feature-list {
@@ -348,8 +348,8 @@
     font-size: .875rem;
     line-height: 1.5rem;
     /* text-white */
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255/var(--tw-text-opacity));
+    
+    color: rgb(255 255 255/1);
 }
 
 .middle-card-bullet-svg {
@@ -364,8 +364,8 @@
     /* stroke-current */
     stroke: currentColor;
     /* text-white */
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255/var(--tw-text-opacity));
+    
+    color: rgb(255 255 255/1);
 }
 
 .middle-get-started-button {
@@ -390,11 +390,11 @@
     /* font-semibold */
     font-weight: 600;
     /* bg-white */
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255/var(--tw-bg-opacity));
+    
+    background-color: rgb(255 255 255/1);
     /* text-slate-900 */
-    --tw-text-opacity: 1;
-    color: rgb(15 23 42/var(--tw-text-opacity));
+    
+    color: rgb(15 23 42/1);
     /* mt-8 */
     margin-top: 2rem
 }
@@ -416,17 +416,17 @@
 
 .middle-get-started-button:active {
     /* active:bg-blue-200 */
-    --tw-bg-opacity: 1;
-    background-color: rgb(191 219 254/var(--tw-bg-opacity));
+    
+    background-color: rgb(191 219 254/1);
     /* active:text-slate-600 */
-    --tw-text-opacity: 1;
-    color: rgb(71 85 105/var(--tw-text-opacity));
+    
+    color: rgb(71 85 105/1);
 }
 
 .middle-get-started-button:hover {
     /* hover:bg-blue-50 */
-    --tw-bg-opacity: 1;
-    background-color: rgb(239 246 255/var(--tw-bg-opacity));
+    
+    background-color: rgb(239 246 255/1);
 }
 
 /* Small */

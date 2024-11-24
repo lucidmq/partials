@@ -1,7 +1,7 @@
 .profile-container {
     /* bg-gray-200 */
-    --tw-bg-opacity: 1;
-    background-color: rgb(229 231 235 / var(--tw-bg-opacity));
+    
+    background-color: rgb(229 231 235 / 1);
     /* flex */
     display: flex;
     /* flex-wrap */
@@ -19,8 +19,8 @@
       /* sm:w-full */
       /* md:w-2/3 */
       /* bg-white   */
-      --tw-bg-opacity: 1;
-      background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+      
+      background-color: rgb(255 255 255 / 1);
       /* transform    */
       transform: translate(var(--tw-translate-x), var(--tw-translate-y))
         rotate(var(--tw-rotate)) skew(var(--tw-skew-x)) skewY(var(--tw-skew-y))
@@ -59,8 +59,8 @@
           /* w-32 */
           width: 8rem; /* 128px */
           /* bg-white */
-          --tw-bg-opacity: 1;
-          background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+          
+          background-color: rgb(255 255 255 / 1);
           /* p-2 */
           padding: 0.5rem; /* 8px */
           /* rounded-full */
@@ -77,8 +77,8 @@
   
           .profile-title {
               /* text-gray-800 */
-              --tw-text-opacity: 1;
-              color: rgb(17 24 39 / var(--tw-text-opacity));
+              
+              color: rgb(17 24 39 / 1);
               /* text-3xl */
               font-size: 1.875rem;
               line-height: 2.25rem;
@@ -90,8 +90,8 @@
               /* mt-2 */
               margin-top: 0.5rem;
               /* text-gray-500 */
-              --tw-text-opacity: 1;
-              color: rgb(107 114 128 / var(--tw-text-opacity));
+              
+              color: rgb(107 114 128 / 1);
               /* text-sm */
               font-size: 0.875rem;
               line-height: 1.25rem;

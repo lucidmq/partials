@@ -4,8 +4,8 @@
   /* overflow-hidden  */
   overflow: hidden;
   /* bg-slate-50  */
-  --tw-bg-opacity: 1;
-  background-color: rgb(248 250 252/var(--tw-bg-opacity));
+  
+  background-color: rgb(248 250 252/1);
   /* py-20  */
   padding-top: 5rem;
   padding-bottom: 5rem;
@@ -63,8 +63,8 @@
   font-size: 2rem;
   line-height: 2.5rem;
   letter-spacing: -0.025em;
-  --tw-text-opacity: 1;
-  color: rgb(15 23 42 / var(--tw-text-opacity));
+  
+  color: rgb(15 23 42 / 1);
 
   /* font-display text-3xl tracking-tight text-slate-900 sm:text-4xl */
 }
@@ -75,8 +75,8 @@
   font-size: 1.125rem;
   line-height: 2rem;
   letter-spacing: -0.025em;
-  --tw-text-opacity: 1;
-  color: rgb(51 65 85 / var(--tw-text-opacity));
+  
+  color: rgb(51 65 85 / 1);
 }
 
 .faq-sub-section {
@@ -96,8 +96,8 @@
   font-size: 1.125rem;
   line-height: 2rem;
   line-height: 1.75rem;
-  --tw-text-opacity: 1;
-  color: rgb(15 23 42 / var(--tw-text-opacity));
+  
+  color: rgb(15 23 42 / 1);
 }
 
 .faq-col-para {
@@ -105,8 +105,8 @@
   margin-top: 1rem;
   font-size: 0.875rem;
   line-height: 1.5rem;
-  --tw-text-opacity: 1;
-  color: rgb(51 65 85 / var(--tw-text-opacity));
+  
+  color: rgb(51 65 85 / 1);
 }
 @media (min-width: 640px) {
   .faq {

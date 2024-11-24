@@ -59,12 +59,12 @@
   /*card-body*/
   position: relative;
   z-index: 20;
-  --tw-text-opacity: 1;
-  color: hsl(var(--nc) / var(--tw-text-opacity));
+  
+  color: hsl(var(--nc) / 1);
   /*bordered*/
   border-width: 1px;
-  --tw-border-opacity: 1;
-  border-color: hsl(var(--b2, var(--b1)) / var(--tw-border-opacity));
+  
+  border-color: hsl(var(--b2, var(--b1)) / 1);
   /*card-body*/
   font-size: 0.875rem;
   line-height: 1.25rem;
@@ -72,8 +72,8 @@
   height: -moz-min-content;
   height: min-content;
   /*bg-base-100*/
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--b1) / var(--tw-bg-opacity));
+  
+  background-color: hsl(var(--b1) / 1);
   /*duration-200*/
   transition-duration: 0.2s;
   /*col-span-1*/
@@ -91,8 +91,8 @@
   position: relative;
   content: "";
   z-index: 10;
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--n) / var(--tw-bg-opacity));
+  
+  background-color: hsl(var(--n) / 1);
   opacity: 0.75;
   border-radius: var(--rounded-box, 1rem);
 
@@ -127,8 +127,8 @@
     scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
 
   /*hover:bg-base-300*/
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--b3, var(--b2)) / var(--tw-bg-opacity));
+  
+  background-color: hsl(var(--b3, var(--b2)) / 1);
 }
 
 .ZYNYZXKCZHGVHKK > :not([hidden]) ~ :not([hidden]) {
@@ -255,12 +255,12 @@
 
 .LADLRIZOJKUMFDQ {
   /*badge-ghost*/
-  --tw-border-opacity: 1;
-  border-color: hsl(var(--b2, var(--b1)) / var(--tw-border-opacity));
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--b2, var(--b1)) / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: hsl(var(--bc) / var(--tw-text-opacity));
+  
+  border-color: hsl(var(--b2, var(--b1)) / 1);
+  
+  background-color: hsl(var(--b2, var(--b1)) / 1);
+  
+  color: hsl(var(--bc) / 1);
   /*badge*/
   height: 1.25rem;
   width: -moz-fit-content;
@@ -268,7 +268,7 @@
   padding-left: 0.563rem;
   padding-right: 0.563rem;
   border-width: 1px;
-  border-color: hsl(var(--n) / var(--tw-border-opacity));
+  border-color: hsl(var(--n) / 1);
   border-radius: var(--rounded-badge, 1.9rem);
   /*btn*/
   display: inline-flex;
@@ -287,11 +287,11 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
   font-size: 0.875rem;
   line-height: 1.25rem;
-  --tw-border-opacity: 1;
-  --tw-bg-opacity: 1;
-  background-color: hsl(var(--n) / var(--tw-bg-opacity));
-  --tw-text-opacity: 1;
-  color: hsl(var(--nc) / var(--tw-text-opacity));
+  
+  
+  background-color: hsl(var(--n) / 1);
+  
+  color: hsl(var(--nc) / 1);
   /*badge-sm*/
   height: 1rem;
   font-size: 0.75rem;

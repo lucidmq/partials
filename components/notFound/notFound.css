@@ -45,8 +45,8 @@
     /* aww  */
     letter-spacing: -0.025em;
     /* axu  */
-    --tw-text-opacity: 1;
-    color: rgb(17 24 39 / var(--tw-text-opacity));
+    
+    color: rgb(17 24 39 / 1);
 }
 
 .sub-text {
@@ -58,8 +58,8 @@
     /* awp  */
     line-height: 1.75rem;
     /* axr */
-    --tw-text-opacity: 1;
-    color: rgb(75 85 99 / var(--tw-text-opacity));
+    
+    color: rgb(75 85 99 / 1);
 }
 
 .link-container {

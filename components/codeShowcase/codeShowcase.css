@@ -1,6 +1,5 @@
 .codeShowcaseWrapper {
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+  background-color: rgb(255 255 255 / 1);
   margin-left: auto;
   margin-right: auto;
   padding-left: 1rem;
@@ -74,7 +73,7 @@
   overflow-x: auto;
   min-width: 18rem;
   border-radius: var(--rounded-box, 1rem);
-  --tw-bg-opacity: 1;
+
   background-color: rgb(0 0 0);
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -140,7 +139,7 @@
   justify-content: center;
   border-radius: var(--rounded-btn, 0.5rem);
   border-color: transparent;
-  border-color: oklch(var(--btn-color, var(--b2)) / var(--tw-border-opacity));
+  border-color: oklch(var(--btn-color, var(--b2)) / 1);
   padding-left: 1rem;
   padding-right: 1rem;
   text-align: center;
@@ -155,16 +154,15 @@
   animation: button-pop var(--animation-btn, 0.25s) ease-out;
   transition-property: color, background-color, border-color, opacity,
     box-shadow, transform;
-  --tw-text-opacity: 1;
-  color: var(--fallback-bc, oklch(var(--bc) / var(--tw-text-opacity)));
+  
+  color: var(--fallback-bc, oklch(var(--bc) / 1));
   --tw-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
   --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
     var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   outline-color: var(--fallback-bc, oklch(var(--bc) / 1));
-  background-color: oklch(var(--btn-color, var(--b2)) / var(--tw-bg-opacity));
-  --tw-bg-opacity: 1;
-  --tw-border-opacity: 1;
+  background-color: oklch(var(--btn-color, var(--b2)) / 1);
+
   /*glass*/
   --tw-shadow: 0 0 #0000;
   --tw-shadow-colored: 0 0 #0000;
@@ -211,21 +209,18 @@
 
 .SAFSFSRAPTFHIKS:disabled {
   /*btn*/
-  --tw-border-opacity: 0;
-  background-color: var(--fallback-n, oklch(var(--n) / var(--tw-bg-opacity)));
-  --tw-bg-opacity: 0.2;
-  color: var(--fallback-bc, oklch(var(--bc) / var(--tw-text-opacity)));
-  --tw-text-opacity: 0.2;
+  background-color: var(--fallback-n, oklch(var(--n) / 0.2));
+  color: var(--fallback-bc, oklch(var(--bc) / 0.2));
 }
 
 .SAFSFSRAPTFHIKS:btn {
   /*btn*/
-  --tw-border-opacity: 1;
-  border-color: var(--fallback-p, oklch(var(--p) / var(--tw-border-opacity)));
-  --tw-bg-opacity: 1;
-  background-color: var(--fallback-p, oklch(var(--p) / var(--tw-bg-opacity)));
-  --tw-text-opacity: 1;
-  color: var(--fallback-pc, oklch(var(--pc) / var(--tw-text-opacity)));
+
+  border-color: var(--fallback-p, oklch(var(--p) / 1));
+
+  background-color: var(--fallback-p, oklch(var(--p) / 1));
+  
+  color: var(--fallback-pc, oklch(var(--pc) / 1));
 }
 
 .SAFSFSRAPTFHIKS::focus-visible {
@@ -236,16 +231,10 @@
 @media (hover: hover) {
   .SAFSFSRAPTFHIKS {
     /*btn*/
-    --tw-border-opacity: 1;
-    border-color: var(
-      --fallback-b3,
-      oklch(var(--b3) / var(--tw-border-opacity))
-    );
-    --tw-bg-opacity: 1;
-    background-color: var(
-      --fallback-b3,
-      oklch(var(--b3) / var(--tw-bg-opacity))
-    );
+
+    border-color: var(--fallback-b3, oklch(var(--b3) / 1));
+
+    background-color: var(--fallback-b3, oklch(var(--b3) / 1));
   }
   .SAFSFSRAPTFHIKS {
     /*btn*/
@@ -302,15 +291,15 @@
   text-align: center; /*text-xl*/
   font-size: 1.5rem;
   line-height: 2rem;
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity));
+  
+  color: rgb(107 114 128 / 1);
 }
 
 /* Tab section.... */
 .EFUMGFCCWRWCMNJ {
   /*amp*/
-  --tw-bg-opacity: 1;
-  background-color: rgb(255 255 255 / var(--tw-bg-opacity)); /*asn*/
+
+  background-color: rgb(255 255 255 / 1); /*asn*/
   padding-left: 1rem;
   padding-right: 1rem; /*atj*/
   padding-top: 1.5rem;
@@ -361,13 +350,13 @@
   display: block; /*uf*/
   width: 100%; /*aet*/
   border-radius: 0.375rem; /*agy*/
-  --tw-border-opacity: 1;
-  border-color: rgb(209 213 219 / var(--tw-border-opacity));
+
+  border-color: rgb(209 213 219 / 1);
 }
 .XBPBCCJQKSDGPMA:focus {
   /*boi*/
-  --tw-border-opacity: 1;
-  border-color: rgb(99 102 241 / var(--tw-border-opacity)); /*bpn*/
+
+  border-color: rgb(99 102 241 / 1); /*bpn*/
   --tw-ring-opacity: 1;
   --tw-ring-color: rgb(99 102 241 / var(--tw-ring-opacity));
 }
@@ -384,8 +373,8 @@
 .KGWAUHIWYORVCKL {
   /*agg*/
   border-bottom-width: 1px; /*agx*/
-  --tw-border-opacity: 1;
-  border-color: rgb(229 231 235 / var(--tw-border-opacity));
+
+  border-color: rgb(229 231 235 / 1);
 }
 .JZAPSDTOOXDOZEB {
   /*ho*/
@@ -395,8 +384,8 @@
 .inactive_code_tab {
   /*aib*/
   border-color: transparent; /*aze*/
-  --tw-text-opacity: 1;
-  color: rgb(107 114 128 / var(--tw-text-opacity)); /*ry*/
+  
+  color: rgb(107 114 128 / 1); /*ry*/
   width: 50%; /*agi*/
   border-bottom-width: 2px; /*asf*/
   padding-left: 0.25rem;
@@ -410,10 +399,10 @@
 }
 .inactive_code_tab:hover {
   /*bjj*/
-  --tw-border-opacity: 1;
-  border-color: rgb(209 213 219 / var(--tw-border-opacity)); /*bmw*/
-  --tw-text-opacity: 1;
-  color: rgb(55 65 81 / var(--tw-text-opacity));
+
+  border-color: rgb(209 213 219 / 1); /*bmw*/
+  
+  color: rgb(55 65 81 / 1);
 }
 .active_code_tab {
   /*ahj*/

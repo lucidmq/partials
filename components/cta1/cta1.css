@@ -1,7 +1,7 @@
 .cta1-container {
     /* aji */
-    --tw-bg-opacity: 1;
-    background-color: rgb(224 231 255 / var(--tw-bg-opacity));
+    
+    background-color: rgb(224 231 255 / 1);
 }
 
 .cta1-subcontainer {
@@ -27,8 +27,8 @@
     /* aww  */
     letter-spacing: -0.025em;
     /* axu  */
-    --tw-text-opacity: 1;
-    color: rgb(17 24 39 / var(--tw-text-opacity));
+    
+    color: rgb(17 24 39 / 1);
 }
 
 .cta1-actions-container {
@@ -59,8 +59,8 @@
     /* awf  */
     font-weight: 600;
     /* bag  */
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
+    
+    color: rgb(255 255 255 / 1);
     /* bbm  */
     --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
     --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
@@ -91,8 +91,8 @@
     /* awo  */
     line-height: 1.5rem;
     /* axu */
-    --tw-text-opacity: 1;
-    color: rgb(17 24 39 / var(--tw-text-opacity));
+    
+    color: rgb(17 24 39 / 1);
 }
 
 @media (min-width: 640px) {

@@ -1,7 +1,7 @@
 .simpleHero-section-container {
     /* bg-white */
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    
+    background-color: rgb(255 255 255 / 1);
 }
 
 .simpleHero-container {
@@ -32,8 +32,8 @@
         /* leading-none */
         line-height: 1;
         /* text-gray-900 */
-        --tw-text-opacity: 1;
-        color: rgb(17 24 39 / var(--tw-text-opacity));
+        
+        color: rgb(17 24 39 / 1);
     }
     
     .subtitle {
@@ -45,8 +45,8 @@
         /* font-normal  */
         font-weight: 400;
         /* text-gray-500  */
-        --tw-text-opacity: 1;
-        color: rgb(107 114 128 / var(--tw-text-opacity));
+        
+        color: rgb(107 114 128 / 1);
     }
 }
 
@@ -72,11 +72,11 @@
     font-size: 0.875rem;
     line-height: 1.25rem;
     /* text-gray-700  */
-    --tw-text-opacity: 1;
-    color: rgb(55 65 81 / var(--tw-text-opacity));
+    
+    color: rgb(55 65 81 / 1);
     /* bg-gray-100  */
-    --tw-bg-opacity: 1;
-    background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+    
+    background-color: rgb(243 244 246 / 1);
     /* rounded-full  */
     border-radius: 9999px;
     /* hover:bg-gray-200 */
@@ -86,13 +86,13 @@
         font-size: 0.75rem;
         line-height: 1rem;
         /* bg-primary-600  */
-        --tw-bg-opacity: 1;
+        
         background-color: var(--primary-color);
         /* rounded-full  */
         border-radius: 9999px;
         /* text-white  */
-        --tw-text-opacity: 1;
-        color: rgb(255 255 255 / var(--tw-text-opacity));
+        
+        color: rgb(255 255 255 / 1);
         /* px-4  */
         padding-left: 1rem;
         padding-right: 1rem;
@@ -155,8 +155,8 @@
     
     .button1 {
         /* text-white */
-        --tw-text-opacity: 1;
-        color: rgb(255 255 255 / var(--tw-text-opacity));
+        
+        color: rgb(255 255 255 / 1);
         /* bg-primary-700 */
         background-color: var(--primary-color);
         /* hover:bg-primary-800 */
@@ -166,13 +166,13 @@
     
     .button2 {
         /* text-gray-900 */
-        --tw-text-opacity: 1;
-        color: rgb(17 24 39 / var(--tw-text-opacity));
+        
+        color: rgb(17 24 39 / 1);
         /* border  */
         border-width: 1px;
         /* border-gray-300  */
-        --tw-border-opacity: 1;
-        border-color: rgb(209 213 219 / var(--tw-border-opacity));
+        
+        border-color: rgb(209 213 219 / 1);
         /* hover:bg-gray-100  */
         /* focus:ring-4  */
         /* focus:ring-gray-100 */

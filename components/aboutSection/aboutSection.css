@@ -1,7 +1,6 @@
 .YHLGOVUQDHBHHCC {
     /*alt*/
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    background-color: rgb(255 255 255 / 1);
     /*ase*/
     padding-top: 6rem;
     padding-bottom: 6rem;
@@ -104,8 +103,7 @@
     /*ady*/
     border-radius: 1.5rem;
     /*aje*/
-    --tw-bg-opacity: 1;
-    background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+    background-color: rgb(17 24 39 / 1);
     /*arq*/
     padding-left: 1.5rem;
     padding-right: 1.5rem;
@@ -196,8 +194,7 @@
     /*ak*/
     inset: 0px;
     /*aje*/
-    --tw-bg-opacity: 1;
-    background-color: rgb(17 24 39 / var(--tw-bg-opacity));
+    background-color: rgb(17 24 39 / 1);
     /*bbn*/
     mix-blend-mode: multiply;
   }
@@ -290,8 +287,8 @@
     /*awx*/
     line-height: 2rem;
     /*ban*/
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
+    
+    color: rgb(255 255 255 / 1);
   }
   
   .TBFFSJFXYCMGESW {
@@ -303,16 +300,16 @@
     /*awv*/
     line-height: 1.5rem;
     /*axu*/
-    --tw-text-opacity: 1;
-    color: rgb(209 213 219 / var(--tw-text-opacity));
+    
+    color: rgb(209 213 219 / 1);
   }
   
   .LLHXMMAFZRONZMP {
     /*awm*/
     font-weight: 600;
     /*ban*/
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
+    
+    color: rgb(255 255 255 / 1);
   }
   
   .VRQMJPAJQKIESRK {
@@ -322,8 +319,8 @@
     /*aww*/
     line-height: 1.75rem;
     /*axz*/
-    --tw-text-opacity: 1;
-    color: rgb(55 65 81 / var(--tw-text-opacity));
+    
+    color: rgb(55 65 81 / 1);
   }
   
   @media (min-width: 1024px) {
@@ -343,7 +340,7 @@
     /*aww*/
     line-height: 1.75rem;
     /*ayn*/
-    --tw-text-opacity: 1;
+    
     color: var(--primary-color);
   }
   
@@ -358,8 +355,8 @@
     /*axd*/
     letter-spacing: -0.025em;
     /*ayb*/
-    --tw-text-opacity: 1;
-    color: rgb(17 24 39 / var(--tw-text-opacity));
+    
+    color: rgb(17 24 39 / 1);
   }
   
   @media (min-width: 640px) {
@@ -420,8 +417,8 @@
     /*awv*/
     line-height: 1.5rem;
     /*axy*/
-    --tw-text-opacity: 1;
-    color: rgb(75 85 99 / var(--tw-text-opacity));
+    
+    color: rgb(75 85 99 / 1);
   }
   
   .SLCEWJLEHSMVFGW {
@@ -437,8 +434,8 @@
     /*axd*/
     letter-spacing: -0.025em;
     /*ayb*/
-    --tw-text-opacity: 1;
-    color: rgb(17 24 39 / var(--tw-text-opacity));
+    
+    color: rgb(17 24 39 / 1);
   }
   
   .MNIPDXGDRVUONLU {

@@ -1,7 +1,7 @@
 .qa-container {
     /* alm */
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    
+    background-color: rgb(255 255 255 / 1);
 }
 
 .qa-wrapper {
@@ -71,8 +71,8 @@
     /* aww */
     letter-spacing: -0.025em;
     /* axu */
-    --tw-text-opacity: 1;
-    color: rgb(17 24 39 / var(--tw-text-opacity));
+    
+    color: rgb(17 24 39 / 1);
 }
 
 .qa-list {
@@ -113,8 +113,8 @@
     /* avj */
     text-align: left;
     /* axu */
-    --tw-text-opacity: 1;
-    color: rgb(17 24 39 / var(--tw-text-opacity));
+    
+    color: rgb(17 24 39 / 1);
 }
 
 .qa-question {
@@ -160,8 +160,8 @@
     /* awp */
     line-height: 1.75rem;
     /* axr */
-    --tw-text-opacity: 1;
-    color: rgb(75 85 99 / var(--tw-text-opacity));
+    
+    color: rgb(75 85 99 / 1);
 }
 
 .qa-item {

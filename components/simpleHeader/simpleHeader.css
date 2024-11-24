@@ -1,7 +1,7 @@
 .simpleHeader-section-container {
     /* alm  */
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    
+    background-color: rgb(255 255 255 / 1);
     /* arx  */
     padding-top: 3rem;
     padding-bottom: 2rem;
@@ -35,8 +35,8 @@
     /* aww  */
     letter-spacing: -0.025em;
     /* axu  */
-    --tw-text-opacity: 1;
-    color: rgb(17 24 39 / var(--tw-text-opacity));
+    
+    color: rgb(17 24 39 / 1);
 }
 
 .simpleHeader-description {
@@ -48,8 +48,8 @@
     /* awq  */
     line-height: 2rem;
     /* axr */
-    --tw-text-opacity: 1;
-    color: rgb(75 85 99 / var(--tw-text-opacity));
+    
+    color: rgb(75 85 99 / 1);
 }
 
 @media (min-width: 640px) {

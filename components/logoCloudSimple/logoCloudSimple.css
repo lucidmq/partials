@@ -1,7 +1,7 @@
 .URQVMJXBKZUJKGC {
     /*alt*/
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    
+    background-color: rgb(255 255 255 / 1);
     /*ase*/
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -58,8 +58,8 @@
     /*awx*/
     line-height: 2rem;
     /*ayb*/
-    --tw-text-opacity: 1;
-    color: rgb(17 24 39 / var(--tw-text-opacity));
+    
+    color: rgb(17 24 39 / 1);
   }
   
   .BLEKFQYFGYETIGU {

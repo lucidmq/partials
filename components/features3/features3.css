@@ -1,7 +1,7 @@
 .features3-section-container {
     /* alm  */
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    
+    background-color: rgb(255 255 255 / 1);
     /* arx  */
     padding-top: 6rem;
     padding-bottom: 6rem;
@@ -49,8 +49,8 @@
     /* aww  */
     letter-spacing: -0.025em;
     /* axu  */
-    --tw-text-opacity: 1;
-    color: rgb(17 24 39 / var(--tw-text-opacity));
+    
+    color: rgb(17 24 39 / 1);
 }
 
 .features3-description {
@@ -62,8 +62,8 @@
     /* awq  */
     line-height: 2rem;
     /* axr */
-    --tw-text-opacity: 1;
-    color: rgb(75 85 99 / var(--tw-text-opacity));
+    
+    color: rgb(75 85 99 / 1);
 }
 
 .features3-features-container {
@@ -113,8 +113,8 @@
     /* awp  */
     line-height: 1.75rem;
     /* axu  */
-    --tw-text-opacity: 1;
-    color: rgb(17 24 39 / var(--tw-text-opacity));
+    
+    color: rgb(17 24 39 / 1);
 }
 
 .features3-svg {
@@ -143,8 +143,8 @@
     /* awp  */
     line-height: 1.75rem;
     /* axr */
-    --tw-text-opacity: 1;
-    color: rgb(75 85 99 / var(--tw-text-opacity));
+    
+    color: rgb(75 85 99 / 1);
 }
 
 .decription-details-text {

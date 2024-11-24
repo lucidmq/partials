@@ -56,8 +56,8 @@
     /* tracking-tight */
     letter-spacing: -.025em;
     /* text-white */
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255/var(--tw-text-opacity));
+    
+    color: rgb(255 255 255/1);
 }
 
 .features-title-subtext {
@@ -69,8 +69,8 @@
     /* tracking-tight */
     letter-spacing: -.025em;
     /* text-blue-100 */
-    --tw-text-opacity: 1;
-    color: rgb(219 234 254/var(--tw-text-opacity));
+    
+    color: rgb(219 234 254/1);
 }
 
 .slection-button {
@@ -144,8 +144,8 @@
     padding-top: .25rem;
     padding-bottom: .25rem;
     /* bg-white  */
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255/var(--tw-bg-opacity));
+    
+    background-color: rgb(255 255 255/1);
 }
 
 .tab-button-selected {
@@ -177,8 +177,8 @@
     font-size: .875rem;
     line-height: 1.5rem;
     /* text-white */
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255/var(--tw-text-opacity));
+    
+    color: rgb(255 255 255/1);
 }
 
 .tab-container {
@@ -209,14 +209,14 @@
     line-height: 2rem;
     /* ui-not-focus-visible:outline-none  */
     /* text-blue-100  */
-    --tw-text-opacity: 1;
-    color: rgb(219 234 254/var(--tw-text-opacity));
+    
+    color: rgb(219 234 254/1);
 }
 
 .tab-button:hover {
     /* hover:text-white  */
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255/var(--tw-text-opacity));
+    
+    color: rgb(255 255 255/1);
 }
 
 .section-text-2 {
@@ -228,14 +228,14 @@
     font-size: .875rem;
     line-height: 1.5rem;
     /* text-blue-100  */
-    --tw-text-opacity: 1;
-    color: rgb(219 234 254/var(--tw-text-opacity));
+    
+    color: rgb(219 234 254/1);
 }
 
 .section-text-2:hover {
     /* group-hover:text-white */
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255/var(--tw-text-opacity));
+    
+    color: rgb(255 255 255/1);
 }
 
 
@@ -278,8 +278,8 @@
     font-size: 1rem;
     line-height: 1.75rem;
     /* text-white  */
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255/var(--tw-text-opacity));
+    
+    color: rgb(255 255 255/1);
 }
 
 .section-container9 {
@@ -292,8 +292,8 @@
     /* rounded-xl  */
     border-radius: .75rem;
     /* bg-slate-50  */
-    /* --tw-bg-opacity: 1;
-    background-color: rgb(100 116 139/var(--tw-bg-opacity)); */
+    /* 
+    background-color: rgb(100 116 139/1); */
     /* shadow-xl  */
     /* --tw-shadow: 0 20px 25px -5px rgba(0,0,0,.1),0 8px 10px -6px rgba(0,0,0,.1);
     --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color),0 8px 10px -6px var(--tw-shadow-color);
@@ -462,8 +462,8 @@
 
     .tab-button-selected {
         /* lg:text-white */
-        --tw-text-opacity: 1;
-        color: rgb(255 255 255/var(--tw-text-opacity));
+        
+        color: rgb(255 255 255/1);
     }
 
     .tabButton-span {
@@ -498,8 +498,8 @@
 
     .tab-button {
         /* lg:text-white */
-        --tw-text-opacity: 1;
-        color: rgb(255 255 255/var(--tw-text-opacity));
+        
+        color: rgb(255 255 255/1);
     }
 
     .section-text-2 {

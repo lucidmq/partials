@@ -1,7 +1,7 @@
 .incetive1-section-container {
     /* alm  */
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    
+    background-color: rgb(255 255 255 / 1);
     /* arr */
     padding-top: 3rem;
     padding-bottom: 3rem;
@@ -9,8 +9,8 @@
 
 .incentive1-subcontainer {
     /* alm */
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    
+    background-color: rgb(255 255 255 / 1);
 }
 
 .incentive1-items-container {
@@ -78,8 +78,8 @@
     /* awd  */
     font-weight: 500;
     /* axu */
-    --tw-text-opacity: 1;
-    color: rgb(17 24 39 / var(--tw-text-opacity));
+    
+    color: rgb(17 24 39 / 1);
 }
 
 .incetive1-description {
@@ -87,8 +87,8 @@
     font-size: 0.875rem;
     line-height: 1.25rem;
     /* axq */
-    --tw-text-opacity: 1;
-    color: rgb(107 114 128 / var(--tw-text-opacity));
+    
+    color: rgb(107 114 128 / 1);
 }
 
 @media (min-width: 640px) { }

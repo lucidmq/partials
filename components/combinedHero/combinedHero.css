@@ -110,8 +110,8 @@
     /* tracking-tight */
     letter-spacing: -.025em;
     /* text-slate-900  */
-    --tw-text-opacity: 1;
-    color: rgb(15 23 42/var(--tw-text-opacity));
+    
+    color: rgb(15 23 42/1);
 }
 
 .hero_title_span {
@@ -157,8 +157,8 @@
     /* tracking-tight  */
     letter-spacing: -.025rem;
     /* text-slate-700 */
-    --tw-text-opacity: 1;
-    color: rgb(51 65 85/var(--tw-text-opacity));
+    
+    color: rgb(51 65 85/1);
 }
 
 .cta-container {

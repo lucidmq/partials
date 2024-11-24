@@ -65,8 +65,8 @@
         /* aww  */
         letter-spacing: -0.025em;
         /* axu */
-        --tw-text-opacity: 1;
-        color: rgb(17 24 39 / var(--tw-text-opacity));
+        
+        color: rgb(17 24 39 / 1);
     }
 }
 
@@ -83,8 +83,8 @@
 
     .wrapper {
         /* alm  */
-        --tw-bg-opacity: 1;
-        background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+        
+        background-color: rgb(255 255 255 / 1);
         /* arj  */
         padding-left: 1.5rem;
         padding-right: 1.5rem;
@@ -119,8 +119,8 @@
             /* awo  */
             line-height: 1.5rem;
             /* axu */
-            --tw-text-opacity: 1;
-            color: rgb(17 24 39 / var(--tw-text-opacity));
+            
+            color: rgb(17 24 39 / 1);
         }
 
         .input-wrapper {
@@ -140,8 +140,8 @@
                 padding-top: 0.375rem;
                 padding-bottom: 0.375rem;
                 /* axu  */
-                --tw-text-opacity: 1;
-                color: rgb(17 24 39 / var(--tw-text-opacity));
+                
+                color: rgb(17 24 39 / 1);
                 /* bbm  */
                 --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
                 --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
@@ -191,8 +191,8 @@
             /* adu  */
             border-radius: 0.375rem;
             /* ajp  */
-            --tw-bg-opacity: 1;
-            background-color: rgb(79 70 229 / var(--tw-bg-opacity));
+            
+            background-color: rgb(79 70 229 / 1);
             /* are  */
             padding-left: 0.75rem;
             padding-right: 0.75rem;
@@ -207,8 +207,8 @@
             /* awo  */
             line-height: 1.5rem;
             /* bag  */
-            --tw-text-opacity: 1;
-            color: rgb(255 255 255 / var(--tw-text-opacity));
+            
+            color: rgb(255 255 255 / 1);
             /* bbm  */
             --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
             --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
@@ -216,8 +216,8 @@
         }
         .submit-button:hover {
             /* bir  */
-            --tw-bg-opacity: 1;
-            background-color: rgb(99 102 241 / var(--tw-bg-opacity));
+            
+            background-color: rgb(99 102 241 / 1);
         }
         .submit-button:focus-visible {
             /* box  */
@@ -254,8 +254,8 @@
             /* afm  */
             border-top-width: 1px;
             /* afu */
-            --tw-border-opacity: 1;
-            border-color: rgb(229 231 235 / var(--tw-border-opacity));
+            
+            border-color: rgb(229 231 235 / 1);
         }
     }
 
@@ -276,14 +276,14 @@
 
         .continue-text {
             /* alm */
-            --tw-bg-opacity: 1;
-            background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+            
+            background-color: rgb(255 255 255 / 1);
             /* arj */
             padding-left: 1.5rem;
             padding-right: 1.5rem;
             /* axu */
-            --tw-text-opacity: 1;
-            color: rgb(17 24 39 / var(--tw-text-opacity));
+            
+            color: rgb(17 24 39 / 1);
         }
     }
 }
@@ -312,8 +312,8 @@
         /* adu */
         border-radius: 0.375rem;
         /* alm */
-        --tw-bg-opacity: 1;
-        background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+        
+        background-color: rgb(255 255 255 / 1);
         /* are */
         padding-left: 0.75rem;
         padding-right: 0.75rem;
@@ -326,8 +326,8 @@
         /* awf  */
         font-weight: 600;
         /* axu */
-        --tw-text-opacity: 1;
-        color: rgb(17 24 39 / var(--tw-text-opacity));
+        
+        color: rgb(17 24 39 / 1);
         /* bbm */
         --tw-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
         --tw-shadow-colored: 0 1px 2px 0 var(--tw-shadow-color);
@@ -364,8 +364,8 @@
 
     .social-link:hover {
         /* big: hover */
-        --tw-bg-opacity: 1;
-        background-color: rgb(249 250 251 / var(--tw-bg-opacity));
+        
+        background-color: rgb(249 250 251 / 1);
     }
     .social-link:focus-visible {
         /* bpp */

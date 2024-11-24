@@ -26,8 +26,8 @@
     /*n8e6ORKgPTnY6zgs5HS7*/
     border-radius: 9999px;
     /*_sKOAvqwIF0JM69g2BaC*/
-    --tw-bg-opacity: 1;
-    background-color: rgb(222 247 236 / var(--tw-bg-opacity));
+    
+    background-color: rgb(222 247 236 / 1);
   }
   
   @media (min-width: 640px) {
@@ -53,8 +53,8 @@
     /*_pwSRUXRHN5bHphyTRKz*/
     height: 2rem;
     /*soAkn7UnTd5mqIs7Xdxf*/
-    --tw-text-opacity: 1;
-    color: rgb(4 108 78 / var(--tw-text-opacity));
+    
+    color: rgb(4 108 78 / 1);
   }
   
   @media (min-width: 640px) {
@@ -81,8 +81,8 @@
     /*LYMps1kO2vF8HBymW3az*/
     font-weight: 600;
     /*g3OYBOqwXUEW4dRGogkH*/
-    --tw-text-opacity: 1;
-    color: rgb(17 24 39 / var(--tw-text-opacity));
+    
+    color: rgb(17 24 39 / 1);
     /*_MTwKeST1JpgVPLVq9Qc*/
     margin-bottom: 1rem;
     margin-top: 1rem;
@@ -93,8 +93,8 @@
   
   .OMFNBYKZPMRMKCF {
     /*K1PPCJwslha8GUIvV_Cr*/
-    --tw-text-opacity: 1;
-    color: rgb(107 114 128 / var(--tw-text-opacity));
+    
+    color: rgb(107 114 128 / 1);
   }
   
   /* Classes not found for OMFNBYKZPMRMKCF*/
@@ -102,8 +102,8 @@
   
   .YUVHBIKTZAWMDRS {
     /*g3OYBOqwXUEW4dRGogkH*/
-    --tw-text-opacity: 1;
-    color: rgb(17 24 39 / var(--tw-text-opacity));
+    
+    color: rgb(17 24 39 / 1);
     /*LYMps1kO2vF8HBymW3az*/
     font-weight: 600;
   }
@@ -128,8 +128,8 @@
     /*VPOaIHacePDZ9eYE_phl*/
     border-top-width: 1px;
     /*pxHuWvF853ck68OLN6ef*/
-    --tw-border-opacity: 1;
-    border-color: rgb(229 231 235 / var(--tw-border-opacity));
+    
+    border-color: rgb(229 231 235 / 1);
     /*UV0UXx_CGh3nufuH2fPZ*/
     padding-top: 1rem;
   }
@@ -213,8 +213,8 @@
     /*_A6LflweZRUwrcL6M2Tk*/
     font-weight: 500;
     /*wP9HMsqy6b96l2HBRbgb*/
-    --tw-text-opacity: 1;
-    color: rgb(255 255 255 / var(--tw-text-opacity));
+    
+    color: rgb(255 255 255 / 1);
   }
   
   .QOPRWSVQAIFNXOG:focus {
@@ -258,11 +258,11 @@
     /*PWreZZgitgAm_Nv4Noh9*/
     border-width: 1px;
     /*pxHuWvF853ck68OLN6ef*/
-    --tw-border-opacity: 1;
-    border-color: rgb(229 231 235 / var(--tw-border-opacity));
+    
+    border-color: rgb(229 231 235 / 1);
     /*yjGyQxv8jnYk9_MGMqLN*/
-    --tw-bg-opacity: 1;
-    background-color: rgb(255 255 255 / var(--tw-bg-opacity));
+    
+    background-color: rgb(255 255 255 / 1);
     /*bFARDnno0HUtfhktTXfR*/
     padding-left: 1.25rem;
     padding-right: 1.25rem;
@@ -275,15 +275,15 @@
     /*_A6LflweZRUwrcL6M2Tk*/
     font-weight: 500;
     /*g3OYBOqwXUEW4dRGogkH*/
-    --tw-text-opacity: 1;
-    color: rgb(17 24 39 / var(--tw-text-opacity));
+    
+    color: rgb(17 24 39 / 1);
   }
   
   .TWJEGLKRNHDZPBW:hover {
     /*DpMPWwlSESiYA8EE1xKM*/
   
-    --tw-bg-opacity: 1;
-    background-color: rgb(243 244 246 / var(--tw-bg-opacity));
+    
+    background-color: rgb(243 244 246 / 1);
   }
   
   .TWJEGLKRNHDZPBW:focus {
