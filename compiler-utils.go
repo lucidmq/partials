@@ -2,6 +2,7 @@ package partials
 
 import (
 	"bufio"
+	"errors"
 	"fmt"
 	"html/template"
 	"io"
@@ -27,6 +28,9 @@ const (
 var TemplatesMap = map[string]*template.Template{}
 
 func BaseTemplateGenerator(templater *types.BaseTemplatePageData, starting_template string) (*template.Template, error) {
+	SYLES_OUTPUT_DIRECTORY := STATIC_BASE_PATH + "/styles/"
+	JS_OUTPUT_DIRECOTRY := STATIC_BASE_PATH + "/js/"
+
 	templateName := templater.TemplateName
 	templates_to_bring := templater.Partials
 
@@ -41,10 +45,17 @@ func BaseTemplateGenerator(templater *types.BaseTemplatePageData, starting_templ
 	if ok {
 		log.Printf("Found template %s \n", templateName)
 		for _, template := range templates_to_fetch {
-			css_file_path := STYLES_WEB_PATH + template + CSS_FILE_EXTENSION
-			js_file_path := JS_WEB_PATH + template + JS_FILE_EXTENSION
-			cssFiles = append(cssFiles, css_file_path)
-			jsFiles = append(jsFiles, js_file_path)
+			baseCssPath := SYLES_OUTPUT_DIRECTORY + template + CSS_FILE_EXTENSION
+			if checkFileExists(baseCssPath) {
+				css_web_path := STYLES_WEB_PATH + template + CSS_FILE_EXTENSION
+				cssFiles = append(cssFiles, css_web_path)
+			}
+			baseJsPath := JS_OUTPUT_DIRECOTRY + template + JS_FILE_EXTENSION
+			if checkFileExists(baseJsPath) {
+				js_web_path := JS_WEB_PATH + template + JS_FILE_EXTENSION
+				jsFiles = append(jsFiles, js_web_path)
+			}
+
 		}
 		templater.CssFiles = cssFiles
 		templater.JsFiles = jsFiles
@@ -169,6 +180,19 @@ func assetCompiler(directories_to_build []string) {
 	}
 }
 
+func checkFileExists(src string) bool {
+	fullSrcPath, err := filepath.Abs(src)
+	if err != nil {
+		log.Println(err)
+		return false
+	}
+	// Check if our src file exists, if not then we just want to exit
+	if _, err := os.Stat(fullSrcPath); errors.Is(err, os.ErrNotExist) {
+		return false
+	}
+	return true
+}
+
 func symLinker(src, dst string) error {
 	fullSrcPath, err := filepath.Abs(src)
 	if err != nil {
@@ -187,8 +211,7 @@ func symLinker(src, dst string) error {
 		}
 	}
 
-	err = os.Symlink(fullSrcPath, fullDstPath)
-	return err
+	return os.Symlink(fullSrcPath, fullDstPath)
 }
 
 var comment_re = regexp.MustCompile("(?s)//.*?\n|/\\*.*?\\*/")

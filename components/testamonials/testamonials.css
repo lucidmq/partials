@@ -1,66 +1,48 @@
 .testamonial-section {
-  /* bg-slate-50  */
-  
-  background-color: rgb(248 250 252 / 1);
-  /* py-20  */
-  padding-top: 5rem;
-  padding-bottom: 5rem;
+  background-color: rgb(255 255 255 / 1);
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 }
 
 .testamonial-outer-container {
-  /* mx-auto  */
   margin-left: auto;
   margin-right: auto;
-  /* max-w-7xl  */
   max-width: 80rem;
-  /* px-4 */
   padding-left: 1rem;
   padding-right: 1rem;
 }
 
 .testamonial-box {
-  /* relative  */
   position: relative;
-  /* rounded-2xl  */
   border-radius: 1rem;
-  /* bg-white  */
-  
   background-color: rgb(255 255 255 / 1);
-  /* p-6  */
   padding: 1.5rem;
-  /* shadow-xl  */
   --tw-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1),
     0 8px 10px -6px rgba(0, 0, 0, 0.1);
   --tw-shadow-colored: 0 20px 25px -5px var(--tw-shadow-color),
     0 8px 10px -6px var(--tw-shadow-color);
-  /* shadow-slate-900/10 */
   box-shadow: var(--tw-ring-offset-shadow, 0 0 #0000),
     var(--tw-ring-shadow, 0 0 #0000), var(--tw-shadow);
   --tw-shadow-color: rgba(15, 23, 42, 0.1);
   --tw-shadow: var(--tw-shadow-colored);
 }
 .title-container {
-  /* mx-auto  */
   margin-left: auto;
   margin-right: auto;
-  /* max-w-2xl  */
   max-width: 40rem;
-  /* md:text-center */
   text-align: center;
 }
 
 .testimonial-title {
-  /* font-display  */
-  font-family: var(--font-lexend);
   /* text-3xl  */
   font-size: 2rem;
   line-height: 2.5rem;
   /* tracking-tight  */
   letter-spacing: -0.025em;
   /* text-slate-900  */
-  
   color: rgb(15 23 42 / 1);
   /* sm:text-4xl */
+  font-weight: 700;
 }
 
 .testimonial-dessc {
@@ -71,7 +53,6 @@
   line-height: 2rem;
   /* tracking-tight  */
   letter-spacing: -0.025em;
-  /* text-slate-700 */
   
   color: rgb(51 65 85 / 1);
 }
@@ -83,7 +64,6 @@
   /* tracking-tight  */
   letter-spacing: -0.025em;
   /* text-slate-900 */
-  
   color: rgb(15 23 42 / 1);
 }
 
@@ -92,9 +72,6 @@
 }
 
 .testimonial-user-name {
-  /* font-display  */
-  font-family: var(--font-lexend);
-  /* text-base  */
   font-size: 1rem;
   line-height: 1.75rem;
   /* text-slate-900 */
@@ -204,9 +181,8 @@
 
 @media (min-width: 640px) {
   .testamonial-section {
-    /* sm:py-32 */
-    padding-top: 8rem;
-    padding-bottom: 8rem;
+    padding-top: 4rem;
+    padding-bottom: 4rem;
   }
 
   .testimonial-list-container {
