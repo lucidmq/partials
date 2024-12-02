@@ -9,7 +9,6 @@
 @media (min-width: 640px) {
   .YHLGOVUQDHBHHCC {
     /*ckp*/
-
     padding-top: 8rem;
     padding-bottom: 8rem;
   }
@@ -29,7 +28,6 @@
 @media (min-width: 1024px) {
   .MEQPNZSTSDKXJHP {
     /*dit*/
-
     padding-left: 2rem;
     padding-right: 2rem;
   }
@@ -57,29 +55,17 @@
 @media (min-width: 640px) {
   .EPGTJCYSGONHTMZ {
     /*chk*/
-
     row-gap: 6rem;
   }
 }
 @media (min-width: 1024px) {
   .EPGTJCYSGONHTMZ {
     /*cys*/
-
     margin-left: 0px;
     margin-right: 0px;
-  }
-}
-@media (min-width: 1024px) {
-  .EPGTJCYSGONHTMZ {
     /*dcy*/
-
     max-width: none;
-  }
-}
-@media (min-width: 1024px) {
-  .EPGTJCYSGONHTMZ {
     /*ded*/
-
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -90,7 +76,6 @@
 @media (min-width: 1024px) {
   .XBBTHLBWXZWEYKW {
     /*dkl*/
-
     padding-right: 1rem;
   }
 }
@@ -129,41 +114,24 @@
 @media (min-width: 1024px) {
   .KVIWTZJPMTETWQR {
     /*dcw*/
-
     max-width: 32rem;
-  }
-}
-@media (min-width: 1024px) {
-  .KVIWTZJPMTETWQR {
     /*dit*/
-
     padding-left: 2rem;
     padding-right: 2rem;
-  }
-}
-@media (min-width: 1024px) {
-  .KVIWTZJPMTETWQR {
     /*dju*/
-
     padding-bottom: 2rem;
   }
 }
+
 @media (min-width: 1280px) {
   .KVIWTZJPMTETWQR {
     /*dro*/
-
     padding-left: 2.5rem;
     padding-right: 2.5rem;
-  }
-}
-@media (min-width: 1280px) {
-  .KVIWTZJPMTETWQR {
     /*dsc*/
-
     padding-bottom: 2.5rem;
   }
 }
-
 .PGUCQJBVKKPBJUV {
   /*aa*/
   position: absolute;
@@ -287,7 +255,6 @@
   /*awx*/
   line-height: 2rem;
   /*ban*/
-
   color: rgb(255 255 255 / 1);
 }
 
@@ -300,7 +267,6 @@
   /*awv*/
   line-height: 1.5rem;
   /*axu*/
-
   color: rgb(209 213 219 / 1);
 }
 
@@ -308,7 +274,6 @@
   /*awm*/
   font-weight: 600;
   /*ban*/
-
   color: rgb(255 255 255 / 1);
 }
 
@@ -319,14 +284,12 @@
   /*aww*/
   line-height: 1.75rem;
   /*axz*/
-
   color: rgb(55 65 81 / 1);
 }
 
 @media (min-width: 1024px) {
   .VRQMJPAJQKIESRK {
     /*dcw*/
-
     max-width: 32rem;
   }
 }
@@ -340,7 +303,6 @@
   /*aww*/
   line-height: 1.75rem;
   /*ayn*/
-
   color: var(--primary-color);
 }
 
@@ -355,14 +317,12 @@
   /*axd*/
   letter-spacing: -0.025em;
   /*ayb*/
-
   color: rgb(17 24 39 / 1);
 }
 
 @media (min-width: 640px) {
   .LTYPQYQFFFVYAON {
     /*cna*/
-
     font-size: 2.25rem;
     line-height: 2.5rem;
   }
@@ -403,7 +363,6 @@
 @media (min-width: 640px) {
   .KLSFQJVKYAXFOID {
     /*cfy*/
-
     grid-template-columns: repeat(4, minmax(0, 1fr));
   }
 }
@@ -417,7 +376,6 @@
   /*awv*/
   line-height: 1.5rem;
   /*axy*/
-
   color: rgb(75 85 99 / 1);
 }
 
@@ -434,7 +392,6 @@
   /*axd*/
   letter-spacing: -0.025em;
   /*ayb*/
-
   color: rgb(17 24 39 / 1);
 }
 

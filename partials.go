@@ -61,7 +61,6 @@ func GetFuncMap() template.FuncMap {
 		"add": Add,
 		"sub": Sub,
 	}
-
 	return funcMap
 }
 
@@ -72,3 +71,5 @@ func Add(a, b int) int {
 func Sub(a, b int) int {
 	return a - b
 }
+
+//https://stackoverflow.com/questions/43153133/how-to-assign-a-package-to-a-variable-in-go

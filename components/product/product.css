@@ -684,7 +684,7 @@
 .ZPHCRDJWUEAKFPZ > :not([hidden]) ~ :not([hidden]) {
   /*acn*/
   --tw-divide-opacity: 1;
-  border-color: rgb(229 231 235 / var(--tw-divide-opacity));
+  border-color: rgb(229 231 235 / 1);
 
   /*acj*/
   --tw-divide-y-reverse: 0;
@@ -846,7 +846,7 @@
 .accordion > :not([hidden]) ~ :not([hidden]) {
   /*acn*/
   --tw-divide-opacity: 1;
-  border-color: rgb(229 231 235 / var(--tw-divide-opacity));
+  border-color: rgb(229 231 235 / 1);
 
   /*acj*/
   --tw-divide-y-reverse: 0;

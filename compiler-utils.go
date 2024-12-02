@@ -150,7 +150,6 @@ func assetCompiler(directories_to_build []string) {
 				src_css_file := src_dictory_path + "/" + file.Name()
 				output_css_file := SYLES_OUTPUT_DIRECTORY + file.Name()
 				err := symLinker(src_css_file, output_css_file)
-				// _, err := cssCopy(src_css_file, output_css_file)
 				if err != nil {
 					log.Fatalln(err)
 				}
@@ -194,7 +193,7 @@ func symLinker(src, dst string) error {
 
 var comment_re = regexp.MustCompile("(?s)//.*?\n|/\\*.*?\\*/")
 
-func cssCopy(src, dst string) (int, error) {
+func CssCopy(src, dst string) (int, error) {
 	sourceFileStat, err := os.Stat(src)
 	if err != nil {
 		return 0, err

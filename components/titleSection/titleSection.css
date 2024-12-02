@@ -1,5 +1,4 @@
 .IVJALVRVVJDWEQK {
-  
   background-color: rgb(255 255 255 / 1);
   /*mx-auto*/
   margin-left: auto;
@@ -37,7 +36,6 @@
 .AXIMVLWYENADSZJ {
   /*font-semibold*/
   font-weight: 600;
-
   color: var(--primary-color);
 }
 
@@ -52,7 +50,6 @@
   /*tracking-tight*/
   letter-spacing: -0.025em;
   /*text-slate-900*/
-  
   color: rgb(15 23 42 / 1);
 }
 
@@ -65,7 +62,6 @@
   /*mt-4*/
   margin-top: 1rem;
   /*text-slate-700*/
-  
   color: rgb(51 65 85 / 1);
 }
 

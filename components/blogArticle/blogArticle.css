@@ -288,15 +288,6 @@
         margin-top: 1rem;
         table-layout: fixed;
         width: 100%;
-        /* Trying to make the table scrollable...
-        display: block;
-        overflow: auto;
-        white-space: nowrap;
-        table-layout: fixed;
-        max-width: -moz-fit-content;
-        max-width: fit-content; */
-        /* margin-left: auto;
-        margin-right: auto; */
     }
 
     td, th {
