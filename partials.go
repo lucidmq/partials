@@ -1,6 +1,7 @@
 package partials
 
 import (
+	"partials/components/aboutSection"
 	"partials/components/blogArticle"
 	"partials/components/confirmationSimple"
 	"partials/components/cta1"
@@ -58,8 +59,9 @@ func GetFuncMap() template.FuncMap {
 		featuresSimple.CONVERTER_FUNCTION_NAME:      featuresSimple.Cast_to_featuresSimple,
 		emailInputCTA.CONVERTER_FUNCTION_NAME:       emailInputCTA.Cast_to_emailInputCTA,
 		confirmationSimple.CONVERTER_FUNCTION_NAME:  confirmationSimple.Cast_to_confirmationSimple,
-		"add": Add,
-		"sub": Sub,
+		aboutSection.CONVERTER_FUNCTION_NAME:        aboutSection.Cast_to_about_section,
+		"add":                                       Add,
+		"sub":                                       Sub,
 	}
 
 	return funcMap
