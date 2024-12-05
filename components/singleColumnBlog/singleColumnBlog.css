@@ -1,6 +1,5 @@
 .blogContainerWrapper {
     /* alm  */
-    
     background-color: rgb(255 255 255 / 1);
     /* arx  */
     padding-top: 3rem;
@@ -54,14 +53,13 @@
 
 .blogArticleContainer {
     /* kw  */
-    margin-top: 2.5rem;
+    margin-top: 1.5rem;
     /* afm  */
     border-top-width: 1px;
     /* afu  */
-    
     border-color: rgb(229 231 235 / 1);
     /* aun  */
-    padding-top: 2.5rem;
+    padding-top: 1.5rem;
 }
 
 .blogArticleContainer > :not([hidden]) ~ :not([hidden]) {
@@ -239,9 +237,9 @@
 
     .blogArticleContainer {
         /* bwx  (min width 640)*/
-        margin-top: 4rem;
+        margin-top: 2rem;
         /* chc (min width 640)*/
-        padding-top: 4rem;
+        padding-top: 2rem;
     }
 }
 
