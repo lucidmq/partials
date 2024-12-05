@@ -1,0 +1,142 @@
+.faq {
+  
+  position: relative;
+  
+  overflow: hidden;
+  
+  
+  background-color: rgb(248 250 252/1);
+  
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.faq-img {
+  
+  position: absolute;
+  
+  top: 0;
+  
+  max-width: none;
+  
+  left: 50%;
+  max-width: none;
+  
+  --tw-translate-y: -25%;
+  
+  --tw-translate-x: -30%;
+
+  color: transparent;
+}
+
+.faq-main {
+  
+  margin-left: auto;
+  margin-right: auto;
+  
+  max-width: 80rem;
+  
+  padding-left: 1rem;
+  padding-right: 1rem;
+  
+  position: relative;
+}
+
+.faq-section {
+  
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 40rem;
+}
+
+.faq-sec-col {
+  
+  display: flex;
+  
+  flex-direction: column;
+  
+  row-gap: 2rem;
+}
+
+.faq-title {
+  font-family: var(--font-lexend);
+  font-size: 2rem;
+  line-height: 2.5rem;
+  letter-spacing: -0.025em;
+  
+  color: rgb(15 23 42 / 1);
+
+  
+}
+
+.faq-desc {
+  
+  margin-top: 11rem;
+  font-size: 1.125rem;
+  line-height: 2rem;
+  letter-spacing: -0.025em;
+  
+  color: rgb(51 65 85 / 1);
+}
+
+.faq-sub-section {
+  
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 4rem;
+  display: grid;
+  max-width: 40rem;
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  gap: 2rem;
+}
+
+.faq-col-title {
+  
+  font-family: var(--font-lexend);
+  font-size: 1.125rem;
+  line-height: 2rem;
+  line-height: 1.75rem;
+  
+  color: rgb(15 23 42 / 1);
+}
+
+.faq-col-para {
+  
+  margin-top: 1rem;
+  font-size: 0.875rem;
+  line-height: 1.5rem;
+  
+  color: rgb(51 65 85 / 1);
+}
+@media (min-width: 640px) {
+  .faq {
+    
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+  .faq-main {
+    
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  .faq-title {
+    font-size: 2.5rem;
+    line-height: 3.5rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .faq-main {
+    
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+  .faq-section {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .faq-sub-section {
+    max-width: none;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}

@@ -1,93 +1,93 @@
 .not-found-container {
-    /* gx  */
+    
     margin-left: auto;
     margin-right: auto;
-    /* lx  */
+    
     display: flex;
-    /* tn  */
+    
     width: 100%;
-    /* ua  */
+    
     max-width: 80rem;
-    /* un  */
+    
     flex: 1 1 auto;
-    /* yr  */
+    
     flex-direction: column;
-    /* ze  */
+    
     justify-content: center;
-    /* arj  */
+    
     padding-left: 1.5rem;
     padding-right: 1.5rem;
-    /* arx  */
+    
     padding-top: 6rem;
     padding-bottom: 6rem;
 }
 
 .small-text {
-    /* avx  */
+    
     font-size: 1rem;
     line-height: 1.5rem;
-    /* awf  */
+    
     font-weight: 600;
-    /* awq  */
+    
     line-height: 2rem;
-    /* ayg */
+    
     color: var(--primary-color);
 }
 
 .not-found-header {
-    /* lh  */
+    
     margin-top: 1rem;
-    /* avr  */
+    
     font-size: 1.875rem;
     line-height: 2.25rem;
-    /* awc  */
+    
     font-weight: 700;
-    /* aww  */
+    
     letter-spacing: -0.025em;
-    /* axu  */
+    
     
     color: rgb(17 24 39 / 1);
 }
 
 .sub-text {
-    /* lk  */
+    
     margin-top: 1.5rem;
-    /* avx  */
+    
     font-size: 1rem;
     line-height: 1.5rem;
-    /* awp  */
+    
     line-height: 1.75rem;
-    /* axr */
+    
     
     color: rgb(75 85 99 / 1);
 }
 
 .link-container {
-    /* kw */
+    
     margin-top: 2.5rem;
 }
 
 .back-home-link {
-    /* avz  */
+    
     font-size: 0.875rem;
     line-height: 1.25rem;
-    /* awf  */
+    
     font-weight: 600;
-    /* awp  */
+    
     line-height: 1.75rem;
-    /* ayg */
+    
     color: var(--primary-color);
 }
 
 @media (min-width: 640px) {
     .not-found-container {
-        /* cfp  (@media 640)*/
+        
         padding-top: 16rem;
         padding-bottom: 16rem;
     }
 
     .not-found-header {
-        /* chv (@media 640)*/
+        
         font-size: 3rem;
         line-height: 1;
     }
@@ -95,7 +95,7 @@
 }
 @media (min-width: 1024px) {
     .not-found-container {
-        /* dde (@media 1024)*/
+        
         padding-left: 2rem;
         padding-right: 2rem;
     }

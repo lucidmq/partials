@@ -202,7 +202,6 @@ func symLinker(src, dst string) error {
 	if err != nil {
 		return err
 	}
-
 	// Remove the symlink if it already exists
 	if _, err := os.Lstat(fullDstPath); err == nil {
 		err = os.Remove(fullDstPath)
@@ -210,7 +209,6 @@ func symLinker(src, dst string) error {
 			return err
 		}
 	}
-
 	return os.Symlink(fullSrcPath, fullDstPath)
 }
 

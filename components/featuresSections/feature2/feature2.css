@@ -1,0 +1,221 @@
+.features3-section-container {
+    
+    
+    background-color: rgb(255 255 255 / 1);
+    
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+.features3-section-sub-container {
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    max-width: 80rem;
+    
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+}
+
+.features3-title-header-container {
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    max-width: 42rem;
+}
+
+.features3-heading {
+    
+    font-size: 1rem;
+    line-height: 1.5rem;
+    
+    font-weight: 600;
+    
+    line-height: 1.75rem;
+    
+    color:var(--primary-color);
+}
+
+.features3-sub-title {
+    
+    margin-top: 0.5rem;
+    
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+    
+    font-weight: 700;
+    
+    letter-spacing: -0.025em;
+    
+    
+    color: rgb(17 24 39 / 1);
+}
+
+.features3-description {
+    
+    margin-top: 1.5rem;
+    
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    
+    line-height: 2rem;
+    
+    
+    color: rgb(75 85 99 / 1);
+}
+
+.features3-features-container {
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    margin-top: 4rem;
+    
+    max-width: 42rem;
+}
+
+.features3-description-list {
+    
+    display: grid;
+    
+    max-width: 36rem;
+    
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    
+    -moz-column-gap: 2rem;
+    column-gap: 2rem;
+    
+    row-gap: 4rem;
+}
+
+.features3-item-container {
+    
+    display: flex;
+    
+    flex-direction: column;
+}
+
+.features3-description-term {
+    
+    display: flex;
+    
+    align-items: center;
+    
+    -moz-column-gap: 0.75rem;
+    column-gap: 0.75rem;
+    
+    font-size: 1rem;
+    line-height: 1.5rem;
+    
+    font-weight: 600;
+    
+    line-height: 1.75rem;
+    
+    
+    color: rgb(17 24 39 / 1);
+}
+
+.features3-svg {
+    
+    height: 1.25rem;
+    
+    width: 1.25rem;
+    
+    flex: none;
+    
+    color:var(--primary-color);
+}
+
+.features3-decription-details {
+    
+    margin-top: 1rem;
+    
+    display: flex;
+    
+    flex: 1 1 auto;
+    
+    flex-direction: column;
+    
+    font-size: 1rem;
+    line-height: 1.5rem;
+    
+    line-height: 1.75rem;
+    
+    
+    color: rgb(75 85 99 / 1);
+}
+
+.decription-details-text {
+    
+    flex: 1 1 auto;
+}
+
+.learn-more-link-text {
+    
+    margin-top: 1.5rem;
+}
+
+.learn-link {
+    
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    
+    font-weight: 600;
+    
+    line-height: 1.5rem;
+    
+    color: var(--primary-color);
+}
+
+@media (min-width: 640px) {
+    .features3-section-container {
+        
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+
+    .features3-sub-title {
+        
+        font-size: 2.25rem;
+        line-height: 2.5rem;
+    }
+
+    .features3-features-container {
+        
+        margin-top: 5rem;
+        
+        margin-top: 6rem;
+        
+        max-width: none;
+    }
+}
+
+@media (min-width: 1024px) {
+    .features3-section-sub-container {
+        
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .features3-title-header-container {
+        
+        text-align: center;
+    }
+
+    .features3-features-container {
+        
+        margin-top: 6rem;
+        
+        max-width: none;
+    }
+
+    .features3-description-list {
+        
+        max-width: none;
+        
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+    
+}

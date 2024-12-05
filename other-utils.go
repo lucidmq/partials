@@ -6,8 +6,11 @@ import (
 	"fmt"
 	"html/template"
 	"io"
+	"io/fs"
 	"log"
 	"os"
+	"path"
+	"path/filepath"
 	"strconv"
 	"strings"
 )
@@ -161,4 +164,41 @@ func CombineFilesWithSpace(files []string, outputFile string) error {
 	}
 
 	return nil
+}
+
+func componentCleaner() {
+	fmt.Println("starting thing")
+	componentsDir := "components"
+	items, err := os.ReadDir(componentsDir)
+	if err != nil {
+		log.Fatal(err)
+	}
+	directoryIterator(componentsDir, items)
+}
+
+func directoryIterator(startingPath string, items []fs.DirEntry) {
+	for _, item := range items {
+		completePath := filepath.Join(startingPath, item.Name())
+		if item.IsDir() {
+			subitems, err := os.ReadDir(completePath)
+			if err != nil {
+				log.Fatal(err)
+			}
+			directoryIterator(completePath, subitems)
+		} else {
+			handlefile(completePath, item)
+		}
+	}
+}
+
+func handlefile(completePath string, item fs.DirEntry) {
+	switch extension := path.Ext(item.Name()); extension {
+	case CSS_FILE_EXTENSION:
+		// handle file there
+		fmt.Println(completePath)
+		_, err := CssCopy(completePath, completePath)
+		if err != nil {
+			log.Fatalln(err)
+		}
+	}
 }

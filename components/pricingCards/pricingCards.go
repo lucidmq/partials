@@ -31,3 +31,18 @@ func Cast_to_pricing_cards(mapper map[string]interface{}) PricingCards {
 	log.Fatal("Not found in the map")
 	return v
 }
+
+func NewDummy() PricingCards {
+	pricingCard := PricingCard{
+		Title:       "My Title",
+		Description: "My description",
+		Price:       "100",
+		Features:    []string{"feature1", "feature2", "feature3"},
+	}
+
+	return PricingCards{
+		PricingCard1: pricingCard,
+		PricingCard2: pricingCard,
+		PricingCard3: pricingCard,
+	}
+}
