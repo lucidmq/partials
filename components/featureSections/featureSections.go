@@ -1,9 +1,9 @@
-package featuressections
+package featureSections
 
 import (
-	"partials/components/featuresSections/feature1"
-	"partials/components/featuresSections/feature2"
-	"partials/components/featuresSections/featuresSimple"
+	"partials/components/featureSections/feature1"
+	"partials/components/featureSections/feature2"
+	"partials/components/featureSections/featuresSimple"
 	"text/template"
 )
 

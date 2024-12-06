@@ -1,4 +1,4 @@
-package blogsections
+package blogSections
 
 import (
 	"partials/components/blogSections/blogArticle"

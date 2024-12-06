@@ -2,8 +2,13 @@ package partials
 
 import (
 	"fmt"
-	"partials/components/blogsections"
+	"partials/components/blogSections"
 	calltoactionsections "partials/components/callToActionSections"
+	faqsections "partials/components/faqSections"
+	"partials/components/featureSections"
+	"partials/components/heroComponents"
+	"partials/components/otherComponents"
+	"partials/components/profileComponents"
 	"reflect"
 	"text/template"
 	"unicode"
@@ -21,9 +26,29 @@ func GetFuncMap() template.FuncMap {
 	addValueFuncs(m, ctaFuncs)
 	addFuncs(funcMap, ctaFuncs)
 
-	blogFunc := blogsections.GetFuncMap()
+	blogFunc := blogSections.GetFuncMap()
 	addValueFuncs(m, blogFunc)
 	addFuncs(funcMap, blogFunc)
+
+	featureSections := featureSections.GetFuncMap()
+	addValueFuncs(m, featureSections)
+	addFuncs(funcMap, featureSections)
+
+	herosComp := heroComponents.GetFuncMap()
+	addValueFuncs(m, herosComp)
+	addFuncs(funcMap, herosComp)
+
+	profComp := profileComponents.GetFuncMap()
+	addValueFuncs(m, profComp)
+	addFuncs(funcMap, profComp)
+
+	otherComps := otherComponents.GetFuncMap()
+	addValueFuncs(m, otherComps)
+	addFuncs(funcMap, profComp)
+
+	faqCops := faqsections.GetFuncMap()
+	addValueFuncs(m, faqCops)
+	addFuncs(funcMap, faqCops)
 
 	return funcMap
 }
