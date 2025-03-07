@@ -1,0 +1,25 @@
+<section class="cta1-container">
+  <div class="cta1-subcontainer">
+    {{ $cta := cast_to_cta1 .TemplateData }}
+    <h2 class="cta1-header">
+      {{$cta.Title}}<br />{{$cta.Description}}
+    </h2>
+    <div class="cta1-actions-container">
+      {{if $cta.Button1Link}}
+      <a href="{{$cta.Button1Link}}" class="cta1-action-link1">
+      {{else}}
+      <a href="#" class="cta1-action-link1" onclick="openModal(event)">
+      {{end}}
+      {{$cta.Button1Text}}
+      </a>
+      {{if $cta.Button2Link}}
+      <a href="{{$cta.Button2Link}}" class="cta1-action-link2">
+      {{else}}
+      <a href="#" class="cta1-action-link2" onclick="openModal(event)">
+      {{end}}
+        {{$cta.Button2Text}}
+        <span aria-hidden="true">→</span>
+      </a>
+    </div>
+  </div>
+</section>

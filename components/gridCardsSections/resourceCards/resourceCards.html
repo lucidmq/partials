@@ -1,0 +1,31 @@
+<section class="resourceCardsSection">
+  {{ range $index, $resourceCard := cast_to_resource_cards .TemplateData }}
+  <div class="card">
+    <div class="card-content">
+      <div class="subcard-container">
+        <a class="graphic" href="{{$resourceCard.Link}}">
+          <span class="cardImageTitle">{{$resourceCard.Title}}</span>
+        </a>
+      </div>
+      <div class="subcard-container">
+        <div class="subcard-text-container">
+          <h3 class="subcard-title">{{$resourceCard.Section1Subtitle}}</h3>
+          <p class="subcard-text">
+            {{$resourceCard.Section1Description}}
+          </p>
+        </div>
+      </div>
+      <div class="subcard-container">
+        <div class="subcard-text-container">
+          <h3 class="subcard-title">{{$resourceCard.Section2Subtitle}}</h3>
+          <ul class="subcard-points">
+            {{ range $index, $feature := $resourceCard.Section2FeaturesList }}
+              <li>{{$feature}}</li>
+            {{ end }}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  {{ end }}
+</section>

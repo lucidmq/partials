@@ -1,0 +1,135 @@
+.incetive1-section-container {
+    
+    
+    background-color: rgb(255 255 255 / 1);
+    
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.incentive1-subcontainer {
+    
+    
+    background-color: rgb(255 255 255 / 1);
+}
+
+.incentive1-items-container {
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    max-width: 80rem;
+}
+
+.incentive1-items-container > :not([hidden]) ~ :not([hidden]) {
+    
+    --tw-divide-y-reverse: 0;
+    border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+    border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+    
+    --tw-divide-opacity: 1;
+    border-color: rgb(229 231 235 / var(--tw-divide-opacity));
+}
+
+.incentive1-item-wrapper {
+    
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.incentive1-item-sub-wrapper {
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    display: flex;
+    
+    max-width: 20rem;
+    
+    align-items: center;
+    
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.incentive1-svg {
+    
+    height: 2rem;
+    
+    width: 2rem;
+    
+    flex-shrink: 0;
+    
+    color: var(--primary-color);
+}
+
+.incentive1-text-container {
+    
+    margin-left: 1rem;
+    
+    display: flex;
+    
+    flex: 1 1 auto;
+    
+    flex-direction: column-reverse;
+}
+
+.incentive1-title {
+    
+    font-weight: 500;
+    
+    
+    color: rgb(17 24 39 / 1);
+}
+
+.incetive1-description {
+    
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    
+    
+    color: rgb(107 114 128 / 1);
+}
+
+@media (min-width: 640px) { }
+
+@media (min-width: 1024px) {
+    .incentive1-items-container {
+        
+        display: flex;
+        
+        justify-content: center;
+        
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+    
+    .incentive1-items-container > :not([hidden]) ~ :not([hidden]) {
+        
+        --tw-divide-x-reverse: 0;
+        border-right-width: calc(1px * var(--tw-divide-x-reverse));
+        border-left-width: calc(1px * calc(1 - var(--tw-divide-x-reverse)));
+        
+        --tw-divide-y-reverse: 0;
+        border-top-width: calc(0px * calc(1 - var(--tw-divide-y-reverse)));
+        border-bottom-width: calc(0px * var(--tw-divide-y-reverse));
+    }
+
+    .incentive1-item-wrapper {
+        
+        width: 33.333333%;
+        
+        flex: none;
+        
+        padding-top: 0px;
+        padding-bottom: 0px;
+    }
+
+    .incentive1-item-sub-wrapper {
+        
+        max-width: none;
+        
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+ }

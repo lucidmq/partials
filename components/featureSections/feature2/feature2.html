@@ -1,0 +1,43 @@
+<section class="features3-section-container">
+  <div class="features3-section-sub-container">
+    <div class="features3-title-header-container">
+      {{$IntegrationHow := cast_to_features3 .TemplateData}}
+      <h2 class="features3-heading">{{$IntegrationHow.Subtitle}}</h2>
+      <p class="features3-sub-title">
+        {{$IntegrationHow.Title}}
+      </p>
+      <p class="features3-description">
+        {{$IntegrationHow.Description}}
+      </p>
+    </div>
+    <div class="features3-features-container">
+      <dl class="features3-description-list">
+        {{ range $step := $IntegrationHow.Steps }}
+          <div class="features3-item-container">
+            <dt class="features3-description-term">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                aria-hidden="true"
+                class="features3-svg"
+              >
+                <path
+                  fill-rule="evenodd"
+                  d="{{ $step.SvgString }}"
+                  clip-rule="evenodd"
+                ></path>
+              </svg>
+                {{$step.Title}}
+            </dt>
+            <dd class="features3-decription-details">
+              <p class="decription-details-text">
+                {{$step.Description}}
+              </p>
+            </dd>
+          </div>
+        {{ end }}
+      </dl>
+    </div>
+  </div>
+</section>

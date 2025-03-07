@@ -1,0 +1,21 @@
+<section id="get-started-today" class="get-started-today-section">
+  {{ $cta := cast_to_cta2 .TemplateData }}
+  <img
+    alt=""
+    loading="lazy"
+    width="2347"
+    height="1244"
+    decoding="async"
+    class="get-started-today-img"
+    src="{{$cta.BackgroundImagePath}}"
+  />
+  <div class="get-started-outer-container">
+    <div class="get-started-text-container">
+      <h2 class="get-started-title">{{$cta.Title}}</h2>
+      <p class="get-started-desc">
+        {{$cta.Description}}
+      </p>
+      <a class="get-started-btn" href="{{$cta.ButtonLink}}" onclick="{{$cta.ButtonFunction}}">{{$cta.ButtonText}}</a>
+    </div>
+  </div>
+</section>

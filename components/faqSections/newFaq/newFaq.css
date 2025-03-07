@@ -1,0 +1,174 @@
+.qa-container {
+    
+    
+    background-color: rgb(255 255 255 / 1);
+}
+
+.qa-wrapper {
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    max-width: 80rem;
+    
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    
+    padding-top: 6rem;
+    padding-bottom: 6rem;
+}
+
+
+
+@media (min-width: 640px) {
+    .qa-wrapper {
+        
+        padding-top: 8rem;
+        padding-bottom: 8rem;
+    }
+}
+
+
+
+@media (min-width: 1024px) {
+    .qa-wrapper {
+        
+        padding-left: 2rem;
+        padding-right: 2rem;
+        
+        padding-top: 10rem;
+        padding-bottom: 10rem;
+    }
+}
+
+.qa-content {
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    max-width: 56rem;
+    
+}
+
+.qa-content > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-y-reverse: 0;
+    border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+    border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+}
+
+.qa-content .aco > :not([hidden]) ~ :not([hidden]) {
+    border-color: rgb(17 24 39 / 0.1);
+}
+
+.qa-heading {
+    
+    font-size: 1.5rem;
+    line-height: 2rem;
+    
+    font-weight: 700;
+    
+    line-height: 2.5rem;
+    
+    letter-spacing: -0.025em;
+    
+    
+    color: rgb(17 24 39 / 1);
+}
+
+.qa-list {
+    
+    margin-top: 2.5rem;
+}
+
+.qa-list > :not([hidden]) ~ :not([hidden]) {
+    --tw-space-y-reverse: 0;
+    margin-top: calc(1.5rem * calc(1 - var(--tw-space-y-reverse)));
+    margin-bottom: calc(1.5rem * var(--tw-space-y-reverse));
+}
+
+.qa-list > :not([hidden]) ~ :not([hidden]) {
+    --tw-divide-y-reverse: 0;
+    border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+    border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+}
+
+.qa-list > :not([hidden]) ~ :not([hidden]) {
+    border-color: rgb(17 24 39 / 0.1);
+}
+
+.qa-item {
+    
+    padding-top: 1.5rem;
+}
+
+.qa-toggle-button {
+    
+    display: flex;
+    
+    width: 100%;
+    
+    align-items: flex-start;
+    
+    justify-content: space-between;
+    
+    text-align: left;
+    
+    
+    color: rgb(17 24 39 / 1);
+}
+
+.qa-question {
+    
+    font-size: 1rem;
+    line-height: 1.5rem;
+    
+    font-weight: 600;
+    
+    line-height: 1.75rem;
+}
+
+.qa-toggle-icon {
+    
+    margin-left: 1.5rem;
+    
+    display: flex;
+    
+    height: 1.75rem;
+    
+    align-items: center;
+}
+
+.qa-toggle-icon-svg {
+    
+    height: 1.5rem;
+    
+    width: 1.5rem;
+}
+
+.qa-answer  {
+    
+    margin-top: 0.5rem;
+
+    
+    padding-right: 3rem;
+}
+
+.qa-answer-text {
+    
+    font-size: 1rem;
+    line-height: 1.5rem;
+    
+    line-height: 1.75rem;
+    
+    
+    color: rgb(75 85 99 / 1);
+}
+
+.qa-item {
+    
+    padding-top: 1.5rem;
+}
+
+.hidden {
+    display: none;
+}

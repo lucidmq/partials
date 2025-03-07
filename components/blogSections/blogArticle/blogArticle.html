@@ -1,0 +1,30 @@
+<article class="articleContainer">
+    <div class="articleTitleContainer">
+        {{$blogDetails := cast_to_blog_article .TemplateData}}
+        <h1 class="articleTitle">{{$blogDetails.BlogDetails.Title}}</h1>
+        <div class="articleMeta">
+            <div class="articleAuthorContainer">
+                <img
+                    src="{{$blogDetails.BlogDetails.Authorurl}}"
+                    alt="{{$blogDetails.BlogDetails.Author}}"
+                    class="authorImage"
+                />
+                <div class="authorMetaDetailsContainer">
+                    <p class="authorText">
+                        <a>
+                        <span class="textSpanner"></span>
+                        {{$blogDetails.BlogDetails.Author}}</a>
+                    </p>
+                    <p class="authorRoleTitleText">{{$blogDetails.BlogDetails.Authorrole}}</p>
+                </div>
+            </div>
+            <div class="articleMetaDataContainer">
+                <a class="tag">{{$blogDetails.BlogDetails.Tag}}</a>
+                <time datetime="{{$blogDetails.BlogDetails.GetDateString}}" class="timeWrapper">{{$blogDetails.BlogDetails.GetMonthDateString}}</time>
+            </div>
+        </div>
+    </div>
+    <div class="articleContentsContainer">
+        {{$blogDetails.HtmlDataString}}
+    </div>
+</article>

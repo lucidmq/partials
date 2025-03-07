@@ -1,0 +1,172 @@
+.get-started-today-section{
+    
+    position : relative;
+    
+    overflow:hidden;
+    
+    background-color: var(--primary-color);
+    
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+.get-started-today-img{
+    
+    position: absolute;
+    
+    left: 50%;
+    
+    top: 50%;  
+    
+    max-width: none;
+    
+    --tw-translate-x: -50%;
+    
+    --tw-translate-y: -50%;
+
+    transform: translate(var(--tw-translate-x),var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
+    color: transparent
+
+}
+
+.get-started-outer-container{
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    max-width: 80rem;
+    
+    position: relative;
+    
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+    
+}
+.get-started-text-container{
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    max-width: 32rem;
+    
+    text-align: center;
+}
+
+
+.get-started-title{
+    
+    font-family: var(--font-lexend);
+    
+    font-size: 2rem;
+    line-height: 2.5rem;
+    
+    letter-spacing: -.025em;
+    
+    
+    color: rgb(255 255 255/1);
+    
+}
+
+.get-started-desc{
+    
+    margin-top: 1rem;
+    
+    font-size: 1.125rem;
+    line-height: 2rem;
+    
+    letter-spacing: -.025em;
+    
+    
+    color: rgb(255 255 255/1);
+ }
+
+.get-started-btn {
+    
+    display: inline-flex;
+    
+    align-items: center;
+    
+    justify-content: center;
+    
+    border-radius: 9999px;
+    
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+    font-size: .875rem;
+    line-height: 1.5rem;
+    
+    font-weight: 600;
+    
+    margin-top: 2.5rem;
+    
+    
+    background-color: rgb(255 255 255/1);
+    
+    
+    color: rgb(15 23 42/1);
+}
+
+.get-started-btn:hover {
+    
+    
+    background-color: rgb(239 246 255/1);
+}
+
+.get-started-btn:focus-visible {
+    
+    outline-width: 2px;
+    
+    outline-offset: 2px;
+    
+    outline-color: #fff;
+}
+
+.get-started-btn:focus {
+    
+    outline: 2px solid transparent;
+    outline-offset: 2px;
+}
+
+.get-started-btn:active {
+    
+    
+    background-color: rgb(191 219 254 / 1);
+    
+    
+    color: rgb(71 85 105 / 1);
+
+}
+
+@media (min-width: 640px) { 
+    .get-started-outer-container{
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    
+    }
+    .get-started-title{
+        font-size: 2.5rem;
+            line-height: 3.5rem;
+    
+    }
+
+}
+
+
+
+@media (min-width: 1024px) { 
+    .get-started-outer-container{
+        padding-left: 2rem;
+        padding-right: 2rem;
+
+    }
+
+
+}
+    
+
+

@@ -1,0 +1,12 @@
+<section class="allButtonContainer">
+  <div class="linkerWrapper">
+    {{ range $index, $socialLink := cast_to_linker .TemplateData }}
+    <a href="{{$socialLink.Link}}" class="linkBaseButton {{$socialLink.ButtonStyle}}">
+        <span class="spanner">
+            {{$socialLink.IconSvg}}
+            {{$socialLink.LinkText}}
+        </span>
+    </a>
+    {{ end }}
+  </div>
+</section>

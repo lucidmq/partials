@@ -1,0 +1,325 @@
+.IKYJGMIBHZBWZDX {
+  
+  
+  background-color: rgb(255 255 255 / 1);
+  
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+
+
+.AOOKDOEUHDOMNCS {
+  
+  margin-left: auto;
+  margin-right: auto;
+  
+  display: grid;
+  
+  max-width: 80rem;
+  
+  grid-template-columns: repeat(1, minmax(0, 1fr));
+  
+  -moz-column-gap: 2rem;
+  column-gap: 2rem;
+  
+  row-gap: 3rem;
+  
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.BZCSBFVGOOLFAHA {
+  
+  margin-left: auto;
+  margin-right: auto;
+  
+  width: 100%;
+  
+  max-width: 42rem;
+}
+
+.ENDJCGVNOGOIDPW {
+  
+  display: block;
+  
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  
+  line-height: 1.5rem;
+  
+  
+  color: rgb(75 85 99 / 1);
+}
+
+.EFWQLGPHXHFDHVS {
+  
+  margin-top: 1rem;
+  
+  font-size: 1.875rem;
+  line-height: 2.25rem;
+  
+  font-weight: 700;
+  
+  letter-spacing: -0.025em;
+  
+  
+  color: rgb(17 24 39 / 1);
+}
+
+.WXWXSBURYWFEVKQ {
+  
+  margin-top: 1rem;
+  
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  
+  line-height: 2rem;
+  
+  
+  color: rgb(75 85 99 / 1);
+}
+
+.PVMRBIYWYXATOEL {
+  
+  margin-top: 1rem;
+  
+  display: flex;
+  
+  flex-direction: column;
+  
+  justify-content: space-between;
+  
+  gap: 1.5rem;
+}
+
+.BYOCCYADNIJSISY {
+  
+  display: flex;
+}
+
+.CIQKGHQRGSUOWKR {
+  
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  
+  font-weight: 600;
+  
+  line-height: 1.5rem;
+
+  color: var(--primary-color)
+}
+
+.LFKZOFPLCKLKFMU {
+  
+  display: flex;
+}
+
+.KTJQGXOMHKCCEOI {
+  
+  display: flex;
+  
+  -moz-column-gap: 0.625rem;
+  column-gap: 0.625rem;
+  
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  
+  font-weight: 600;
+  
+  line-height: 1.5rem;
+  
+  
+  color: rgb(17 24 39 / 1);
+}
+
+.NPOLBQLTKWAYTGE {
+  
+  height: 1.5rem;
+  
+  width: 1.5rem;
+  
+  flex: none;
+  
+  border-radius: 9999px;
+  
+  
+  background-color: rgb(249 250 251 / 1);
+}
+
+.GSTEBPFGYBEGFHG {
+  
+  margin-left: auto;
+  margin-right: auto;
+  
+  width: 100%;
+  
+  max-width: 42rem;
+  
+  border-top-width: 1px;
+  
+  border-color: rgb(17 24 39 / 0.1);
+  
+  padding-top: 3rem;
+}
+
+.WNQNVFEQOONPOEI {
+  
+  margin-top: -3rem;
+  margin-bottom: -3rem;
+}
+
+.ZMRRUEFTKLHTSMD {
+  
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.FLQSJTNYFGWBKSD {
+  
+  position: relative;
+  
+  max-width: 36rem;
+}
+
+
+
+
+.QNDUCCHVSEOCZRA {
+  
+  margin-top: 0.5rem;
+  
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  
+  font-weight: 600;
+  
+  
+  color: rgb(17 24 39 / 1);
+}
+
+
+
+
+.VTSXRHONAAFTEWP {
+  
+  position: absolute;
+  
+  inset: 0px;
+}
+
+.SFBWKFJQZAQCRAM {
+  
+  margin-top: 1rem;
+  
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  
+  line-height: 1.5rem;
+  
+  
+  color: rgb(75 85 99 / 1);
+}
+
+.JBDMLCFAIAKVGXU {
+  
+  margin-top: 1rem;
+  
+  display: flex;
+}
+
+.GJWMHOWHATGTWPQ {
+  
+  position: relative;
+  
+  display: flex;
+  
+  -moz-column-gap: 0.625rem;
+  column-gap: 0.625rem;
+  
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+  
+  font-weight: 600;
+  
+  line-height: 1.5rem;
+  
+  
+  color: rgb(17 24 39 / 1);
+}
+
+@media (min-width: 640px) {
+  .IKYJGMIBHZBWZDX {
+    
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+  }
+  .AOOKDOEUHDOMNCS {
+    
+    row-gap: 4rem;
+  }
+  .EFWQLGPHXHFDHVS {
+    
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+  .PVMRBIYWYXATOEL {
+    
+    margin-top: 2rem;
+    
+    flex-direction: row-reverse;
+    
+    gap: 2rem;
+  }
+  .GSTEBPFGYBEGFHG {
+    
+    padding-top: 4rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .AOOKDOEUHDOMNCS {
+    
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+
+    
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .BZCSBFVGOOLFAHA {
+    
+    margin-left: 0px;
+    margin-right: 0px;
+    
+    max-width: 32rem;
+  }
+
+  .PVMRBIYWYXATOEL {
+    
+    margin-top: 1rem;
+    
+    flex-direction: column;
+  }
+
+  .LFKZOFPLCKLKFMU {
+    
+    border-top-width: 1px;
+    
+    border-color: rgb(17 24 39 / 0.1);
+    
+    padding-top: 2rem;
+  }
+
+  .GSTEBPFGYBEGFHG {
+    
+    margin-left: 0px;
+    margin-right: 0px;
+    
+    max-width: none;
+    
+    border-top-width: 0px;
+    
+    padding-top: 0px;
+  }
+}

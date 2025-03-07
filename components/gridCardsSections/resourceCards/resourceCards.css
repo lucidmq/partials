@@ -1,0 +1,122 @@
+.resourceCardsSection {
+  background-color: rgb(255 255 255 / 1);
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  margin-top: 1.5rem;
+  margin-bottom: 3rem;
+}
+
+.card {
+  display: flex;
+  max-width: 80rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.card-content {
+  flex-direction: column;
+  display: flex;
+  
+}
+
+.subcard-container {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.subcard-title {
+    font-size: 1.45rem;
+    line-height: 1.85rem;
+    letter-spacing: -0.05em;
+    font-weight: 600;
+    color: black;
+    margin-bottom: .5rem;
+}
+
+.subcard-text {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    color: rgb(75 85 99 / 1);
+}
+
+.subcard-text-container {
+    padding: 1rem .5rem;
+}
+
+.graphic {
+  min-height: 10rem;
+  height: 100%;
+  background-color: var(--primary-color);
+  background-image: url(/static/images/test.svg);
+  background-repeat: no-repeat;
+  -webkit-background-position: 50% 79%;
+  background-position: 50% 79%;
+  background-size: 225px;
+  -webkit-background-size: 225px;
+  padding: 1.5rem;
+}
+
+.cardImageTitle {
+    font-size: 2rem;
+    line-height: 2.25rem;
+    color: #FFF;
+    font-weight: 700;
+}
+
+.subcard-points {
+    padding-left: 20px;
+    list-style: disc;
+}
+
+.subcard-points li {
+    font-size: 1rem;
+    line-height: 1.75rem;
+    color: rgb(75 85 99 / 1);
+}
+
+
+@media (min-width: 640px) {
+    .resourceCardsSection {
+        padding-top: 2rem;
+        padding-bottom: 2rem;
+    }
+}
+
+@media (min-width: 768px) {
+  .card-content {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .subcard-text-container {
+    padding: 2.5rem 1rem;
+  }
+
+  .graphic {
+    width: 90%;
+    border-radius: 0 10px 10px 0;
+  }
+
+  .subcard-title {
+    margin-bottom: 1rem;
+  }
+
+  .subcard-text {
+    font-size: 1.05rem;
+    line-height: 2rem;
+  }
+
+.subcard-points li {
+    font-size: 1.05rem;
+    line-height: 2rem;
+  }
+
+}

@@ -1,0 +1,93 @@
+<div class="docPageContainer">
+  {{$docPage := cast_to_doc_page .TemplateData}}
+  <div class="docTableContents">
+    <div class="content1"></div>
+    <div class="content2"></div>
+    <div class="content3"></div>
+    <div class="mainTableContent">
+      <nav class="mainContentNav">
+        <ul role="list" class="lister">
+          {{ range $index, $contents := $docPage.TOC }}
+          <li>
+            <h2 class="listTitle">{{$contents.SectionTitle}}</h2>
+            <ul role="list" class="subLister">
+              {{ range $index, $section := $contents.SubSections }}
+                <li class="listItem">
+                  {{if eq $docPage.CurrentPageSlug $section.Link}}
+                  <a class="activeLinker" href="{{$section.Link}}"
+                    >{{$section.SubSectionTitle}}
+                  </a>
+                  {{else}}
+                  <a class="linker" href="{{$section.Link}}"
+                  >{{$section.SubSectionTitle}}
+                  </a>
+                  {{end}}
+                </li>
+              {{end}}
+            </ul>
+          </li>
+          {{end}}
+        </ul>
+      </nav>
+    </div>
+  </div>
+  <div class="docMainArticle">
+    <article>
+      <header class="articleHeader">
+        <p class="articleSubtitle">{{$docPage.Section}}</p>
+        <h1 class="articleTitle">{{$docPage.Title}}</h1>
+      </header>
+      <div class="articleBody">
+        {{$docPage.DocHtmlData}}
+      </div>
+    </article>
+    <dl class="articleNavigator">
+      {{if $docPage.PreviousPage.SubSectionTitle}}
+      <div>
+        <dt class="previousText">Previous</dt>
+        <dd class="previousLinkContainer">
+          <a class="previousLink" href="{{$docPage.PreviousPage.Link}}">
+            {{$docPage.PreviousPage.SubSectionTitle}}
+            <svg viewBox="0 0 16 16" aria-hidden="true" class="svger">
+              <path
+                d="m9.182 13.423-1.17-1.16 3.505-3.505H3V7.065h8.517l-3.506-3.5L9.181 2.4l5.512 5.511-5.511 5.512Z"
+              ></path>
+            </svg>
+          </a>
+        </dd>
+      </div>
+      {{end}}
+      {{if $docPage.NextPage.SubSectionTitle}}
+      <div class="nextContainer">
+        <dt class="nextText">Next</dt>
+        <dd class="nextLinkContainer">
+          <a class="nextLink" href="{{$docPage.NextPage.Link}}">
+            {{$docPage.NextPage.SubSectionTitle}}
+            <svg viewBox="0 0 16 16" aria-hidden="true" class="svger">
+              <path
+                d="m9.182 13.423-1.17-1.16 3.505-3.505H3V7.065h8.517l-3.506-3.5L9.181 2.4l5.512 5.511-5.511 5.512Z"
+              ></path>
+            </svg>
+          </a>
+        </dd>
+      </div>
+      {{ end }}
+    </dl>
+  </div>
+  <div class="pageTableContents">
+    <nav aria-labelledby="on-this-page-title" class="naver">
+      <h2 id="on-this-page-title" class="title">On this page</h2>
+      <ol role="list" class="contentsList">
+        {{ range $index, $onPageSections := $docPage.OnThisPage }}
+        <li>
+          <h3>
+            <a class="botLink" href="#{{$onPageSections.Link}}"
+              >{{$onPageSections.SubSectionTitle}}</a
+            >
+          </h3>
+        </li>
+        {{ end }}
+      </ol>
+    </nav>
+  </div>
+</div>

@@ -1,0 +1,40 @@
+<section class="TRCPPULPZKRLSWD">
+    <div class="BLNREVDILMKOCDT">
+        {{$relatedBlogSection := cast_to_related_blog_articles .TemplateData}}
+        <div class="CMESKNEFOCUEHHP">
+            <h2 class="JJOHRFGUEBCTGFM">Related Articles</h2>
+        </div>
+        <div class="ADISKUTDRQMBJBW">
+            {{range $article := $relatedBlogSection.Posts}}
+            <article class="GOSKVYCXIEDPBDC">
+                <div class="VTZNHWVKJICTRHT">
+                    <span class="tag">
+                        {{$article.Tag}}
+                    </span>
+                    <span class="FYXFIKDNATQHHNA">{{$article.GetMonthDateString}}</span>
+                </div>
+                <h2 class="XZABKOYFRDVWETO"><a href="{{$article.Slug}}">{{$article.Title}}</a></h2>
+                <p class="XOCQCWLMKVOIJDM">{{$article.Snippet}}</p>
+                <div class="ALXGUZMUAKTITFD">
+                    <div class="ZSOZTIIAIRJOYEX">
+                        <img alt="{{$article.Author}} avatar" class="FSWJUULONDYRYNX"
+                            src="{{$article.Authorurl}}" />
+                        <span class="YMVKMVLCLXLFYZQ">
+                            {{$article.Author}}
+                        </span>
+                    </div>
+                    <a class="BEWSSENPXNHOZKU" href="{{$article.Slug}}">
+                        Read more
+                        <svg class="ZTJJAUNCARBSOAK" fill="currentColor" viewbox="0 0 20 20"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path clip-rule="evenodd"
+                                d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                                fill-rule="evenodd"></path>
+                        </svg>
+                    </a>
+                </div>
+            </article>
+            {{end}}
+        </div>
+    </div>
+</section>

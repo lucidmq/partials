@@ -1,0 +1,34 @@
+<section class="confirmSimpleSection">
+  <div class="BPPHRWCTOWTEHJZ">
+    <svg
+      aria-hidden="true"
+      class="YDKPZSPPBUXZDUY"
+      fill="none"
+      height="24"
+      viewbox="0 0 24 24"
+      width="24"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M5 11.917 9.724 16.5 19 7.5"
+        stroke="currentColor"
+        stroke-linecap="round"
+        stroke-linejoin="round"
+        stroke-width="2"
+      ></path>
+    </svg>
+  </div>
+  {{ $confimation := cast_to_confirmationSimple .TemplateData }}
+  <h2 class="FVYYIKSSWFJSKLA">{{$confimation.Title}}</h2>
+  <p class="OMFNBYKZPMRMKCF">
+    {{$confimation.Description}}
+  </p>
+  <div class="IWJYPZRPSGLDPDP">
+    <a
+      class="TWJEGLKRNHDZPBW"
+      href="{{$confimation.Button1Link}}"
+    >
+    {{$confimation.Button1Text}}
+  </a>
+  </div>
+</section>

@@ -1,0 +1,194 @@
+.integration-card-section {
+    
+    
+    background-color: rgb(255 255 255 / 1);
+}
+
+.integration-card-container {
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    max-width: 80rem;
+    
+    padding-left: 1rem;
+    padding-right: 1rem;
+    
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.integration-card-list-container {
+    
+    margin-top: 4rem;
+    
+    display: grid;
+    
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+    
+    -moz-column-gap: 1.5rem;
+    column-gap: 1.5rem;
+    
+    row-gap: 2rem;
+}
+
+.card-item {
+    
+    overflow: hidden;
+    
+    border-radius: 0.75rem;
+    
+    border-width: 1px;
+    
+    
+    border-color: rgb(229 231 235 / 1);
+}
+
+.card-item-header-container {
+    flex-direction: column;
+    
+    -moz-row-gap: 1rem;
+    row-gap: 1rem;
+    
+    display: flex;
+    
+    border-bottom-width: 1px;
+    
+    border-color: rgb(17 24 39 / 0.05);
+    
+    
+    background-color: rgb(249 250 251 / 1);
+    
+    padding: 1rem;
+}
+
+.card-item-header-images-container {
+    display: flex;
+    flex-direction: row;
+
+    
+    -moz-column-gap: 1rem;
+    column-gap: 1rem;
+}
+
+.card-item-image-wrapper {
+    height: 3.5rem;
+    width: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    
+    
+    background-color: rgb(255 255 255 / 1);
+
+    
+    --tw-ring-offset-shadow: var(--tw-ring-inset) 0 0 0 var(--tw-ring-offset-width) var(--tw-ring-offset-color);
+    --tw-ring-shadow: var(--tw-ring-inset) 0 0 0 calc(1px + var(--tw-ring-offset-width)) var(--tw-ring-color);
+    box-shadow: var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow, 0 0 #0000);
+    
+    --tw-ring-color: rgb(17 24 39 / 0.1);
+
+    
+    border-radius: 0.5rem;
+}
+
+.card-item-image {
+    
+    height: 2.5rem;
+    
+    width: 2.5rem;
+    
+    flex: none;
+    
+    border-radius: 0.5rem;
+    
+    
+    background-color: rgb(255 255 255 / 1);
+    
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+.card-item-title {
+    
+    font-size: 1rem;
+    line-height: 1.5rem;
+    
+    font-weight: 700;
+    
+    line-height: 1.75rem;
+    
+    
+    color: rgb(17 24 39 / 1);
+}
+
+.card-item-cta-container {
+    
+    margin-top: -0.75rem;
+    margin-bottom: -0.75rem;
+
+    
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+    
+    line-height: 1.5rem;
+}
+
+.card-item-cta-container > :not([hidden]) ~ :not([hidden]) {
+    
+    --tw-divide-y-reverse: 0;
+    border-top-width: calc(1px * calc(1 - var(--tw-divide-y-reverse)));
+    border-bottom-width: calc(1px * var(--tw-divide-y-reverse));
+    
+    --tw-divide-opacity: 1;
+    border-color: rgb(243 244 246 / var(--tw-divide-opacity));
+}
+
+.card-item-cta-sub-container {
+    
+    display: flex;
+    
+    justify-content: space-between;
+    
+    -moz-column-gap: 1rem;
+    column-gap: 1rem;
+    
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+}
+
+@media (min-width: 640px) {
+    .integration-card-container {
+        
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+    }
+}
+
+@media (min-width: 1024px) {
+    .integration-card-container {
+        
+        padding-left: 2rem;
+        padding-right: 2rem;
+    }
+
+    .integration-card-list-container {
+        
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
+
+@media (min-width: 1280) {
+    .integration-card-list-container {
+        
+        -moz-column-gap: 2rem;
+        column-gap: 2rem;
+    }
+}

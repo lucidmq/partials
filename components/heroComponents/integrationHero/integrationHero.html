@@ -1,0 +1,100 @@
+<div id="app">
+  <div class="hero-outer-container">
+    <svg class="hero-background-svg" aria-hidden="true">
+      <defs>
+        <pattern
+          id="0787a7c5-978c-4f66-83c7-11c213f99cb7"
+          width="200"
+          height="200"
+          x="50%"
+          y="-1"
+          patternUnits="userSpaceOnUse"
+        >
+          <path d="M.5 200V.5H200" fill="none"></path>
+        </pattern>
+      </defs>
+      <rect
+        width="100%"
+        height="100%"
+        stroke-width="0"
+        fill="url(#0787a7c5-978c-4f66-83c7-11c213f99cb7)"
+      ></rect>
+    </svg>
+    <div class="hero-inner-container">
+      <div class="hero-text-container">
+        <div class="extra-icon-container">
+          <div class="extra-icon-link">
+            <span class="extra-icon-span-1">
+              New release
+            </span>
+            <span class="extra-icon-span-2">
+              <span>
+                Version 1.0
+              </span>
+            </span>
+          </div>
+        </div>
+        {{$IntegrationHero := cast_to_integration_hero .TemplateData}}
+        <h1 class="hero-header-title">
+          Automatically import {{$IntegrationHero.App1}} data into {{$IntegrationHero.App2}}
+        </h1>
+        <p class="hero-header-subtitle">
+          Create integrations between {{$IntegrationHero.App1}} and {{$IntegrationHero.App2}} to automate any workflow
+        </p>
+        <div class="hero-header-cta-container">
+          <a href="#" class="get-started-link">
+            Get started
+          </a>
+          <a href="#" class="learn-more-link">
+            Learn more <span aria-hidden="true">→</span>
+          </a>
+        </div>
+      </div>
+      <div class="hero-graphic-container">
+        <div class="hero-graphic-card-item">
+            <div class="hero-graphic-card-image-wrapper">
+              <img
+                src="{{$IntegrationHero.App1ImageLocation}}"
+                alt="Filevine logo"
+                class="hero-graphic-card-item-image"
+              />
+            </div>
+            <div class="hero-card-item-text-container">
+              <h3 class="hero-card-title-text">
+                {{$IntegrationHero.App1}}
+              </h3>
+              <p class="hero-card-details-text">
+                Your {{$IntegrationHero.App1}} data
+              </p>
+            </div>
+          </div>
+
+          <div class="arrow-container">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" height="32" width="32" size="32" name="arrowBigDown">
+              <path fill="#2D2E2E" d="m11 16.86-6-5.04v2.62l7 5.86 7-5.86v-2.62l-6 5.04V4h-2v12.86Z">
+              </path>
+            </svg>
+          </div>
+
+          <div class="hero-graphic-card-item">
+            <div class="hero-graphic-card-image-wrapper">
+              <img
+                src="{{$IntegrationHero.App2ImageLocation}}"
+                alt="Google Sheets Logo"
+                class="hero-graphic-card-item-image"
+              />
+            </div>
+            <div class="hero-card-item-text-container">
+              <h3 class="hero-card-title-text">
+                {{$IntegrationHero.App2}}
+              </h3>
+              <p class="hero-card-details-text">
+                Your {{$IntegrationHero.App2}} spreadsheet
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,134 @@
+.URQVMJXBKZUJKGC {
+    
+    
+    background-color: rgb(255 255 255 / 1);
+    
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+  }
+  
+  @media (min-width: 640px) {
+    .URQVMJXBKZUJKGC {
+      
+      padding-top: 4rem;
+      padding-bottom: 4rem;
+    }
+  }
+  
+  .JITOBXDODPWARQG {
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    max-width: 80rem;
+    
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+  
+  @media (min-width: 1024px) {
+    .JITOBXDODPWARQG {
+      
+      padding-left: 2rem;
+      padding-right: 2rem;
+    }
+  }
+  
+  .KRJMEMSICXXTEER {
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    max-width: 42rem;
+  }
+  
+  @media (min-width: 1024px) {
+    .KRJMEMSICXXTEER {
+      
+      max-width: none;
+    }
+  }
+  
+  .KMQBVBYBWRQUHYN {
+    
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+    
+    font-weight: 600;
+    
+    line-height: 2rem;
+    
+    
+    color: rgb(17 24 39 / 1);
+  }
+  
+  .BLEKFQYFGYETIGU {
+    
+    margin-left: auto;
+    margin-right: auto;
+    
+    margin-top: 2.5rem;
+    
+    display: grid;
+    
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    
+    align-items: flex-start;
+    
+    -moz-column-gap: 2rem;
+    column-gap: 2rem;
+    
+    row-gap: 2.5rem;
+  }
+  
+  @media (min-width: 640px) {
+    .BLEKFQYFGYETIGU {
+      
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+  @media (min-width: 640px) {
+    .BLEKFQYFGYETIGU {
+      
+  
+      -moz-column-gap: 2.5rem;
+      column-gap: 2.5rem;
+    }
+  }
+  @media (min-width: 1024px) {
+    .BLEKFQYFGYETIGU {
+      
+  
+      margin-left: 0px;
+      margin-right: 0px;
+    }
+  }
+  @media (min-width: 1024px) {
+    .BLEKFQYFGYETIGU {
+      
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+    }
+  }
+  
+  .RAVFWNICOVTHNUB {
+    
+    grid-column: span 2 / span 2;
+    
+    max-height: 3rem;
+    
+    width: 100%;
+    
+    -o-object-fit: contain;
+    object-fit: contain;
+    
+    -o-object-position: left;
+    object-position: left;
+  }
+  
+  @media (min-width: 1024px) {
+    .RAVFWNICOVTHNUB {
+      
+      grid-column: span 1 / span 1;
+    }
+  }
+  

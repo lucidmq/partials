@@ -1,0 +1,58 @@
+<header class="topbar">
+  {{ $topbarData := cast_to_topbar .TemplateData }}
+  <div class="topbar_subcontainer">
+    <nav class="nav_container">
+      <div class="nav_subcontainer">
+        <a class="logoContainer" aria-label="Home" href="/">
+          {{$topbarData.LogoSVG}}
+          {{ if $topbarData.SiteName }}
+            <h1 class="logoText">{{$topbarData.SiteName }}</h1>
+          {{end}}
+        </a>
+        <div class="main_links_container">
+          {{ range $index, $link := $topbarData.MainLinks }}
+          <a class="main_links" href="{{$link.Link}}">{{$link.Title}}</a>
+          {{end}}
+        </div>
+      </div>
+      {{ if $topbarData.ShowLoginLinks}}
+      <div class="login_container">
+        <a class="register_link" href="/login">
+          <span>Log In</span>
+        </a>
+      </div>
+      {{ end }}
+      <div class="mobile_container">
+        <button
+          class="mobile_togle_nav"
+          aria-label="Toggle Navigation"
+          type="button"
+          aria-expanded="false"
+          onclick="toggleMenu(event)"
+        >
+          <svg
+            aria-hidden="true"
+            class="mobile_svg_button"
+            fill="none"
+            stroke-width="2"
+            stroke-linecap="round"
+          >
+            <path
+              d="M0 1H14M0 7H14M0 13H14"
+              class="hamburger_x_path"
+            ></path>
+            <path
+              d="M2 2L12 12M12 2L2 12"
+              class="hamburger_x_selected"
+            ></path>
+          </svg>
+        </button>
+        <div class="mobile_sub_object" id="resNav">
+          {{ range $index, $link := $topbarData.MainLinks }}
+          <a class="mobile_links" href="{{$link.Link}}">{{$link.Title}}</a>
+          {{end}}
+        </div>
+      </div>
+    </nav>
+  </div>
+</header>
