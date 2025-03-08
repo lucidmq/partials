@@ -6,15 +6,8 @@
         <div class="card-item-header-images-container">
           <div class="card-item-image-wrapper">
             <img
-              src="{{$integration.App1ImageLocation}}"
-              alt="Filevine"
-              class="card-item-image"
-            />
-          </div>
-          <div class="card-item-image-wrapper">
-            <img
-              src="{{$integration.App2ImageLocation}}"
-              alt="Filevine"
+              src="{{$integration.ImageLocation}}"
+              alt="Our image"
               class="card-item-image"
             />
           </div>
@@ -23,7 +16,8 @@
           <h3 class="integration-box-title">
             <a href="{{$integration.Link}}" class="integration-box-link">
               <span class="integration-box-link-span" aria-hidden="true"></span>
-              {{$integration.App1}} - {{$integration.App2}}
+              <p>{{$integration.CardTile}}</p>
+              <p>{{$integration.CardDescription}}</p>
             </a>
           </h3>
         </div>

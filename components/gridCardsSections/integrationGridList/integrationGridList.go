@@ -6,11 +6,10 @@ const DATA_KEY = "integrationGridListData"
 const CONVERTER_FUNCTION_NAME = "cast_to_integration_grid_list"
 
 type Integration struct {
-	App1              string
-	App2              string
-	App1ImageLocation string
-	App2ImageLocation string
-	Link              string
+	CardTile        string
+	CardDescription string
+	ImageLocation   string
+	Link            string
 }
 
 func Cast_to_integration_grid_list(mapper map[string]interface{}) []Integration {
@@ -25,4 +24,33 @@ func Cast_to_integration_grid_list(mapper map[string]interface{}) []Integration 
 	}
 	log.Fatal("Not found in the map")
 	return v
+}
+
+func NewDummy() []Integration {
+	return []Integration{
+		{
+			CardTile:        "Test Title",
+			CardDescription: "Test Description",
+			ImageLocation:   "/undefined",
+			Link:            "#",
+		},
+		{
+			CardTile:        "Test Title",
+			CardDescription: "Test Description",
+			ImageLocation:   "/undefined",
+			Link:            "#",
+		},
+		{
+			CardTile:        "Test Title",
+			CardDescription: "Test Description",
+			ImageLocation:   "/undefined",
+			Link:            "#",
+		},
+		{
+			CardTile:        "Test Title",
+			CardDescription: "Test Description",
+			ImageLocation:   "/undefined",
+			Link:            "#",
+		},
+	}
 }
