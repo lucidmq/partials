@@ -6,7 +6,7 @@ This repository contains reuseable components that are used across all the landi
 
 1. Add submodule to existing project
 ```bash
-git submodule add git@github.com:integrandio/partials.git
+git submodule add git@github.com:lucidmq/partials.git
 ```
 
 
