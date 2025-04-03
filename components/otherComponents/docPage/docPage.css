@@ -1,59 +1,37 @@
 .docPageContainer {
-  
   position: relative;
-  
   margin-left: auto;
   margin-right: auto;
-  
   display: flex;
-  
   width: 100%;
-  
   max-width: 95rem;
-  
   flex: 1 1 auto;
-  
   justify-content: center;
 }
 
 .docTableContents {
-  
   display: none;
 
   .content1 {
-    
     position: absolute;
-    
     top: 0;
     bottom: 0;
-    
     right: 0;
-    
     width: 50vw;
     border-right-width: 1px;
     border-right-style: solid;
     border-right-color: var(--secondary-border-color);
-    
   }
 
   .content2 {
-    
     position: absolute;
-    
     bottom: 0;
-    
     right: 0;
-    
     top: 4rem;
-    
     display: none;
-    
     height: 3rem;
-    
     width: 1px;
-    
     background-image: linear-gradient(to top, var(--tw-gradient-stops));
-    
     --tw-gradient-from: #1e293b var(--tw-gradient-from-position);
     --tw-gradient-to: rgba(30, 41, 59, 0) var(--tw-gradient-to-position);
     --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
@@ -228,7 +206,6 @@
       }
 
       .subLister > :not([hidden]) ~ :not([hidden]) {
-        
         --tw-space-y-reverse: 0;
         margin-top: calc(0.5rem * calc(1 - var(--tw-space-y-reverse)));
         margin-bottom: calc(0.5rem * var(--tw-space-y-reverse));
@@ -610,18 +587,9 @@
     color: var(--tw-prose-code);
     font-weight: 600;
     font-size: 0.875em;
-  }
-  .articleBody
-    :where(code):not(
-      :where([class~="not-prose"], [class~="not-prose"] *)
-    ):before {
-    content: "`";
-  }
-  .articleBody
-    :where(code):not(
-      :where([class~="not-prose"], [class~="not-prose"] *)
-    ):after {
-    content: "`";
+    background-color: rgb(208, 208, 208);
+    padding: .1rem .25rem;
+    border-radius: 4px;
   }
   .articleBody
     :where(a code):not(:where([class~="not-prose"], [class~="not-prose"] *)) {
